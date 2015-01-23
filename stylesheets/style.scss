@@ -1,0 +1,194 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:400,500,700,800,900,400italic,500italic);
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900);
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Exo";
+}
+
+@mixin transition {
+  opacity: 0;
+  @for $i from 1 through 11 {
+    &:nth-child(#{$i}) {
+      -webkit-animation: fade-in 1.6s #{($i/4) - 1}s ease-in forwards;
+    }
+  }
+}
+
+@mixin centerCode {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+figure {
+  @include centerCode;
+  -webkit-animation: move-up 1s 3s ease forwards;
+  &:nth-child(2) {
+    opacity: 0;
+    -webkit-animation: fade-in 1s 3.8s ease-in forwards;
+  }
+  span {
+    @include transition;
+  }
+}
+
+@-webkit-keyframes move-up {
+  100% {
+    transform: translate(-50%, -165px);
+  }
+}
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.space1 {
+  letter-spacing: 15px;
+}
+
+.space2 {
+  letter-spacing: -15px;
+}
+
+.main {
+  position: relative;
+  background-image: url('../assets/black-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  figure {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: white;
+    font-size: 9.0vh;
+    @media (max-width: 520px) {
+      font-size: 6.5vh;
+    }
+    p {
+      font-size: 4.5vh;
+      font-family: 'Raleway';
+      font-weight: 700;
+      @media (max-width: 730px) {
+        font-size: 3.5vh;
+      }
+    } // closing p brace
+  } // closing figure brace
+} // closing main brace
+
+#about {
+  padding: 50px 0 75px 0;
+  background-image: url('../assets/cool.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-header {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  h1 {
+    font-family: 'Fredoka One';
+    color: #FFF;
+    font-size: 6vh;
+    @media (max-width: 990px){
+      font-size: 48px;
+    }
+  }
+}
+
+.col-md-3 {
+  img {
+    max-width: 100%;
+  }
+}
+
+
+.box {
+  padding: 30px 30px;
+  background-color: white;
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+  p {
+    font-size: 1.9vh;
+  }
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  li {
+    list-style-type: none;
+    }
+  }
+
+
+
+p {
+  font-size: 16px;
+}
+
+
+.jumbotron {
+  margin-top: 10px;
+  background: -webkit-linear-gradient(deepskyblue, dodgerblue);
+}
+
+.heading {
+  font-size: 7vh;
+  text-decoration: underline;
+}
+
+.row {
+  margin-top: 100px;
+}
+
+.line {
+  line-height: 2px;
+  border-color: #ccc;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image2 {
+  margin-bottom: 50px;
+  width: 85%;
+  height: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  @media (max-width: 1007px) {
+    margin-top: 15px;
+  }
+}
+
+.pom-btn {
+  @media (max-width: 1007px) {
+    margin-bottom: 15px;
+  }
+}
