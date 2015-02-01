@@ -162,6 +162,9 @@ img {
     .image2 {
       margin-top: 15px; } }
 
+.image3 {
+  vertical-align: bottom; }
+
 @media (max-width: 1007px) {
   .pom-btn {
     margin-bottom: 15px; } }

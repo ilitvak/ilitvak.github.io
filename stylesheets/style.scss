@@ -137,7 +137,6 @@ figure {
   }
 }
 
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -192,6 +191,10 @@ img {
   @media (max-width: 1007px) {
     margin-top: 15px;
   }
+}
+
+.image3 {
+  vertical-align: bottom;
 }
 
 .pom-btn {
