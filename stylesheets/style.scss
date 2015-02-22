@@ -84,15 +84,15 @@ figure {
     color: white;
     font-size: 6.5em;
     z-index: 10;
-    @media (max-width: 520px) {
-      font-size: 6.5vh;
+    @media (max-width: 590px) {
+      font-size: 4.0em;
     }
     p {
       font-size: 0.5em; // Cant't use vh because on IMAC's it pushes into the parent tag.
       font-weight: 700;
       white-space: nowrap;
-      @media (max-width: 730px) {
-        font-size: 3.5vh;
+      @media (max-width: 590px) {
+        font-size: 0.6em;
       }
     } // closing p brace
   } // closing figure brace
@@ -112,7 +112,7 @@ figure {
   h1 {
     font-weight: 700;
     color: #FFF;
-    font-size: 6vh;
+    font-size: 4.5em;
     @media (max-width: 990px){
       font-size: 48px;
     }
@@ -133,7 +133,7 @@ figure {
     font-size: 16px;
   }
   p {
-    font-size: 1.9vh;
+    font-size: 1.32em;
   }
 }
 
@@ -164,7 +164,7 @@ p {
 }
 
 .heading {
-  font-size: 7vh;
+  font-size: 4.0em;
   text-decoration: underline;
 }
 

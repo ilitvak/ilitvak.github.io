@@ -77,16 +77,16 @@ figure {
     color: white;
     font-size: 6.5em;
     z-index: 10; }
-    @media (max-width: 520px) {
+    @media (max-width: 590px) {
       .main figure {
-        font-size: 6.5vh; } }
+        font-size: 4.0em; } }
     .main figure p {
       font-size: 0.5em;
       font-weight: 700;
       white-space: nowrap; }
-      @media (max-width: 730px) {
+      @media (max-width: 590px) {
         .main figure p {
-          font-size: 3.5vh; } }
+          font-size: 0.6em; } }
 
 #about {
   padding: 50px 0 75px 0;
@@ -101,7 +101,7 @@ figure {
   .about-header h1 {
     font-weight: 700;
     color: #FFF;
-    font-size: 6vh; }
+    font-size: 4.5em; }
     @media (max-width: 990px) {
       .about-header h1 {
         font-size: 48px; } }
@@ -116,7 +116,7 @@ figure {
     .box {
       font-size: 16px; } }
   .box p {
-    font-size: 1.9vh; }
+    font-size: 1.3em; }
 
 .contact {
   display: flex;
@@ -138,7 +138,7 @@ p {
   background: -webkit-linear-gradient(deepskyblue, dodgerblue); }
 
 .heading {
-  font-size: 7vh;
+  font-size: 4.0em;
   text-decoration: underline; }
 
 .row {
