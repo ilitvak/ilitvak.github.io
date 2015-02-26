@@ -119,13 +119,6 @@ figure {
   }
 }
 
-.col-md-3 {
-  img {
-    max-width: 100%;
-  }
-}
-
-
 .box {
   padding: 30px 30px;
   background-color: white;
@@ -165,7 +158,6 @@ p {
 
 .heading {
   font-size: 4.0em;
-  text-decoration: underline;
 }
 
 .row {
@@ -198,7 +190,8 @@ img {
 }
 
 .pom-btn {
-  @media (max-width: 1007px) {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+  @media (max-width: 494px){
+    font-size: 1.5vw;
   }
 }

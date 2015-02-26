@@ -106,9 +106,6 @@ figure {
       .about-header h1 {
         font-size: 48px; } }
 
-.col-md-3 img {
-  max-width: 100%; }
-
 .box {
   padding: 30px 30px;
   background-color: white; }
@@ -116,7 +113,7 @@ figure {
     .box {
       font-size: 16px; } }
   .box p {
-    font-size: 1.3em; }
+    font-size: 1.32em; }
 
 .contact {
   display: flex;
@@ -138,8 +135,7 @@ p {
   background: -webkit-linear-gradient(deepskyblue, dodgerblue); }
 
 .heading {
-  font-size: 4.0em;
-  text-decoration: underline; }
+  font-size: 4.0em; }
 
 .row {
   margin-top: 100px; }
@@ -165,8 +161,10 @@ img {
 .image3 {
   vertical-align: bottom; }
 
-@media (max-width: 1007px) {
-  .pom-btn {
-    margin-bottom: 15px; } }
+.pom-btn {
+  margin-bottom: 15px; }
+  @media (max-width: 494px) {
+    .pom-btn {
+      font-size: 1.5vw; } }
 
 /*# sourceMappingURL=style.css.map */
