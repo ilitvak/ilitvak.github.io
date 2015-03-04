@@ -1,167 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Irwin's Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+<head lang="en">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css" type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Website Revamp</title>
+</head>
+<body>
+  <div id='wall_1' class='image'></div>
+  <div class="container-fluid projects-container">
+    <h3 class="projects-header"><span>P</span>rojects</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="http://bloc-jams-testss.herokuapp.com/">
+          <img src="assets/blocjams.png" alt="blocjams" class="project1"/>
+        </a>
+        <h3 class="title">BlocJams</h3>
+        <p>BlocJams is a music application that allows the user to play music and use interactive scroll bars and volume controls.
+          This was the first project I had to build as part of my 12-week immersive bootcamp.
+        </p>
+        <p>There is a bonus hidden feature on Bloc-Jams. All you have to do is mouse click on 'Turn the Music Up'.</p>
+        <p> Bloc-Jams was built using HTML5, CSS3, Sass and the AngularJS.</p>
+        <a class='btn btn-info' href="https://github.com/ilitvak/bloc-jams">Github</a>
+      </div>
 
-  <body>
-    <div class="main">
-      <figure>
-        <span>I</span>
-        <span>R</span>
-        <span>W</span>
-        <span>I</span>
-        <span class="space1">N</span>
-        <span>L</span>
-        <span>I</span>
-        <span>T</span>
-        <span class="space2">V</span>
-        <span>A</span>
-        <span>K</span>
-      </figure>
+      <div class="col-md-4">
+        <a href="  http://pomodoro-app-timer.herokuapp.com/">
+          <img src="assets/pom.png" alt="pom" class="project2"/>
+        </a>
+        <h3 class="title">Pomodoro</h3>
+        <p>The <a href="http://pomodorotechnique.com/">Pomodoro Timer</a> is a productivity application that helps users use their time efficiently.
+          You set the time for 25 minutes and during that time you focus on one sole task.
+        </p>
+        <p>I have personally used this timer for my daily activities and can confidently say I feel more productive.
+          Hopefully you have similar results!
+        </p>
+        <p> Pomodoro was built using HTML5, CSS3, Sass and the AngularJS.</p>
+        <a class='btn btn-info' href="https://github.com/ilitvak/Pomodoro-App">Github</a>
+      </div>
 
-      <figure>
-        <p>Front-End Developer</p>
-      </figure>
+      <div class="col-md-4">
+        <a href="http://bodybyyou.herokuapp.com/">
+          <img src="assets/bodybyyou.png" alt="bodybyyou" class="project3"/>
+        </a>
+        <h3 class="title">BlocJams</h3>
+        <p class="rotate">BodyByYou is a nutrition/educational website to inform people of the various benefits or eating healthy.
+          The website covers multiple areas from food types: fats, carbohydrates, proteins, shopping lists, to motivational quotes.
+          This website encompasses a lot of my daily life and the effort that is required to eat well.
+        </p>
+        <p>Key Note: I am not a nutritionist, but I am a Certified Personal Trainer,
+          so all of the food recommendations/portion sizes are my own suggestions based on copious amounts of research.
+        </p>
+        <p> Pomodoro was built using HTML5, CSS3, Sass and the AngularJS.</p>
+        <a href="https://github.com/ilitvak/bodybyyou" class="btn btn-info">Github</a>
+      </div>
+    </div>
+  </div> <!--closing container class -->
+
+  <div id='wall_2' class='image'></div>
+  <div id='content_2' class='content'>
+    <h3 class="about-me"><span>W</span>ho am I?</h3>
+    <p class='rotate'>Hi, my name is Irwin Litvak  and I am a Front-End Web Developer. I recently graduated from <a href="https://www.bloc.io">Bloc.io's</a> online
+      12 week immersive bootcamp. During my time there I was introduced to new concepts and was able to culminate my skills of HTML5, CSS3, Sass,
+      and the AngularJS framework.
+    </p>
+    <p>Coding has always been a curiosity of mine and after leaving behind my career of finance, I realized how much I enjoy it. I am always eager to learn
+      new technologies, languages or frameworks in order to strengthen my knowledge of code. I have done a ton of pair
+      programming at Bloc and worked on a small team with like-minded individuals. We collaborated on projects/Hackathons and gave insightful tips and
+      critiques to enhance our work.
+    </p>
+    <p>If you have any recommendations or are interested
+      in learning more about me, send me an email to <em>irwin.litvak@gmail.com</em></p>
+  </div>
+
+  <div class='container-fluid skill-set'>
+    <h2 class="about-me"><span>S</span>kills</h2>
+
+    <h3>HTML5</h3>
+    <div class='skill-bar'>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-off></div>
     </div>
 
-    <div class="container-fluid">
-      <div class="jumbotron">
-        <h1 class="text-center">Projects</h1>
-      </div>
-    </div> <!--closing container-fluid tag -->
+    <h3>CSS3</h3>
+    <div class='skill-bar'>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-off></div>
+    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="http://i.imgur.com/ytYhmnU.jpg" alt="bloc-jams-project-photo" class="image1"/>
-        </div>
+    <h3>Sass</h3>
+    <div class='skill-bar'>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-off></div>
+    </div>
 
-        <div class="col-md-6">
-          <h1 class="heading">BlocJams</h1>
-          <h3><em>A Project by <a href="https://www.bloc.io/">Bloc</a> for their Front-End Web Development Course</em></h3>
-          <p class="description">BlocJams is a music application that allows the user to play music and use interactive scroll bars and volume controls.
-             This was the first project I had to build as part of my 12-week immersive bootcamp.
-          </p>
-          <p>
-            There is a bonus hidden feature on Bloc-Jams. All you have to do is mouse click on 'Turn the Music Up'.
-          </p>
-          <p>
-           Bloc-Jams was built using HTML5, CSS3, CSS preprocessor Sass and the AngularJS framework.
-          </p>
-          <a class="btn btn-primary" href="http://bloc-jams-testss.herokuapp.com/">BlocJams</a>
-          <a class="btn btn-success" href="https://github.com/ilitvak/bloc-jams">Github</a>
-        </div>
-      </div> <!--closing row tag -->
-    </div> <!--closing container-fluid tag -->
+    <h3>JavaScript</h3>
+    <div class='skill-bar'>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-off></div>
+      <div class=skill-rate-off></div>
+    </div>
 
-    <div class="container">
-      <hr class="line">
-        <div class='row'>
-          <div class="col-md-6">
-            <h1 class="heading">BodyByYou</h1>
-            <h3><em>My Final Project for <a href="https://www.bloc.io/">Bloc</a> to graduate their Front End Development course. </em></h3>
-            <p class="description">BodyByYou is a nutrition/educational website to inform people of the various benefits or eating healthy.
-              The website covers multiple areas from food types: fats, carbohydrates, proteins, shopping lists, to motivational quotes.
-              This website encompasses a lot of my daily life and the effort that is required to eat well.
-            </p>
-            <p>
-              Everyone wants to eat well and sometimes you just need a little direction on how to do that.
-              This is what BodyByYou does. It gives the user a thorough look on food suggestions and how to shop smart.
-              Key Note: I am not a nutritionist, but I am a Certified Personal Trainer, so all of the food recommendations/portion sizes are my own suggestions based on copious amounts of research.
-            </p>
-            <p>
-              This website was created using HTML5, CSS3, CSS preprocessor Sass, AngularJS framework, NutritionIX API, and Firebase.io.
-            </p>
-            <a class="btn btn-primary" href="http://bodybyyou.herokuapp.com/">BodyByYou</a>
-            <a class="btn btn-success" href="https://github.com/ilitvak/bodybyyou">Github</a>
-          </div>
+    <h3>AngularJS</h3>
+    <div class='skill-bar'>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-on></div>
+      <div class=skill-rate-off></div>
+      <div class=skill-rate-off></div>
+    </div>
+  </div>
 
-          <div class="col-md-6">
-            <img src="http://i.imgur.com/8E9gkf4.jpg" alt="bodybybyou image in mac" class="image2"/>
-          </div>
-
-        </div> <!--closing row2 tag -->
-      </div> <!--closing container tag -->
-
-      <div class="container">
-        <hr class="line">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="http://i.imgur.com/jViyDzr.jpg" alt="pomodoro-timer" class="image3"/>
-            </div>
-
-            <div class="col-md-6">
-              <h1 class="heading">Pomodoro-Timer</h1>
-              <h3><em>A <a href="http://pomodorotechnique.com/">Pomodoro-Technique</a> inspired application</em></h3>
-              <p class="description">The Pomodoro Timer is a productivity application that helps users use their time efficiently. You set the time for 25 minutes and during that time you focus
-               on one sole task. I have personally used this timer for my daily activities and can confidently say I feel more productive. Hopefully you have similar results!
-              </p>
-              <p>This application was built using HTML5, CSS3, CSS preprocessor Sass and the AngularJS framework.</p>
-              <div class="pom-btn">
-                <a href="http://pomodoro-app-timer.herokuapp.com" class="btn btn-primary">Pomodoro-Timer</a>
-                <a href="https://github.com/ilitvak/Pomodoro-App" class="btn btn-success">Github</a>
-              </div>
-            </div> <!--closing col-md-4 -->
-        </div> <!--closing row tag -->
-      </div> <!--closing container tag -->
-
-      <div id="about">
-        <div class="container-fluid">
-          <div class="about-header">
-            <h1>Hi! I'm Irwin Litvak</h1>
-          </div>
-        </div>
+  <footer>
+    <div class="social">
+      <ul>
+        <li><a href="https://github.com/ilitvak"><i class="fa fa-github-square fa-4x"></i></a></li>
+        <li><a href="http://codepen.io/purewisdom1/"><i class="fa fa-codepen fa-4x"></i></a></li>
+        <li><a href="www.linkedin.com/in/ilitvak"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
 
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-6">
-              <div class="box">
-                <p>I'm enthusiastic about Front End Web Development and live in New York City! I utilize skills such as HTML5, CSS3, JavaScript, CSS preprocessor Sass, and an AngularJS framework.</p>
-                <p>Thanks to my experience at <a href="https://www.bloc.io/">Bloc</a> I was able to culminate my skill-set of Front End Web Development. If you have any questions, please feel free to email me
-                   at irwin.litvak@gmail.com </p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <ul class="contact">
-                <li>
-                  <a href="https://www.linkedin.com/in/ilitvak">
-                    <i class="fa fa-linkedin-square fa-3x"></i>
-                    <p>Linkedin</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/ilitvak">
-                    <i class="fa fa-github-alt fa-3x"></i>
-                    <p>Github</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="http://codepen.io/purewisdom1/">
-                    <i class="fa fa-codepen fa-3x"></i>
-                    <p>Codepen</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/IrwinLitvak">
-                    <i class="fa fa-twitter fa-3x"></i>
-                    <p>Twitter</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> <!--container tag -->
-      </div> <!--id about tag -->
-
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
