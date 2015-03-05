@@ -10,5 +10,11 @@ jQuery(document).ready(function(){
             $('#wall_2').css('background-position', 'center' + scrolled * .25 + '%');
         }
     }
+
+    $(".rotate").textrotator({
+        animation: "dissolve",
+        separator: "|",
+        speed: 2000
+    });
 });
 
