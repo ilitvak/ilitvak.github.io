@@ -9,21 +9,24 @@ body, html {
   font-family: 'Montserrat'; 
 }
 
+/* Header */
+
 #bg {
     width: 100%;
-    height: 820px;
+    height: 420px;
     background-image: url(../assets/bg.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .intro {
+    height: 100%;
     text-align: center;
 }
 
 .intro h1 {
     margin: 0;
-    padding-top: 365px;
+    padding-top: 170px;
     font-weight: bold;
     font-size: 55px;
     color: #fff;
@@ -38,7 +41,35 @@ body, html {
     text-shadow: 3px 3px black;
 }
 
-section.projects {
+/* end of header*/
+
+
+
+/* projects title container */
+
+.projects-title {
+    width: 500px;
     margin: 40px 0 0 40px;
+    text-align: left;
 }
+
+.projects-title h2::first-letter {
+    color: #00bfff;
+}
+
+.projects-title h2 {
+    font-size: 47px;
+}
+
+/* end of projects title container */
+
+
+/* section for projects */
+
+.bloc {
+    width: 100%;
+    height: 300px;
+}
+
+
 
