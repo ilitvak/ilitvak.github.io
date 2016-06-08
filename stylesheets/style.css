@@ -47,18 +47,23 @@ body, html {
 
 /* projects title container */
 
-.projects-title {
-    width: 500px;
-    margin: 40px 0 0 40px;
-    text-align: left;
+.projects-section-container {
+   width: 100%;
 }
 
-.projects-title h2::first-letter {
+.projects-section-container h2::first-letter {
     color: #00bfff;
 }
 
-.projects-title h2 {
+.projects-section-container h2 {
     font-size: 47px;
+    color: grey;
+}
+
+.projects-title-box {
+    margin-left: 40px;
+    padding-top: 500px;
+    width: 500px;
 }
 
 /* end of projects title container */
@@ -66,10 +71,13 @@ body, html {
 
 /* section for projects */
 
+
 .bloc {
-    width: 100%;
+    width: 558px;
     height: 300px;
 }
 
-
+.projects-text-container {
+    display: inline-block;
+}
 
