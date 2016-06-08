@@ -1,12 +1,44 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://fonts.googleapis.com/css?family=Montaga);
-@import url(http://fonts.googleapis.com/css?family=Play);
+
 * {
   margin: 0px;
   padding: 0px; }
 
 body, html {
   width: 100%;
-  font-family: 'Montserrat'; }
+  font-family: 'Montserrat'; 
+}
 
+#bg {
+    width: 100%;
+    height: 820px;
+    background-image: url(../assets/bg.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    margin: 0;
+    padding-top: 365px;
+    font-weight: bold;
+    font-size: 55px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px black;
+}
+
+.intro p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 3px 3px black;
+}
+
+section.projects {
+    margin: 40px 0 0 40px;
+}
 
