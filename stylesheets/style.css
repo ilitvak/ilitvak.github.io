@@ -48,22 +48,28 @@ body, html {
 /* projects title container */
 
 .projects-section-container {
-   width: 100%;
+    width: 100%;
+    padding-top: 30px;
 }
 
-.projects-section-container h2::first-letter {
+.projects-title-box h2::first-letter {
     color: #00bfff;
 }
 
-.projects-section-container h2 {
+.projects-title-box h2 {
     font-size: 47px;
     color: grey;
 }
 
 .projects-title-box {
+    display: inline-block;
     margin-left: 40px;
-    padding-top: 500px;
-    width: 500px;
+    padding: 200px 200px 0 0;
+}
+
+.project-table {
+    display: inline-block;
+    width: 660px;
 }
 
 /* end of projects title container */
@@ -71,13 +77,17 @@ body, html {
 
 /* section for projects */
 
+.bloc-box-container {
+    display: inline-block;
+}
 
 .bloc {
     width: 558px;
     height: 300px;
 }
 
-.projects-text-container {
+.bloc-title h2 {
     display: inline-block;
 }
+
 
