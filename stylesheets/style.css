@@ -92,14 +92,41 @@ body, html {
 
 
 
-.bloc {
+img {
     width: 100%;
     height: auto;
 }
 
 .bloc-title {
+    margin-bottom: 5%;
     width: 60%;
     float: left;
 }
 
+.bloc-title h2 {
+    display: inline-block;
+}
 
+button {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-color: #46b8da;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #5bc0de;
+}
+
+.project-container a:nth-child(3) {
+    float: right;
+}
+.pomodoro-title {
+    width: 60%; 
+    float: left;
+}
+
+.pomodoro-title h2 {
+    display: inline-block;
+}
