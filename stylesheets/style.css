@@ -5,6 +5,7 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
     }
 
 body, html {
@@ -155,13 +156,6 @@ div.pom {
     background-image: url(../assets/city.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    opacity: .88;
-}
-
-footer .title {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    color: #fff;
 }
 
 /*End of footer section*/
@@ -169,19 +163,80 @@ footer .title {
 /* Form Section*/
 
 
+form {
+    padding: 25px 150px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+.form-container {
+    padding: 2% 25% 0;
+}
+
+
+@keyframes inandOut {
+    from {opacity: 0.4};
+    to {opacity: 1};
+}
+
+.form-container h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    animation-name: inandOut;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+
+.input-container, .email-container, .message-container {
+    border-bottom: 2px solid #fff;
+}
+
+.input-container label:nth-child(2)::before {
+    content: "Name";
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px;
+}
+
 input {
-    border-radius: 8px;
-}
-
-fieldset {
-    padding: 0;
+    padding: 3px 5px;
+/*    border-radius: 10px;*/
+    margin-bottom: 10px;
     border: none;
-    margin: 0;
-
 }
 
+input:focus{
+    outline: none;
+}
 
+.email-container label:nth-child(2)::before {
+    content: "Email";
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px;
+}
 
+.message-container label:nth-child(2)::before {
+    content: "Message";
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 10px ;
+}
+
+.email-container, .message-container {
+    margin-top: 5px;
+}
 
 
 

@@ -68,15 +68,21 @@
             </div>
         </section> <!-- This is the main container for projects -->
         <footer class="footer-bg">
-            <div class="title">
-                <h1>I&#8242;d love to hear from you!</h1>
-            </div>
-            <div class="title form-container clearfix">
-                <form action="" method="post">
-                    <fieldset>
-                        <label for="Name">Name</label>
-                        <input type="text" name="Name">
-                    </fieldset>
+            <div class="form-container clearfix">
+                <h1>I&#146;d love to hear from you!</h1>
+                <form>
+                    <div class="input-container">
+                        <input id="input-name" type="text" name="name">
+                        <label for="input-name" data-req-text="Name"></label>
+                    </div>
+                    <div class="email-container">
+                        <input id="email-input" type="email" name="email">
+                        <label for="email-input" data-req-text="Email"></label>
+                    </div>
+                    <div class="message-container">
+                        <input id="message-input" type="text" name="message">
+                        <label for="message-input" data-req-text="message"></label>
+                    </div>
                 </form>
             </div>
         </footer>
