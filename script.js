@@ -1,20 +1,13 @@
-jQuery(document).ready(function(){
-    $(window).scroll(function(e){
-        parallaxScroll();
-    });
 
-    function parallaxScroll(){
-        var scrolled = $(window).scrollTop();
-        $('#wall_1').css('background-position', 'left ' + scrolled * .25 + '%');
-        if($(window).scrollTop() > $(window).height()) {
-            $('#wall_2').css('background-position', 'center' + scrolled * .25 + '%');
-        }
+/*Hides input text when clicked on*/
+
+$(".text-fields input").click(function(){
+   $(this).next().hide();
+});
+
+$(".text-fields input").blur(function(){
+    if($(this).val() == "") {
+        $(this).next().show();
     }
-
-    $(".rotate").textrotator({
-        animation: "dissolve",
-        separator: "|",
-        speed: 2000
-    });
 });
 

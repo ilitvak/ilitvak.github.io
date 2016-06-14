@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
+
+
+
+
 * {
     padding: 0;
     border: 0;
@@ -39,10 +43,11 @@ body, html {
 
 .intro p {
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     color: #fff;
     text-shadow: 3px 3px black;
+    text-transform: uppercase;
 }
 
 /* end of header*/
@@ -151,6 +156,8 @@ div.pom {
 /* Footer section*/
 
 .section-bg {
+    position: relative;
+    padding: 0 12.5%;
     width: 100%;
     height: 550px;
     background-image: url(../assets/city.jpg);
@@ -164,14 +171,15 @@ div.pom {
 
 
 form {
-    padding: 25px 150px;
     margin-top: 5%;
     text-align: center;
 }
 
 
 .form-container {
-    padding: 2% 50% 0 6%;
+    padding-right: 15%;
+    width: 53%;
+    float: left;
 }
 
 
@@ -181,7 +189,7 @@ form {
 }
 
 .form-container h1 {
-    margin-bottom: 0;
+    margin: 0 0;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -209,14 +217,15 @@ form {
 input {
     padding: 3px 5px;
     margin-bottom: 10px;
-    border: none;
-    outline: none;
-    -webkit-appearance: none; box-shadow: none !important;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
 }
 
 input:focus{
     outline: none;
 }
+
 
 .email-container label:nth-child(2)::before {
     content: "Email";
@@ -246,5 +255,36 @@ label {
     left: 0;
 }
 
+.submit-container {
+    margin-top: 15px;
+    text-align: right;
+}
 
+.submit {
+    border-radius: 8px;
+    background-color: orange;
+    color: #fff;
+}
+
+/* Skills section */
+
+
+.skills {
+    width: 47%;
+    float: right;
+}
+
+.icon-prog-js02 {
+    width: 48px;
+    height: 50px;
+}
+
+
+/*Media query section*/
+
+@media (max-width: 1099px) {
+    .intro h1 {
+        font-size: 45px;
+    }
+}
 
