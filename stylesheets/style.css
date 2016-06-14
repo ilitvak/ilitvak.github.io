@@ -150,7 +150,7 @@ div.pom {
 
 /* Footer section*/
 
-.footer-bg {
+.section-bg {
     width: 100%;
     height: 550px;
     background-image: url(../assets/city.jpg);
@@ -171,7 +171,7 @@ form {
 
 
 .form-container {
-    padding: 2% 25% 0;
+    padding: 2% 50% 0 6%;
 }
 
 
@@ -193,6 +193,7 @@ form {
 
 
 .input-container, .email-container, .message-container {
+    position: relative;
     border-bottom: 2px solid #fff;
 }
 
@@ -207,9 +208,10 @@ form {
 
 input {
     padding: 3px 5px;
-/*    border-radius: 10px;*/
     margin-bottom: 10px;
     border: none;
+    outline: none;
+    -webkit-appearance: none; box-shadow: none !important;
 }
 
 input:focus{
@@ -236,6 +238,12 @@ input:focus{
 
 .email-container, .message-container {
     margin-top: 5px;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
