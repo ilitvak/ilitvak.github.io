@@ -177,6 +177,7 @@ form {
 
 
 .form-container {
+    padding-top: 5%;
     padding-right: 15%;
     width: 53%;
     float: left;
@@ -266,6 +267,10 @@ label {
     color: #fff;
 }
 
+.submit:hover {
+    background-color: lightcoral;
+}
+
 /* Skills section */
 
 
@@ -274,11 +279,41 @@ label {
     float: right;
 }
 
-.icon-prog-js02 {
-    width: 48px;
+.skills h2::first-letter {
+    color: #00bfff;
+}
+
+.skills h2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 47px;
+    color: #fff;
+    text-shadow: 3px 3px black;
+    -ms-transform: rotateZ(90deg);
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    float: right;
+}
+
+.credential-list li {
+    list-style-type: none;
+}
+
+.credential-list p {
+    padding: 0;
+    color: #fff;
+}
+
+.credential-list li img {
+    width: 50px;
     height: 50px;
 }
 
+.icons {
+    font-size: 37px;
+    color: #fff;
+}
 
 /*Media query section*/
 
