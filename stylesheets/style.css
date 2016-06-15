@@ -157,9 +157,9 @@ div.pom {
 
 .section-bg {
     position: relative;
-    padding: 0 12.5%;
     width: 100%;
     height: 550px;
+    padding: 5% 12.5% 0;
     background-image: url(../assets/city.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -177,9 +177,8 @@ form {
 
 
 .form-container {
-    padding-top: 5%;
-    padding-right: 15%;
     width: 53%;
+    padding-right: 15%;
     float: left;
 }
 
@@ -263,12 +262,12 @@ label {
 
 .submit {
     border-radius: 8px;
-    background-color: orange;
+    background-color: cornflowerblue;
     color: #fff;
 }
 
 .submit:hover {
-    background-color: lightcoral;
+    background-color: navy;
 }
 
 /* Skills section */
@@ -293,21 +292,29 @@ label {
     -ms-transform: rotateZ(90deg);
     -webkit-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
-    float: right;
+}
+
+.credential-list {
+    padding: 0 calc(50% - 110px);
+    text-align: center;
 }
 
 .credential-list li {
+    padding: 0 10px 20px;
+    width: 110px;
     list-style-type: none;
+    float: left;
 }
 
 .credential-list p {
     padding: 0;
+    text-align: center;
     color: #fff;
 }
 
 .credential-list li img {
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 40px;
 }
 
 .icons {
