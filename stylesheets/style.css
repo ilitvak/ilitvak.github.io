@@ -298,17 +298,20 @@ label {
 
 .credential-list {
     position: absolute;
+    width: 75%;
     height: 100%;
     top: 0;
-    left: 457px;
+    left: 25%;
     text-align: center;
 }
 
 
 .credential-list li {
-    width: 300px;
-    height: 100%;
-    margin-left: 38px;
+    width: 20%;
+    position: relative;
+    display: block;
+    padding-top: 20%;
+    height: 0;
     list-style-type: none;
     float: left;
 }
@@ -320,8 +323,10 @@ label {
 }
 
 .credential-list li img {
+    position: absolute;
     width: 54px;
     height: 40px;
+    top: 0;
 }
 
 .credential-list li img:nth-child(1){
@@ -331,7 +336,20 @@ label {
 }
 
 .credential-list li span {
-    margin-top: 68px;
+    position: absolute;
+    top: calc(50% - 37px);
+    left: 0;
+    width: 100%;
+}
+
+.credential-list p {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    top: 50%;
+    left: 0;
+    color: #fff;
+    text-align: center;
 }
 
 .icons {
