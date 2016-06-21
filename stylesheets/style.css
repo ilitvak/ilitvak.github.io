@@ -78,13 +78,22 @@ body, html {
     color: grey;
 }
 
+.project {
+    margin-bottom: 8%;
+}
 
-
-.project-container a {
+.project > a {
     display: block;
-    margin-bottom: 7%;
     width: 40%;
     float: left;
+}
+
+.project:nth-child(even) > a {
+    float: right;
+}
+
+.project:last-child {
+    margin-bottom: 0;
 }
 
 .clearfix::after {
@@ -100,6 +109,10 @@ body, html {
 /* section for projects */
 
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
 
 img {
     width: 100%;
@@ -107,7 +120,6 @@ img {
 }
 
 .title {
-    margin-bottom: 14%;
     width: 60%;
     text-align: center;
     float: left;
@@ -117,18 +129,7 @@ img {
     display: inline-block;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-p {
-    padding: 0 30px;
-    text-align: left;
-    line-height: 27px;
-}
-
-button {
+.title a {
     display: inline-block;
     padding: 6px 12px;
     border: 1px solid transparent;
@@ -139,6 +140,14 @@ button {
     color: #fff;
     background-color: #5bc0de;
 }
+
+
+p {
+    padding: 0 30px;
+    text-align: left;
+    line-height: 27px;
+}
+
 
 .project-container a:nth-child(3) {
     float: right;
@@ -275,13 +284,7 @@ label {
 .skills {
     position: relative;
     width: 100%;
-    height: 200px;
-}
-
-
-.skills {
-    width: 100%;
-    margin-bottom: 70px;
+    background: linear-gradient(black, grey, black);
 }
 
 .skills h2::first-letter {
@@ -291,13 +294,15 @@ label {
 .skills h2 {
     position: absolute;
     width: 25%;
-    top: 72px;
+    top: calc(50% - 25px);
     font-size: 47px;
+    line-height: 50px;
+    color: #fff;
     text-align: center;
 }
 
 .credential-list {
-    position: absolute;
+    position:relative;
     width: 75%;
     height: 100%;
     top: 0;
@@ -307,11 +312,11 @@ label {
 
 
 .credential-list li {
-    width: 20%;
-    position: relative;
     display: block;
-    padding-top: 20%;
+    position: relative;
+    width: 20%;
     height: 0;
+    padding-top: 20%;
     list-style-type: none;
     float: left;
 }
@@ -322,24 +327,19 @@ label {
     color: #fff;
 }
 
-.credential-list li img {
-    position: absolute;
-    width: 54px;
-    height: 40px;
-    top: 0;
-}
-
-.credential-list li img:nth-child(1){
-    width: 51px;
-    height: 33px;
-    margin-top: 70px;
-}
-
-.credential-list li span {
+.credential-list li span,
+.credential-list li img
+{
     position: absolute;
     top: calc(50% - 37px);
     left: 0;
     width: 100%;
+}
+
+.credential-list li img {
+    width: 50px;
+    height:auto;
+    left: calc(50% - 25px);
 }
 
 .credential-list p {
