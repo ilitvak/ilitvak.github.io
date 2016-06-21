@@ -276,12 +276,12 @@ label {
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: grey;
 }
 
 
 .skills {
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .skills h2::first-letter {
@@ -308,7 +308,7 @@ label {
 .credential-list li {
     width: 300px;
     height: 100%;
-    border: 1px solid black;
+    margin-left: 38px;
     list-style-type: none;
     float: left;
 }
@@ -327,11 +327,36 @@ label {
 .credential-list li img:nth-child(1){
     width: 51px;
     height: 33px;
+    margin-top: 70px;
+}
+
+.credential-list li span {
+    margin-top: 68px;
 }
 
 .icons {
     font-size: 37px;
     color: #fff;
+}
+
+.credential-list li:first-child{
+    background-color:#f1c026 ;
+}
+
+.credential-list li:nth-child(2) {
+    background-color: #f2672c;
+}
+
+.credential-list li:nth-child(3) {
+    background-color: #30aadd;
+}
+
+.credential-list li:nth-child(4) {
+    background-color: lightcoral;
+}
+
+.credential-list li:nth-child(5) {
+    background-color: black;
 }
 
 /*Media query section*/
