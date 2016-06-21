@@ -273,6 +273,7 @@ label {
 /* Skills section */
 
 .skills-section {
+    position: relative;
     width: 100%;
     height: 200px;
     background-color: grey;
@@ -280,6 +281,7 @@ label {
 
 
 .skills {
+    width: 100%;
 }
 
 .skills h2::first-letter {
@@ -287,11 +289,17 @@ label {
 }
 
 .skills h2 {
+    position: absolute;
+    width: 25%;
+    top: 72px;
     font-size: 47px;
-    float: left;
+    text-align: center;
 }
 
 .credential-list {
+    position: absolute;
+    top: 67px;
+    left: 457px;
     text-align: center;
 }
 
@@ -312,6 +320,11 @@ label {
 .credential-list li img {
     width: 54px;
     height: 40px;
+}
+
+.credential-list li img:nth-child(1){
+    width: 51px;
+    height: 33px;
 }
 
 .icons {
