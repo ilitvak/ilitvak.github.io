@@ -276,7 +276,7 @@ label {
     background-size: 0% 100%, 0% 100%;
     background-repeat: no-repeat, no-repeat;
     color: #fff;
-    transition: background-size 1s;
+    transition: background-size .5s;
 }
 
 .submit:hover {
@@ -290,8 +290,8 @@ label {
 .skills {
     position: relative;
     width: 100%;
-    background: linear-gradient(black, grey, black);
-}
+    background: linear-gradient(#281a4e, #3f3165, #716099, #b8a3de);
+}   
 
 /*
 .skills h2::first-letter {
@@ -366,15 +366,16 @@ label {
 }
 
 .credential-list .html5{
-    background: linear-gradient(black, forestgreen, black);
+    background-color: forestgreen;
+    transition: transform()
 }
 
 .credential-list .css3 {
-    background: linear-gradient(black, #30aadd, black);
+    background-color: #30aadd;
 }
 
 .credential-list .js {
-     background: linear-gradient(black, darkorange, black) ;
+     background-color: darkorange;
 }
 
 .credential-list .jquery {
@@ -382,12 +383,33 @@ label {
 }
 
 .credential-list .sass {
-    background: linear-gradient(black, lightcoral, black);
+    background-color: lightcoral;
 }
 
 .credential-list .angular {
-    background: linear-gradient(black, red, black);
+    background-color: red;
 }
+
+.icons {
+    transition: transform 1s;
+}
+
+.credential-list li:hover .icons {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.icon {
+    transition: transform 1s;
+}
+
+.credential-list li:hover .icon {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 
 /*Media query section*/
 
