@@ -411,6 +411,32 @@ label {
 }
 
 
+/* Social icons */
+
+.social-icons-container {
+    width: 47%;
+    float: right;
+}
+
+.social-icons-container ul {
+    text-align: center;
+}
+
+.social-icons-container li:nth-child(2) {
+    margin: 10px 0;
+}
+
+.social-icons-container li {
+    list-style-type: none;
+}
+
+i {
+    color: #fff;
+}
+
+
+
+
 /*Media query section*/
 
 @media (max-width: 1099px) {
