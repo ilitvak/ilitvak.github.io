@@ -1,15 +1,15 @@
 
 /*Hides input text when clicked on*/
 
-$(".text-fields input").click(function(){
+$(".text-fields input, .text-fields textarea").click(function(){
    $(this).next().hide();
 });
 
-$(".text-fields input").focusin(function(){
+$(".text-fields input, .text-fields textarea").focusin(function(){
     $(this).click();
 });
 
-$(".text-fields input").blur(function(){
+$(".text-fields input, .text-fields textarea").blur(function(){
     if($(this).val() == "") {
         $(this).next().show();
     }

@@ -79,13 +79,13 @@ body, html {
     margin-bottom: 8%;
 }
 
-.project > a {
+.project-info {
     display: block;
     width: 40%;
     float: left;
 }
 
-.project:nth-child(even) > a {
+.project:nth-child(even) .project-info {
     float: right;
 }
 
@@ -154,6 +154,36 @@ div.pom {
     float: right;
 }
 
+.project-info {
+    position: relative;
+}
+
+.project-info h2 {
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 25px;
+    color: #fff;
+    background: linear-gradient(#281a4e, #3f3165, #716099, #b8a3de);
+}
+
+.project-info a {
+    display: inline-block;
+}
+
+.project-info .icons {
+    top: calc(50% - 15px);
+    font-size: 30px;
+}
+
+.project-info .credential-list {
+    width: 59%;
+}
+
+.project-info .credential-list img {
+    width: 35px;
+    top: calc(50% - 15px);
+    left: calc(50% - 17px);
+}
 
 
 /* end of section for projects*/
@@ -211,7 +241,9 @@ form {
     border-bottom: 2px solid #fff;
 }
 
-.input-container label:nth-child(2)::before {
+.input-container label::before, 
+.email-container label::before,
+.message-container label::before {
     content: "Name";
     float: left;
     font-size: 20px;
@@ -220,7 +252,7 @@ form {
     text-shadow: 3px;
 }
 
-input {
+input, textarea {
     padding: 3px 5px;
     margin-bottom: 10px;
     width: 100%;
@@ -232,23 +264,13 @@ input:focus{
     outline: none;
 }
 
-
-.email-container label:nth-child(2)::before {
+.email-container label::before {
     content: "Email";
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 3px;
 }
 
-.message-container label:nth-child(2)::before {
+.message-container label::before {
     content: "Message";
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 10px ;
+    text-shadow: 10px;
 }
 
 .email-container, .message-container {
@@ -290,11 +312,6 @@ label {
     background: linear-gradient(#281a4e, #3f3165, #716099, #b8a3de);
 }   
 
-/*
-.skills h2::first-letter {
-    color: #00bfff;
-}
-*/
 
 .skills h2 {
     position: absolute;
@@ -321,7 +338,7 @@ label {
     position: relative;
     width: 16.66%;
     height: 0;
-    padding-top: 20%;
+    padding-top: 16.66%;
     list-style-type: none;
     float: left;
 }
@@ -436,6 +453,10 @@ label {
 
 .social-icons-container li {
     list-style-type: none;
+}
+
+.social-icons-container a {
+    display: inline-block;
 }
 
 i {
