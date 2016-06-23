@@ -1,9 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 
-
-
-
 * {
     padding: 0;
     border: 0;
@@ -387,7 +384,7 @@ label {
 }
 
 .credential-list .angular {
-    background-color: red;
+    background-color: #e62a39;
 }
 
 .icons {
@@ -418,6 +415,17 @@ label {
     float: right;
 }
 
+.social-icons-container h1 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: inandOut;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
 .social-icons-container ul {
     text-align: center;
 }
@@ -434,14 +442,60 @@ i {
     color: #fff;
 }
 
+.github:hover {
+    color: #00CCFF;
+}
+
+.codepen:hover {
+    color: #9999FF;
+}
+
+.linkedin:hover {
+    color:#FFFF99;
+}
 
 
 
-/*Media query section*/
 
-@media (max-width: 1099px) {
+/* Media query section */
+
+
+/* Query for Macbook Pro 1200px screen */
+@media (max-width: 1200px) {
     .intro h1 {
         font-size: 45px;
     }
+    .projects-section-container {
+        padding-right: 7.5%;
+        padding-left: 15%;
+    }
+    .projects-section-container h1 {
+        width: 15%;
+        margin: 0;
+        -webkit-transform: rotateZ(-90deg);
+        -ms-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+    
+    .section-bg {
+        padding: 12% 12.5% ;
+        height: auto;
+    }
+    
+    .form-container {
+        padding: 0 7.5%;
+    }
+    
+    .form-container h1, .social-icons-container h1 {
+        font-size: 1.6em;
+    }
+    .social-icons-container i {
+        font-size: 2.5em;
+    }
+    
+    .skills h2 {
+        font-size: 40px;
+    }
 }
+
 
