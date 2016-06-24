@@ -543,7 +543,46 @@ i {
 
 @media (max-width: 890px) {
     
+    .projects-section-container {
+        padding: 2% 5%;
+    }
+    .projects-section-container h1 {
+        position: relative; 
+        width: auto;
+        padding-bottom: 6%;
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
     
+    .section-bg {
+        padding: 12% 8%;
+    }
+}
+
+@media (max-width: 780px) {
+    .project-info .credential-list::before  {
+        font-size: 17px;
+    }
+    
+    .project-info .credential-list li {
+        width: 30px;
+        padding-top: 30px;
+    }
+    
+    .project-info .icons {
+        top: calc(50% - 10px);
+        font-size: 22px;
+    }
+    
+    .project-info li.angular span {
+        top: calc(50% - 11px);
+    }
+    .project-info .credential-list img {
+        width: 26px;
+        top: calc(50% - 11px);
+        left: calc(50% - 11px);
+        }
 }
 
 
