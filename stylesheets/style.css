@@ -158,12 +158,13 @@ div.pom {
     position: relative;
 }
 
-.project-info h2 {
-    position: absolute;
+.project-info .credential-list::before {
+    content: "Built In:";
     padding: 5px 10px;
     font-size: 25px;
     color: #fff;
     background: linear-gradient(#281a4e, #3f3165, #716099, #b8a3de);
+    float: left;
 }
 
 .project-info a {
@@ -176,7 +177,15 @@ div.pom {
 }
 
 .project-info .credential-list {
-    width: 59%;
+    display: table;
+    width: auto;
+    margin: 5px auto 0px;
+    left: auto;
+}
+
+.project-info .credential-list li {
+    width: 40px;
+    padding-top: 40px;
 }
 
 .project-info .credential-list img {
@@ -184,6 +193,7 @@ div.pom {
     top: calc(50% - 15px);
     left: calc(50% - 17px);
 }
+
 
 
 /* end of section for projects*/
