@@ -19,7 +19,7 @@ body, html {
 #bg {
     width: 100%;
     background-image: url(../assets/bg.jpeg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -188,6 +188,20 @@ div.pom {
     padding-top: 40px;
 }
 
+/* Prevents skills under computer from rotating */
+.project-info .credential-list li:hover .icons {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.project-info .credential-list li:hover .icon {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+
 .project-info .credential-list img {
     width: 35px;
     top: calc(50% - 15px);
@@ -239,7 +253,7 @@ form {
 .form-container::before {
     content: "Send Me a Message!";
     margin: 0;
-    font-size: 2.4vw;
+    font-size: 2.7vw;
     line-height:1.4;
     text-transform: uppercase;
     color: #fff;
@@ -396,7 +410,6 @@ label {
 
 .credential-list .html5{
     background-color: forestgreen;
-    transition: transform()
 }
 
 .credential-list .css3 {
@@ -451,7 +464,7 @@ label {
 
 .social-icons-container::before {
     content: "Check me out";
-    font-size: 2.4vw;
+    font-size: 2.7vw;
     color: #fff;
     text-transform: uppercase;
     animation-name: inandOut;
@@ -476,6 +489,7 @@ label {
 
 i {
     color: #fff;
+    text-shadow: 3px 3px 3px black;
 }
 
 .github:hover {
@@ -520,18 +534,79 @@ i {
         font-size: 2.5vw;
     }
     
-    .social-icons-container i {
-        font-size: 2.5em;
-    }
-    
     .skills h2 {
         font-size: 40px;
     }
-    
-    .fa-3x {
-        font-size: 3.5vw;
+}
+
+/* Media Query for 1024 x 768 screen size */
+
+@media (max-width: 1024px){
+    .section-bg {
+        padding-top: 14%;
     }
 }
+
+
+/* Media Query for 960 x 720 screen size */
+
+@media (max-width: 960px){
+    
+    .project-info .credential-list::before {
+        font-size: 20px;
+    }
+    
+    .project-info .credential-list li {
+        width: 35px;
+        padding-top: 35px;
+    }
+    
+    .project-info .icons {
+        top: calc(50% - 11px);
+        font-size: 23px;
+    }
+    
+    .project-info .angular span {
+        top: calc(50% - 12px);
+    }
+    
+    .form-container {
+        padding: 0 7.5% 0 0;
+    }
+    
+    .form-container::before, 
+    .social-icons-container::before {
+        font-size: 3.3vw;
+        text-shadow: 3px 3px 3px black;
+    }
+    
+    .project-info .credential-list img {
+        width: 28px;
+        top: calc(50% - 11px);
+        left: calc(50% - 12px);
+    }
+    
+    .credential-list li span {
+        top: calc(50% - 26%);
+    }
+    
+    .credential-list p {
+        top: calc(100% - 41%);
+    }
+    
+    .credential-list li img {
+        top: calc(100% - 76%);
+    }
+    
+    .social-icons-container {
+        padding-left: 14%;
+    }
+    
+    .submit-container .submit {
+        font-size: 21px;
+    }
+}
+
 
 /* Media Query for Tablet*/
 
