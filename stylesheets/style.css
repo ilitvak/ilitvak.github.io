@@ -537,11 +537,24 @@ i {
     .skills h2 {
         font-size: 40px;
     }
+    
+    .credential-list li span {
+        top: calc(100% - 72%);
+    }
+    
+    .credential-list p {
+        top: calc(100% - 44%);
+    }
 }
 
 /* Media Query for 1024 x 768 screen size */
 
 @media (max-width: 1024px){
+    
+    .credential-list li img {
+        top: calc(100% - 73%);
+    }
+    
     .section-bg {
         padding-top: 14%;
     }
@@ -610,43 +623,40 @@ i {
 
 /* Media Query for Tablet*/
 
-@media (max-width: 890px) {
-    
-    .projects-section-container {
-        padding: 2% 5%;
-    }
-    .projects-section-container h1 {
-        position: relative; 
-        width: auto;
-        padding-bottom: 6%;
-        -webkit-transform: rotateZ(0deg);
-        -ms-transform: rotateZ(0deg);
-        transform: rotateZ(0deg);
-    }
-    
-    .section-bg {
-        height: 400px;
-        padding-bottom: 5%;
-    }
-}
-
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     
     .intro h1 {
-        font-size: 4.5vw;
+        font-size: 6.5vw;
     }
     
     .intro p {
         font-size: 2.3vw;
     }
     
+    .projects-section-container {
+        padding: 4% 7.5% 5%;
+    }
+    
+    .projects-section-container h1 {
+        position: relative;
+        width: 100%;
+        padding-bottom: 5%;
+        -webkit-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+    
+    p {
+        font-size: 16px;    
+    }
+    
     .project-info .credential-list::before  {
-        font-size: 17px;
+        font-size: 20px;
     }
     
     .project-info .credential-list li {
-        width: 30px;
-        padding-top: 30px;
+        width: 35px;
+        padding-top: 35px;
     }
     
     .project-info .icons {
@@ -672,7 +682,7 @@ i {
     }
     
     .skills h2 {
-        font-size: 6vw;
+        font-size: 5vw;
     }
     
     .credential-list p {
@@ -696,6 +706,23 @@ i {
     
     .social-icons-container li i {
         font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 696px) {
+    
+    .projects-section-container {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+    
+    .projects-section-container h1 {
+        font-size: 7vw;
+    }
+    
+    .project-info {
+        width: 100%;
+        float: none;
     }
 }
 
