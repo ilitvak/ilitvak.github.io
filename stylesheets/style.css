@@ -585,13 +585,20 @@ i {
     
     .section-bg {
         padding: 0 7%;
+        background-size: cover;
     }
     
     .form-container, .social-icons-container {
         padding-top: 14%;
     }
+    
+    .form-container::before, 
+    .social-icons-container::before {
+        font-size: 37px;
+    }
 }
 
+    
 
 /* Media Query for 960 x 720 screen size */
 
@@ -615,14 +622,14 @@ i {
         top: calc(50% - 12px);
     }
     
-    .form-container {
-        padding: 0 7.5% 0 0;
-    }
-    
     .form-container::before, 
     .social-icons-container::before {
-        font-size: 47px;
+        font-size: 34px;
         text-shadow: 3px 3px 3px black;
+    }
+    
+    .social-icons-container i {
+        font-size: 2.8em;
     }
     
     .project-info .credential-list img {
@@ -643,8 +650,30 @@ i {
         top: calc(100% - 76%);
     }
     
+    .form-container {
+        width: 100%;
+        padding-top: 6%;
+    }
+    
     .social-icons-container {
-        padding-left: 14%;
+        width: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        float: left;
+    }
+    
+    .social-icons-container::before {
+        float: left;
+    }
+    
+    .social-icons-container ul {
+        margin-top: 0;
+    }
+    
+    .social-icons-container li {
+        margin-bottom: 0;
+        margin-left: 75px;
+        float: left;
     }
     
     .submit-container .submit {
