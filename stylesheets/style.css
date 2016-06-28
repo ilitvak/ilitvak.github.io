@@ -652,14 +652,12 @@ i {
     
     .form-container {
         width: 100%;
-        padding-top: 6%;
     }
     
     .social-icons-container {
         width: 100%;
         padding-top: 0;
         padding-left: 0;
-        float: left;
     }
     
     .social-icons-container::before {
@@ -672,7 +670,7 @@ i {
     
     .social-icons-container li {
         margin-bottom: 0;
-        margin-left: 75px;
+        margin-left: 10%;
         float: left;
     }
     
@@ -771,7 +769,7 @@ i {
         font-size: 5.5vw;
     }
 }
-
+    
 @media (max-width: 696px) {
     
     .projects-section-container {
@@ -786,6 +784,24 @@ i {
     .project-info {
         width: 100%;
         float: none;
+    }
+    
+    .project-info .credential-list::before {
+        font-size: 21px;
+    }
+    
+    .title {
+        width: 100%;
+        margin-top: 10%;
+        float: none;
+    }
+    
+    .title h2 {
+        font-size: 28px;
+    }
+    
+    .title p {
+        font-size: 17px;
     }
 }
 
@@ -823,6 +839,7 @@ i {
     
     .form-container {
         width: 100%;
+        padding-top: 0;
         padding-right: 0;
     }
     
@@ -834,7 +851,6 @@ i {
         width: 100%;
         margin-top: 15%;
         padding-left: 0;
-        float: left;
     }
     
     .social-icons-container::before {
