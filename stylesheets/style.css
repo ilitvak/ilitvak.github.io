@@ -466,6 +466,7 @@ label {
     font-size: 47px;
     color: #fff;
     text-transform: uppercase;
+    transition: color 1.25s;
     animation-name: inandOut;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
@@ -824,7 +825,6 @@ i {
         font-size: 15px;
     }
 
-
     .skills h2 {
         font-size: 5.5vw;
     }
@@ -849,7 +849,7 @@ i {
     
     .social-icons-container {
         width: 100%;
-        margin-top: 15%;
+        margin-top: 10%;
         padding-left: 0;
     }
     
@@ -866,3 +866,19 @@ i {
         float: left;
     }
 }
+    
+    @media (max-width: 480px) {
+        .intro h1 {
+            font-size: 7.5vw;
+        }
+        .intro p {
+            font-size: 3.5vw;
+        }
+        .projects-section-container h1 {
+            font-size: 8.5vw;
+        }
+        .title h2 {
+            font-size: 22px;
+        }
+    }
+    
