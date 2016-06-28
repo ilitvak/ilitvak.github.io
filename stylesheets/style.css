@@ -421,7 +421,7 @@ label {
 }
 
 .credential-list .jquery {
-    background: linear-gradient(black, navy, black) ;
+    background: navy ;
 }
 
 .credential-list .sass {
@@ -613,20 +613,19 @@ i {
 @media (max-width: 890px) {
     
     .projects-section-container {
-        padding: 2% 5%;
+        padding: 0 5% 5%;
     }
     .projects-section-container h1 {
         position: relative; 
         width: auto;
-        padding-bottom: 6%;
+        padding: 5% 0;
         -webkit-transform: rotateZ(0deg);
         -ms-transform: rotateZ(0deg);
         transform: rotateZ(0deg);
     }
     
     .section-bg {
-        height: 400px;
-        padding-bottom: 5%;
+        background-size: cover;
     }
 }
 
@@ -699,4 +698,62 @@ i {
     }
 }
 
+@media (max-width: 640px) {
+    .intro h1 {
+        font-size: 6.5vw;
+    }
+    .intro p {
+        font-size: 2.8vw;
+    }
+    .projects-section-container h1{
+        font-size: 6.5vw;
+    }
+    .title h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
 
+    .skills h2 {
+        font-size: 5.5vw;
+    }
+    
+    .section-bg {
+        padding-top: 7.5%;
+    }
+    
+    .form-container::before, .social-icons-container::before {
+        font-size: 4.3vw;
+    }
+    
+    .form-container {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .form-container label::before {
+        font-size: 2.9vw;
+    }
+    
+    .social-icons-container {
+        width: 100%;
+        margin-top: 15%;
+        padding-left: 0;
+        float: left;
+    }
+    
+    .social-icons-container::before {
+        float: left;
+    }
+    
+    .social-icons-container ul {
+        margin-top: 0;
+    }
+    
+    .social-icons-container li {
+        margin-left: 50px;
+        float: left;
+    }
+}
