@@ -711,7 +711,6 @@ i {
     }
 }
 
-<<<<<<< HEAD
 @media (max-width: 696px) {
     
     .projects-section-container {
@@ -729,8 +728,8 @@ i {
     }
 }
 
-=======
 @media (max-width: 640px) {
+    
     .intro h1 {
         font-size: 6.5vw;
     }
@@ -747,7 +746,7 @@ i {
     p {
         font-size: 15px;
     }
->>>>>>> 48684489a27b69c887a20c0ec6080a44bfa55944
+
 
     .skills h2 {
         font-size: 5.5vw;
