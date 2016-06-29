@@ -297,7 +297,7 @@ input:focus, textarea:focus{
 
 .message-container label::before {
     content: "Message";
-    text-shadow: 10px;
+    text-shadow: 3px 3px 3px black;
 }
 
 .email-container, .message-container {
@@ -867,6 +867,11 @@ i {
         margin-left: 13%;
         float: left;
     }
+    
+    .section-bg {
+        height: auto;
+        padding-bottom: 3%;
+    }
 }
     
 @media (max-width: 480px) {
@@ -901,19 +906,23 @@ i {
     .social-icons-container li {
         margin-left: 11%;
     }
+    .skills {
+        display: none;
+    }
 }
     
-    @media (max-width: 413px) {
-        
-        #bg {
-            background-size: 100% 100%;
-        }
-        
-        .intro h1 {
-            font-size: 7vw;
-        }
-        .intro p {
-            font-size: 3.8vw;
-        }
+@media (max-width: 413px) {
+
+    #bg {
+        background-size: 100% 100%;
     }
+
+    .intro h1 {
+        font-size: 7vw;
+    }
+    .intro p {
+        font-size: 3.8vw;
+    }
+}
+
     
