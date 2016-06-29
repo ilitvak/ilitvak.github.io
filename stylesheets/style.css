@@ -244,8 +244,8 @@ form {
 
 
 @keyframes inandOut {
-    from {opacity: 0.4};
-    to {opacity: 1};
+    from {opacity: 0.4}
+    to {opacity: 1}
 }
 
 
@@ -574,6 +574,7 @@ i {
     .form-container::before, 
     .social-icons-container::before {
         font-size: 38px;
+    }
 }
 
 /* Media Query for 1024 x 768 screen size */
@@ -653,6 +654,7 @@ i {
     
     .form-container {
         width: 100%;
+        padding-top: 8%;
     }
     
     .social-icons-container {
@@ -862,23 +864,56 @@ i {
     }
     
     .social-icons-container li {
-        margin-left: 50px;
+        margin-left: 13%;
         float: left;
     }
 }
     
-    @media (max-width: 480px) {
+@media (max-width: 480px) {
+    
+    #bg {
+        background-size: 100% 100%;
+    }
+    
+    .intro h1 {
+        font-size: 7.5vw;
+    }
+    .intro p {
+        font-size: 3.5vw;
+    }
+    .projects-section-container h1 {
+        font-size: 8.5vw;
+    }
+    .title h2 {
+        font-size: 22px;
+    }
+    
+    .form-container::before {
+        font-size: 5.5vw;
+    }
+
+    .form-container label::before {
+        font-size: 3.1vw;
+    }
+    .social-icons-container::before {
+        font-size: 5.1vw;
+    }
+    .social-icons-container li {
+        margin-left: 11%;
+    }
+}
+    
+    @media (max-width: 413px) {
+        
+        #bg {
+            background-size: 100% 100%;
+        }
+        
         .intro h1 {
-            font-size: 7.5vw;
+            font-size: 7vw;
         }
         .intro p {
-            font-size: 3.5vw;
-        }
-        .projects-section-container h1 {
-            font-size: 8.5vw;
-        }
-        .title h2 {
-            font-size: 22px;
+            font-size: 3.8vw;
         }
     }
     
