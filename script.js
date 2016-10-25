@@ -15,4 +15,13 @@ $(".text-fields input, .text-fields textarea").blur(function(){
     }
 });
 
+
+
+$(window).scroll(function(){
+    var currentPos = $(window).scrollTop();  
+    if(currentPos > $(document).height() / 2) {
+    console.log("wow")
+    };   
+})
+
     
