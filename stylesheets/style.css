@@ -17,16 +17,20 @@ body, html {
 /* Header */
 
 #bg {
+    position: relative;
     width: 100%;
-    background-image: url(../assets/bg.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
+    background: url(../assets/bg.jpeg) 0 0 / cover no-repeat; 
 }
 
 .intro {
-    padding: 170px 0;
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .intro h1 {

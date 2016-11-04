@@ -60,7 +60,6 @@
                             <img class="pomodoro" src="assets/pom.png" alt="pom-image">
                         </a>
                  
-                        
                         <ul class="credential-list clearfix">
                             <li class="html5">
                                 <span class="icon-html5-02 icons"></span>
@@ -76,7 +75,6 @@
                             </li>
                         </ul>
                     </div>
-            
 
                     <div class="title pom">
                         <h2>Pomodoro <a href="https://github.com/ilitvak/Pomodoro-App" target="_blank">Github</a></h2>
@@ -111,7 +109,7 @@
                     <div class="title">
                         <h2>BodyByYou <a href="https://github.com/ilitvak/bodybyyou" target="_blank">Github</a></h2>     
                         <p>BodyByYou is a nutrition / educational website to inform people of the various benefits of eating healthy. The website covers multiple areas from food types: fats, carbohydrates, proteins, shopping lists, to motivational quotes.</p><br>
-                        <p>This website encompasses a lot of my daily life and the effort that is required to eat well.</p><br>
+                        <p>This website encompasses a lot of my daily life and the effort that is required to eat well.</p>
                     </div>
                 </div>
             </div>
@@ -151,7 +149,6 @@
  
         <section class="section-bg clearfix">
             <div class="form-container">
-<!--                <h1>Send me a message!</h1>-->
                 <form action="email.php" method="post"> 
                     <div class="input-container text-fields">
                         <input id="input-name" type="text" name="name" autocomplete="false">
