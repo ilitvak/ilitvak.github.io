@@ -14,7 +14,7 @@
     <body>
         
         <a></a>
-        <header id="bg">
+        <header id="bg" class="bg<?php echo rand(1,2) ?>">
             <div class="intro">
                 <h1>Hello, I'm Irwin Litvak</h1>
                 <p>front end developer</p>
