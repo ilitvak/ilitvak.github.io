@@ -892,7 +892,7 @@ i {
 @media (max-width: 480px) {
     
     #bg {
-        background-size: 100% 100%;
+        background-size: cover;
     }
     
     .intro h1 {
@@ -929,7 +929,7 @@ i {
 @media (max-width: 413px) {
 
     #bg {
-        background-size: 100% 100%;
+        background-size: cover;
     }
 
     .intro h1 {
