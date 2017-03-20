@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="stylesheets/pictonic.css">
         <!--[if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
         <link rel="stylesheet" href="stylesheets/style.css" type='text/css'>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Irwin Litvak's Portfolio</title>
     </head>
@@ -162,6 +163,7 @@
                         <textarea id="message-input" name="message" rows="5"></textarea>
                         <label for="message-input" data-req-text="message"></label>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LdemxkUAAAAAPEY2D8ckaczqIRex0Bo5WZre5rB"></div>
                     <div class="submit-container">
                         <input type="submit" id="submit" class="submit" value="Submit">
                     </div>
