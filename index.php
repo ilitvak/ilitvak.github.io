@@ -152,23 +152,24 @@
             <div class="form-container">
                 <form action="email.php" method="post"> 
                     <div class="input-container text-fields">
-                        <input id="input-name" type="text" name="name" autocomplete="false">
+                        <input id="input-name" type="text" name="name" autocomplete="false" required>
                         <label for="input-name" data-req-text="Name"></label>
                     </div>
                     <div class="email-container text-fields">
-                        <input id="email-input" type="email" name="email" autocomplete="false">
+                        <input id="email-input" type="email" name="email" autocomplete="false" required>
                         <label for="email-input" data-req-text="Email"></label>
                     </div>
                     <div class="message-container text-fields" autocomplete="false">
-                        <textarea id="message-input" name="message" rows="5"></textarea>
+                        <textarea id="message-input" name="message" rows="5" required></textarea>
                         <label for="message-input" data-req-text="message"></label>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LdemxkUAAAAAPEY2D8ckaczqIRex0Bo5WZre5rB"></div>
+                    <div class="g-recaptcha" data-sitekey="6LdemxkUAAAAAPEY2D8ckaczqIRex0Bo5WZre5rB" data-callback="recaptchaCallBack"></div>
                     <div class="submit-container">
                         <input type="submit" id="submit" class="submit" value="Submit">
                     </div>
                 </form>
             </div>
+            
             <div class="social-icons-container">
                 <ul class="clearfix">
                     <li>

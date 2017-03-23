@@ -17,21 +17,36 @@ $(".text-fields input, .text-fields textarea").blur(function(){
 
 $("form").submit(function(e){
     e.preventDefault();
+    if(recaptchaToken == "") {
+        alert("Please complete the recaptcha challenge");
+        return;
+    }
     $.post(
         $(this).attr("action"),
         { 
             name: $("#input-name").val(),
             email: $("#email-input").val(),
-            message: $("#message-input").val()
+            message: $("#message-input").val(),
+            token: recaptchaToken
         },
-        function(){
+        function(response){
             // place modal pop up info here for css
-            alert("Your message has been sent");
+            if( response == '0' )
+                alert("Your message has been sent");
+            else
+                alert("Sorry. There was an error submitting your message. Please try again, later.");
             window.scrollTo(0,0);
             window.location.reload();
         }
     ); 
 });
+
+var recaptchaToken = ""; 
+function recaptchaCallBack(token) {
+    // prints token once recaptcha challenge is completed
+    // console.log(token);
+    recaptchaToken = token;
+}
 
 
 
