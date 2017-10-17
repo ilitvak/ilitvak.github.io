@@ -143,6 +143,7 @@ nav {
 }
 
 .grid-2 .box-cont {
+    position: relative;
     margin: 0 auto 50px;
     float: left;
 }
@@ -197,7 +198,7 @@ nav {
 }
 
 .box-overlay:hover {
-    opacity: .7;
+    opacity: .8;
     transition: opacity .5s;
 }
 
@@ -243,10 +244,13 @@ nav {
 }
 
 .box-overlay:hover .text-overlay p::after {
-    transition-delay: 1.5s;
+    transition-delay: 1.2s;
     width: 40px;
 }
 
+.big-overlay {
+    height: 477px;
+}
 
 /* --------------------------------------- */
 /* Skills Section */
