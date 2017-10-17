@@ -29,8 +29,20 @@ body, html {
 }
 
 a {
+    display: block;
+    height: 100%;
     color: #000;
     text-decoration: none;
+    cursor: pointer;
+}
+
+h3 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+h3 a:hover {
+    color: #2980b9;
 }
 
 /* --------------------------------------- */
@@ -104,11 +116,13 @@ nav {
     display: inline-block;
     width: auto;
     margin: 0 auto 50px;
+    overflow: hidden;
 }
 
 .box-1 {
     width: 330px;
     height: 200px;
+    overflow: hidden;
     background-color: dodgerblue;
 }
 
@@ -121,18 +135,12 @@ nav {
     margin-right: 0;
 }
 
-.flex-this h3 {
-    margin-top: 5px;
-    text-align: center;
-}
-
-.flex-this h3 a:hover {
-    color: #2980b9;
-}
-
 .big-box {
+    position: relative;
     width: 736px;
-    height: 450px;
+    height: 477px;
+    background-color: dodgerblue;
+    overflow: hidden;
 }
 
 .grid-2 .box-cont {
@@ -145,151 +153,124 @@ nav {
 }
 
 /* --------------------------------------- */
-/* Projects Container */
+/* Grid Photos */
 /* --------------------------------------- */
 
-.projects-section-container {
+.grid-1-of-3 img, .box-1 img {
     position: relative;
-    padding: 5% 12.5% 5% 25%;
-}
-
-.projects-section-container h1::first-letter {
-    color: #00bfff;
-}
-
-.projects-section-container h1 {
-    position: absolute;
-    width: 25%;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size: 47px;
-    text-align: center;
-    color: grey;
-}
-
-.project {
-    margin-bottom: 8%;
-}
-
-.project-info {
-    display: block;
-    width: 40%;
-    float: left;
-}
-
-.project:nth-child(even) .project-info {
-    float: right;
-}
-
-.project:last-child {
-    margin-bottom: 0;
-}
-
-
-/* end of projects title container */
-
-
-/* section for projects */
-
-img {
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.35);
+    -ms-transform: scale(1.35);
+    transform: scale(1.35);
+    top: 25px;
 }
 
-.title {
-    width: 60%;
+.grid-1-of-3:hover h3 a, .box-cont:hover a {
+    color: #2980b9;
+}
+
+.box-1:hover img, .box-2:hover {
+    transform: scale(1.37);
+}
+
+.box-2 {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    transform: scale(1.35);
+}
+
+.box-2 img {
+    width: 100%;
+}
+
+/* --------------------------------------- */
+/* Skills Section */
+/* --------------------------------------- */ 
+
+.credential-list {
+    position:relative;
+    width: 100%;
+}
+
+.credential-list h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.credential-list h2 {
+    font-size: 12px;
+    font-weight: bold;
     text-align: center;
-    float: left;
 }
 
-.title h2 {
+.credential-list li {
     display: inline-block;
+    vertical-align: top;
 }
 
-.title a {
-    display: inline-block;
-    padding: 6px 12px;
-    border: 1px solid transparent;
-    border-color: #46b8da;
-    border-radius: 4px;
-    margin-left: 20px;
-    font-size: 14px;
+.credential-list li img {
+    width: 80px;
+    vertical-align: bottom;
+}
+
+.icons {
+    font-size: 4.5vw;
     color: #fff;
-    background-color: #5bc0de;
 }
 
-
-.project-container a:nth-child(3) {
-    float: right;
+.html5 .icons, .html5 h2 {
+    color: #e67e22;
 }
 
-div.pom {
-    float: right;
+.css3 .icons, .css3 h2 {
+    color: #2980b9;
 }
 
-.project-info {
-    position: relative;
+.js .icons, .js h2 {
+    color: #f1c40f;
 }
 
-.project-info .credential-list::before {
-    content: "Built In:";
-    padding: 5px 10px;
-    font-size: 25px;
-    color: #fff;
-    background: linear-gradient(#281a4e, #3f3165, #716099, #b8a3de);
-    float: left;
+.jquery .icons, .jquery h2 {
+    color:#3498db;
 }
 
-.project-info a {
-    display: inline-block;
+.sass {
+    vertical-align: bottom;
 }
 
-.project-info .icons {
-    top: calc(50% - 15px);
-    font-size: 30px;
+.sass .icons, .sass h2 {
+    color: #D2527F;
 }
 
-.project-info .credential-list {
-    display: table;
-    width: auto;
-    margin: 5px auto 0px;
-    left: auto;
+.git .icons, .git h2 {
+    color: #000;
 }
 
-.project-info .credential-list li {
-    width: 40px;
-    padding-top: 40px;
+.heroku .icons, .heroku h2 {
+    color: #8e44ad;
 }
 
-/* Prevents skills under computer from rotating */
-.project-info .credential-list li:hover .icons {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+.credential-list .heroku img {
+    width: 70px;
 }
 
-.project-info .credential-list li:hover .icon {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+.credential-list .bootstrap img {
+    width: 65px;
 }
 
-
-.project-info .credential-list img {
-    width: 35px;
-    top: calc(50% - 15px);
-    left: calc(50% - 17px);
+.bootstrap .icons, .bootstrap h2 {
+    color: #8e44ad;
 }
 
+.nodejs .icons, .nodejs h2 {
+    color: #27ae60;
+}
 
-
-/* end of section for projects*/
-
-
-/* Footer section*/
+/* --------------------------------------- */
+/* Footer Section */
+/* --------------------------------------- */ 
 
 .section-bg {
     position: relative;
@@ -414,123 +395,6 @@ label {
 
 /* Skills section */
 
-.skills {
-    position: relative;
-    width: 100%;
-    background: linear-gradient(#281a4e, #3f3165, #716099, #b8a3de);
-}   
-
-
-.skills h2 {
-    position: absolute;
-    width: 25%;
-    top: calc(50% - 25px);
-    font-size: 60px;
-    line-height: 50px;
-    color: #fff;
-    text-align: center;
-}
-
-.credential-list {
-    position:relative;
-    width: 75%;
-    height: 100%;
-    top: 0;
-    left: 25%;
-    text-align: center;
-    overflow: hidden;
-}
-
-
-.credential-list li {
-    display: block;
-    position: relative;
-    width: 16.66%;
-    height: 0;
-    padding-top: 16.66%;
-    list-style-type: none;
-    float: left;
-}
-
-.credential-list p {
-    padding: 0;
-    text-align: center;
-    color: #fff;
-}
-
-.credential-list li span,
-.credential-list li img
-{
-    position: absolute;
-    top: calc(100% - 71%);
-    left: 0;
-    width: 100%;
-}
-
-.credential-list li img {
-    width: 50%;
-    height:auto;
-    left: calc(50% - 24%);
-}
-
-.credential-list p {
-    position: absolute;
-    width: 100%;
-    padding: 0;
-    top: 70%;
-    left: 0;
-    color: #fff;
-    text-align: center;
-}
-
-.icons {
-    font-size: 4.5vw;
-    color: #fff;
-}
-
-.credential-list .html5{
-    background-color: forestgreen;
-}
-
-.credential-list .css3 {
-    background-color: #30aadd;
-}
-
-.credential-list .js {
-     background-color: darkorange;
-}
-
-.credential-list .jquery {
-    background: navy ;
-}
-
-.credential-list .sass {
-    background-color: lightcoral;
-}
-
-.credential-list .angular {
-    background-color: #e62a39;
-}
-
-.icons {
-    transition: transform .5s;
-}
-
-.credential-list li:hover .icons {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-.icon {
-    transition: transform .5s;
-}
-
-.credential-list li:hover .icon {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
 
 
 /* Social icons */
