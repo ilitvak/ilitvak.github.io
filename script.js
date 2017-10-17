@@ -1,3 +1,36 @@
+/************************************/
+/*** Scrolls to Section Upon Nav Click ***/
+/************************************/
+
+if($(window).width() > 1){
+    $(".scroller").click(function(e){
+        e.preventDefault();
+        console.log("works");
+        var aSelector = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(aSelector).offset().top - 60
+        }, 1200);
+    })
+} 
+
+/************************************/
+/*** Fills In Skill Bar Color ***/
+/************************************/
+
+$(window).scroll(function(){
+    
+    if($(window).scrollTop() > 850 ){
+        $(".color-in-bar").each(function(cur){
+            $(this).addClass("color-in-bar-now");
+        console.log(cur + " : " + $( this ));
+        })
+    }
+    
+});
+
+
+
+
 
 /*Hides input text when clicked on*/
 

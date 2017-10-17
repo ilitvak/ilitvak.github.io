@@ -13,8 +13,9 @@
 }
 
 body, html {
-  width: 100%;
-  font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
 }
 
 .row {   
@@ -120,6 +121,14 @@ nav {
     overflow: hidden;
 }
 
+.grid-3 {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 60px;
+    vertical-align: bottom;
+}
+
 .box-1 {
     width: 330px;
     height: 200px;
@@ -219,7 +228,7 @@ nav {
     position: relative;
     padding: 0 20px 0;
     margin-top: 10px;
-    left: -300px;
+    left: -350px;
     font-size: 13px;
     color: #fff;
     text-align: left;
@@ -237,9 +246,9 @@ nav {
 .text-overlay p::after {
     content: "";
     display: block;
+    width: 0;
     border-bottom: 2px solid #2ecc71;
     margin-top: 10px;
-    width: 0;
     transition: width .5s;
 }
 
@@ -256,25 +265,18 @@ nav {
 /* Skills Section */
 /* --------------------------------------- */ 
 
-.credential-list {
-    position:relative;
+.skills {
+    position: relative;
     width: 100%;
+    margin: 75px 0;
 }
 
-.credential-list h1 {
+.skills h2 {
     display: inline-block;
-    vertical-align: middle;
-}
-
-.credential-list h2 {
+    vertical-align: top;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-}
-
-.credential-list li {
-    display: inline-block;
-    vertical-align: top;
 }
 
 .credential-list li img {
@@ -283,55 +285,187 @@ nav {
 }
 
 .icons {
+    margin-right: 2px;
     font-size: 4.5vw;
     color: #fff;
 }
 
-.html5 .icons, .html5 h2 {
+.html span, .html h2 {
     color: #e67e22;
 }
 
-.css3 .icons, .css3 h2 {
+.css {
+    text-align: center;
+}
+
+.css span, .css h2 {
     color: #2980b9;
 }
 
-.js .icons, .js h2 {
+.js {
+    text-align: right;
+}
+
+.js span, .js h2 {
     color: #f1c40f;
 }
 
-.jquery .icons, .jquery h2 {
+.js span {
+    margin-right: 6px;
+}
+
+.jquery span, .jquery h2 {
     color:#3498db;
 }
 
 .sass {
-    vertical-align: bottom;
+    text-align: center;
 }
 
-.sass .icons, .sass h2 {
+.sass span, .sass h2 {
     color: #D2527F;
+}
+
+.sass img {
+    width: 80px;
+}
+
+.git {
+    text-align: right;
+}
+
+.bar {
+    width: 80%;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.grid-3 .bar-one {
+    margin-left: 0;
+}
+
+.grid-3 .bar-three {
+    margin-right: 0;
+}
+
+.html .bar {
+    border-color: #e67e22;
+}
+
+.css .bar {
+    border-color: #2980b9;
+}
+
+.js .bar {
+    border-color: #f1c40f;
+}
+
+.jquery .bar {
+    border-color: #3498db;
+}
+
+.sass .bar {
+    border-color: #D2527F;
+}
+
+.heroku .bar {
+    border-color: #8e44ad;
+}
+
+.bootstrap .bar {
+    border-color: #8e44ad;
+}
+
+.nodejs .bar {
+    border-color: #27ae60;
 }
 
 .git .icons, .git h2 {
     color: #000;
 }
 
-.heroku .icons, .heroku h2 {
-    color: #8e44ad;
+.color-in-bar {
+    width: 0;
 }
 
-.credential-list .heroku img {
+.color-in-bar-now {
+    height: 16px;
+    transition: width 1s;
+}
+
+.html .color-in-bar-now{
+    width: 90%;
+    background: linear-gradient(#fff 0%, #e67e22 100%);
+}
+
+.css .color-in-bar-now {
+    width: 85%;
+    background: linear-gradient(#fff 0%, dodgerblue 100%);
+}
+
+.js .color-in-bar-now {
+    width: 85%;
+    background: linear-gradient(#fff 0%, #f1c40f 100%);
+}
+
+.jquery .color-in-bar-now {
+    width: 80%;
+    background: linear-gradient(#fff 0%, #3498db 100%);
+}
+
+.sass .color-in-bar-now {
+    width: 70%;
+    background: linear-gradient(#fff 0%, #D2527F 100%);
+}
+
+.git .color-in-bar-now {
+    width: 80%;
+    background: linear-gradient(#fff 0%, #000 100%); 
+}
+
+.heroku .color-in-bar-now {
+    width: 80%;
+    background: linear-gradient(#fff 0%, #8e44ad 100%);
+}
+
+.bootstrap .color-in-bar-now {
+    width: 85%;
+    background: linear-gradient(#fff 0%, #6f44ad 100%);
+}
+
+.nodejs .color-in-bar-now {
+    width: 40%;
+    background: linear-gradient(#fff 0%, #27ae60 100%);
+}
+
+.heroku img {
     width: 70px;
 }
 
-.credential-list .bootstrap img {
-    width: 65px;
-}
-
-.bootstrap .icons, .bootstrap h2 {
+.heroku h2 {
     color: #8e44ad;
 }
 
-.nodejs .icons, .nodejs h2 {
+.bootstrap {
+    text-align: center;
+}
+
+.bootstrap img {
+    width: 65px;
+}
+
+.bootstrap h2 {
+    color: #8e44ad;
+}
+
+.nodejs {
+    text-align: right;
+}
+
+.nodejs span, .nodejs h2 {
     color: #27ae60;
 }
 
