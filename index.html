@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/font-awesome.css">
+        <link rel="stylesheet" href="stylesheets/pictonic.css">
+        <!--[if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
+        <link rel="stylesheet" href="stylesheets/style.css" type='text/css'>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Irwin Litvak's Portfolio</title>
+    </head>
+
+    <body>
+        
+        <header class="row header-main">
+            <div class="intro clearfix">
+                <h1>Irwin Litvak</h1>
+                <p>Frontend developer</p>
+            </div>
+            
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="projects-grid">
+            <div class="row flex-this">
+                <div class="grid-1-of-3">
+                    <div class="box-1"></div>
+                    <h3>
+                        <a href="#">Budget-App-X</a>
+                    </h3>
+                </div>  
+                
+                <div class="grid-1-of-3">
+                    <div class="box-1"></div>
+                    <h3>
+                        <a href="#">Pomodoro-App</a>
+                    </h3>
+                </div>  
+                
+                <div class="grid-1-of-3">
+                    <div class="box-1"></div>
+                    <h3>
+                        <a href="#">To-Do-List</a>
+                    </h3>
+                </div>
+            </div>
+            
+            <div class="grid-2 row clearfix">
+                <div class="box-cont">
+                    <div class="box-1"></div>
+                    <h1></h1>
+                </div>  
+                
+                
+                <div class="box-cont">
+                    <div class="box-1 big-box"></div>
+                </div>
+                
+                <div class="box-cont">
+                    <div class="box-1"></div>
+                </div> 
+            </div>
+            
+            <div class="row flex-this">
+                <div class="grid-1-of-3">
+                    <div class="box-1"></div>
+                </div>  
+                
+            </div>
+            
+            
+        </section>
+       
+        
+    
+        <section class="skills">
+            <h2>Skills</h2>
+                <ul class="credential-list clearfix">
+                    <li class="html5">
+                        <span class="icon-html5-02 icons"></span>
+                        <p>HTML5</p>
+                    </li>
+                    <li class="css3">
+                        <span class="icon-css3-02 icons"></span>
+                        <p>CSS3</p>
+                    </li>
+                    <li class="js">
+                        <span class="icon-prog-js02 icons"></span>
+                        <p>JavaScript</p>
+                    </li>
+                   
+                    <li class="jquery">
+                        <span class="icon-prog-jquery icons"></span>
+                        <p>jQuery</p>
+                    </li>
+                    <li class="sass">
+                        <img src="assets/sass.png" class="icon" />
+                        <p>Sass</p>
+                    </li>
+                    <li class="angular">
+                        <span class="icon-angularjs icons"></span>
+                        <p>AngularJS</p>
+                    </li>
+                </ul>
+        </section>
+ 
+        <section class="section-bg clearfix">
+            <div class="form-container">
+                <form action="email.php" method="post"> 
+                    <div class="input-container text-fields">
+                        <input id="input-name" type="text" name="name" autocomplete="false" required>
+                        <label for="input-name" data-req-text="Name"></label>
+                    </div>
+                    <div class="email-container text-fields">
+                        <input id="email-input" type="email" name="email" autocomplete="false" required>
+                        <label for="email-input" data-req-text="Email"></label>
+                    </div>
+                    <div class="message-container text-fields" autocomplete="false">
+                        <textarea id="message-input" name="message" rows="5" required></textarea>
+                        <label for="message-input" data-req-text="message"></label>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LdemxkUAAAAAPEY2D8ckaczqIRex0Bo5WZre5rB" data-callback="recaptchaCallBack"></div>
+                    <div class="submit-container">
+                        <input type="submit" id="submit" class="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="social-icons-container">
+                <ul class="clearfix">
+                    <li>
+                        <a href="https://github.com/ilitvak" target="_blank">
+                            <i class="fa fa-github-alt fa-3x github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://codepen.io/purewisdom1/" target="_blank">
+                            <i class="fa fa-codepen fa-3x codepen" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ilitvak" target="_blank">
+                            <i class="fa fa-linkedin fa-3x linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-98519409-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>

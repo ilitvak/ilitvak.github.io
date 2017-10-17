@@ -1,71 +1,152 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-
+/* --------------------------------------- */
+/* Basic Setup */
+/* --------------------------------------- */
 
 * {
     padding: 0;
     border: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-font-smoothing: inherit;
-    }
+    transition: all .5s;
+}
 
 body, html {
   width: 100%;
-  font-family: 'Montserrat'; 
+  font-family: 'Rubik', sans-serif;
 }
 
-/* Header */
+.row {   
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
-#bg {
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* --------------------------------------- */
+/* Header Section */
+/* --------------------------------------- */
+
+.header-main {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.bg1 {
-    background-image: url(../assets/bg1.jpeg);
-}
-
-.bg2 {
-    background-image: url(../assets/bg2.jpeg);
+    margin-top: 15px;
 }
 
 .intro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: inline-block;
 }
 
-.intro h1 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 55px;
-    color: #fff;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px black;
+.intro h1, .intro p {
+    display: inline-block;
 }
 
 .intro p {
-    margin-top: 5px;
-    font-size: 18px;
-    text-align: center;
-    color: #fff;
-    text-shadow: 3px 3px black;
-    text-transform: uppercase;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #000;
 }
 
-/* end of header*/
+/* --------------------------------------- */
+/* Nav Section */
+/* --------------------------------------- */
 
 
+nav {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+}
 
-/* projects title container */
+.nav-list li {
+    display: inline-block;
+    margin-left: 10px;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.nav-list li:first-child {
+    margin-left: 0;
+}
+
+.nav-list li a {    
+    color: #000;
+}
+
+.nav-list li a:hover {
+    color: #2980b9;
+}
+
+/* --------------------------------------- */
+/* Grid Container */
+/* --------------------------------------- */
+
+.projects-grid {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.flex-this {
+    display: flex;
+}
+
+.grid-1-of-3 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto 50px;
+}
+
+.box-1 {
+    width: 330px;
+    height: 200px;
+    background-color: dodgerblue;
+}
+
+.grid-1-of-3:first-child {
+    margin-left: 0;
+}
+
+
+.grid-1-of-3:last-child {
+    margin-right: 0;
+}
+
+.flex-this h3 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.flex-this h3 a:hover {
+    color: #2980b9;
+}
+
+.big-box {
+    width: 736px;
+    height: 450px;
+}
+
+.grid-2 .box-cont {
+    margin: 0 auto 50px;
+    float: left;
+}
+
+.grid-2 .box-cont:nth-child(2) {
+    float: right;
+}
+
+/* --------------------------------------- */
+/* Projects Container */
+/* --------------------------------------- */
 
 .projects-section-container {
     position: relative;
@@ -107,23 +188,11 @@ body, html {
     margin-bottom: 0;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 
 /* end of projects title container */
 
 
 /* section for projects */
-
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
 
 img {
     width: 100%;
@@ -150,13 +219,6 @@ img {
     font-size: 14px;
     color: #fff;
     background-color: #5bc0de;
-}
-
-
-p {
-    padding: 0 30px;
-    text-align: left;
-    line-height: 27px;
 }
 
 
