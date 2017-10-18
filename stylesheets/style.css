@@ -37,8 +37,14 @@ a {
     cursor: pointer;
 }
 
+h1, h2, h3 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
 h3 {
     margin-top: 5px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -59,13 +65,16 @@ h3 a:hover {
     display: inline-block;
 }
 
-.intro h1, .intro p {
+.intro h1, 
+.intro p {
     display: inline-block;
 }
 
 .intro p {
     padding-left: 5px;
     font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
     color: #000;
 }
 
@@ -84,6 +93,8 @@ nav {
 .nav-list li {
     display: inline-block;
     margin-left: 10px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
     list-style-type: none;
     font-weight: bold;
 }
@@ -92,12 +103,33 @@ nav {
     margin-left: 0;
 }
 
-.nav-list li a {    
+.nav-list li a { 
+    position: relative;
     color: #000;
 }
 
 .nav-list li a:hover {
     color: #2980b9;
+}
+
+.nav-list li a,
+.nav-list li a::after {
+    transition: all .5s;
+}
+
+.nav-list li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #2ecc71;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+}
+
+.nav-list li a:hover::after {
+    width: 30px;
 }
 
 /* --------------------------------------- */
@@ -107,6 +139,24 @@ nav {
 .projects-grid {
     margin-top: 100px;
     width: 100%;
+}
+
+.projects-grid .title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects-grid h1 {
+    display: inline-block;
+    font-family: "Montserrat";
+}
+
+.projects-grid h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    border-bottom: 2px solid #2ecc71;
+    margin-top: 10px;
 }
 
 .flex-this {
@@ -232,6 +282,10 @@ nav {
     font-size: 13px;
     color: #fff;
     text-align: left;
+}
+
+.big-overlay .text-overlay p {
+    left: -390px;
 }
 
 .box-overlay:hover .text-overlay h3 {
@@ -393,7 +447,7 @@ nav {
 
 .color-in-bar-now {
     height: 16px;
-    transition: width 1s;
+    transition: width 1.5s;
 }
 
 .html .color-in-bar-now{
@@ -422,18 +476,18 @@ nav {
 }
 
 .git .color-in-bar-now {
-    width: 80%;
+    width: 70%;
     background: linear-gradient(#fff 0%, #000 100%); 
 }
 
 .heroku .color-in-bar-now {
-    width: 80%;
-    background: linear-gradient(#fff 0%, #8e44ad 100%);
+    width: 70%;
+    background: linear-gradient(#fff 0%, #9b59b6 100%);
 }
 
 .bootstrap .color-in-bar-now {
     width: 85%;
-    background: linear-gradient(#fff 0%, #6f44ad 100%);
+    background: linear-gradient(#fff 0%, #8e44ad 100%);
 }
 
 .nodejs .color-in-bar-now {
@@ -467,6 +521,24 @@ nav {
 
 .nodejs span, .nodejs h2 {
     color: #27ae60;
+}
+
+.skills .title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills h1 {
+    display: inline-block;
+    font-family: "Montserrat";
+}
+
+.skills h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    border-bottom: 2px solid #2ecc71;
+    margin-top: 10px;
 }
 
 /* --------------------------------------- */

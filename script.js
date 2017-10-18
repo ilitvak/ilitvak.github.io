@@ -19,7 +19,7 @@ if($(window).width() > 1){
 
 $(window).scroll(function(){
     
-    if($(window).scrollTop() > 850 ){
+    if($(window).scrollTop() > 900 ){
         $(".color-in-bar").each(function(cur){
             $(this).addClass("color-in-bar-now");
         console.log(cur + " : " + $( this ));
