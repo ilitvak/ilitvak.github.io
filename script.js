@@ -27,7 +27,12 @@ $(window).scroll(function(){
         $(".color-in-bar").each(function(){
             $(this).addClass("color-in-bar-now");
         })
+    } else if( $(window).scrollTop() <= 350 ){
+        $(".color-in-bar").each(function(){
+            $(this).removeClass("color-in-bar-now");
+        })
     }
+
 });
 
 
