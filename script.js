@@ -41,7 +41,7 @@ $(window).scroll(function(){
 /* Checks if form inputs have text */
 
 /************************************/
-
+/*
 var form = document.querySelector("form");
 
 var hasText = document.querySelectorAll(".text-fields");
@@ -50,7 +50,17 @@ var convertNodeToArr = Array.prototype.slice.call(hasText);
 form.addEventListener("focus", function(){
     console.log("wow");
 });
+*/
 
+//$(".text-fields input, .text-fields textarea").focusin(function(){
+//  
+//});
+
+$(".text-fields input, .text-fields textarea").blur(function(){
+    if( $(this).val() !== "") {
+        $(this).parents(".text-fields").find("label").addClass("not-empty");
+    }
+});
 
 
 //var blur = document.addEventListener("blur", changeFunction);
