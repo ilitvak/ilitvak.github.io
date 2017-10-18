@@ -1,5 +1,7 @@
 /************************************/
-/*** Scrolls to Section Upon Nav Click ***/
+
+/* Scrolls to Section Upon Nav Click */
+
 /************************************/
 
 if($(window).width() > 1){
@@ -14,39 +16,50 @@ if($(window).width() > 1){
 } 
 
 /************************************/
-/*** Fills In Skill Bar Color ***/
+
+/* Fills In Skill Bar Color */
+
 /************************************/
 
 $(window).scroll(function(){
     
-    if($(window).scrollTop() > 900 ){
-        $(".color-in-bar").each(function(cur){
+    if($(window).scrollTop() > 850 ){
+        $(".color-in-bar").each(function(){
             $(this).addClass("color-in-bar-now");
-        console.log(cur + " : " + $( this ));
         })
     }
-    
+});
+
+
+/************************************/
+
+/* Checks if form inputs have text */
+
+/************************************/
+
+var form = document.querySelector("form");
+
+var hasText = document.querySelectorAll(".text-fields");
+var convertNodeToArr = Array.prototype.slice.call(hasText);
+
+form.addEventListener("focus", function(){
+    console.log("wow");
 });
 
 
 
+//var blur = document.addEventListener("blur", changeFunction);
 
+function changeFunction(){
+    var addToLabel = document.querySelector(".animated-label");
+    convertNodeToArr.forEach(function(cur){
+            console.log( cur );
+            addToLabel.classList.add("not-empty");
+    });   
+}
 
 /*Hides input text when clicked on*/
 
-$(".text-fields input, .text-fields textarea").click(function(){
-   $(this).next().hide();
-});
-
-$(".text-fields input, .text-fields textarea").focusin(function(){
-    $(this).click();
-});
-
-$(".text-fields input, .text-fields textarea").blur(function(){
-    if($(this).val() == "") {
-        $(this).next().show();
-    }
-});
 
 $("form").submit(function(e){
     e.preventDefault();
@@ -80,14 +93,5 @@ function recaptchaCallBack(token) {
     // console.log(token);
     recaptchaToken = token;
 }
-
-
-
-$(window).scroll(function(){
-    var currentPos = $(window).scrollTop() + $(window).height() / 2;  
-    if(currentPos >= $(document).height() / 2) {
-    console.log("wow")
-    };   
-})
 
     

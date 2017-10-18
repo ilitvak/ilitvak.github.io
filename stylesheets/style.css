@@ -151,14 +151,6 @@ nav {
     font-family: "Montserrat";
 }
 
-.projects-grid h1::after {
-    content: "";
-    display: block;
-    width: 40px;
-    border-bottom: 2px solid #2ecc71;
-    margin-top: 10px;
-}
-
 .flex-this {
     display: flex;
 }
@@ -323,6 +315,16 @@ nav {
     position: relative;
     width: 100%;
     margin: 75px 0;
+}
+
+.skills .title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills h1 {
+    display: inline-block;
+    font-family: "Montserrat";
 }
 
 .skills h2 {
@@ -523,111 +525,93 @@ nav {
     color: #27ae60;
 }
 
-.skills .title {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.skills h1 {
-    display: inline-block;
-    font-family: "Montserrat";
-}
-
-.skills h1::after {
-    content: "";
-    display: block;
-    width: 40px;
-    border-bottom: 2px solid #2ecc71;
-    margin-top: 10px;
-}
-
 /* --------------------------------------- */
 /* Footer Section */
 /* --------------------------------------- */ 
 
-.section-bg {
+footer {
     position: relative;
     width: 100%;
-    height: 600px;
-    padding: 5% 8.3% 0;
-    background-image: url(../assets/city.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
-/*End of footer section*/
+footer .title {
+    content: "Contact Me";
+    display: block;
+    margin-bottom: 20px;
+    text-align: center; 
+}
 
-/* Form Section*/
+footer h2 {
+    font-size: 20px;
+}
 
+footer .footer-info {
+    text-align: left;
+}
 
 form {
     margin-top: 5%;
     text-align: center;
 }
 
-
 .form-container {
-    width: 53%;
+    width: 40%;
     text-align: center;
     float: left;
 }
 
-
-@keyframes inandOut {
-    from {opacity: 0.4}
-    to {opacity: 1}
-}
-
-
-.form-container::before {
-    content: "Send Me a Message!";
-    margin: 0;
-    font-size: 47px;
-    text-transform: uppercase;
-    color: #fff;
-    animation-name: inandOut;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-}
-
-
-
-.input-container, .email-container, .message-container {
+.input-container, .email-container, .phone-container, .message-container {
     position: relative;
-    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
 }
 
-.input-container label::before, 
-.email-container label::before,
-.message-container label::before {
-    content: "Name";
-    float: left;
-    font-size: 23px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 3px 3px 3px black;
+.input-container::after, .email-container::after, 
+.phone-container::after, .message-container::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #000;
 }
+
 
 input, textarea {
-    padding: 3px 5px;
-    margin-bottom: 10px;
     width: 100%;
+    padding: 3px 0;
+    margin-bottom: 5px;
     background-color: transparent;
-    color: #fff;
+    color: #000;
+    font-size: 16px;
+    z-index: 1000;
 }
 
 input:focus, textarea:focus{
     outline: none;
+    font-size: 16px;
 }
 
-.email-container label::before {
-    content: "Email";
+.animated-label {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    cursor: text;
+    transition: 0.2s ease all;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
-.message-container label::before {
-    content: "Message";
-    text-shadow: 3px 3px 3px black;
+form #input-name:focus ~ .animated-label, form #email-input:focus ~ .animated-label,
+form #phone-input:focus ~ .animated-label, form #message-input:focus ~ .animated-label {
+    top: -15px;
+    color: #2980b9;
+    font-size: 12px;
+}
+
+.not-empty {
+    top: -15px;
+    font-size: 12px;
+    color: #2980b9;
 }
 
 .email-container, .message-container {
@@ -635,9 +619,9 @@ input:focus, textarea:focus{
 }
 
 label {
-    position: absolute;
-    top: 0;
-    left: 0;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .g-recaptcha {
@@ -666,10 +650,6 @@ label {
 
 
 
-/* Skills section */
-
-
-
 /* Social icons */
 
 .social-icons-container {
@@ -679,16 +659,8 @@ label {
     float: right;
 }
 
-.social-icons-container::before {
-    content: "Check me out";
-    font-size: 47px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: color 1.25s;
-    animation-name: inandOut;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+.social-icons-container .title h3 {
+    font-size: 20px;
 }
 
 .social-icons-container ul {
@@ -703,23 +675,48 @@ label {
 
 .social-icons-container a {
     display: inline-block;
+    height: 45px;
 }
 
 i {
-    color: #fff;
-    text-shadow: 3px 3px 3px black;
+    color: #000;
+}
+
+.i-text {
+    display: inline-block;
+    height:100%;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-family: "Montserrat";
+    font-size: 15px;
 }
 
 .github:hover {
-    color: #00CCFF;
+    color: #bdc3c7;
+}
+
+.codepen {
+    color: #e67e22;
 }
 
 .codepen:hover {
-    color: #9999FF;
+    color: #d35400;
+}
+
+.linkedin {
+    color: #2980b9;
 }
 
 .linkedin:hover {
-    color:#FFFF99;
+    color:#3498db;
+}
+
+.pdf {
+    color: #e74c3c;
+}
+
+.pdf:hover {
+    color: #c0392b;
 }
 
 

@@ -32,7 +32,7 @@
                             <a href=".skills" class="scroller">Skills</a>
                         </li>
                         <li>
-                            <a href=".contact" class="scroller">Contact</a>
+                            <a href="footer" class="scroller">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -186,8 +186,6 @@
             
         </section>
        
-        
-    
         <section class="skills">
             <div class="row clearfix">
                 
@@ -277,48 +275,80 @@
             
         </section>
  
-        <section class="section-bg clearfix">
-            <div class="form-container">
-                <form action="email.php" method="post"> 
-                    <div class="input-container text-fields">
-                        <input id="input-name" type="text" name="name" autocomplete="false" required>
-                        <label for="input-name" data-req-text="Name"></label>
-                    </div>
-                    <div class="email-container text-fields">
-                        <input id="email-input" type="email" name="email" autocomplete="false" required>
-                        <label for="email-input" data-req-text="Email"></label>
-                    </div>
-                    <div class="message-container text-fields" autocomplete="false">
-                        <textarea id="message-input" name="message" rows="5" required></textarea>
-                        <label for="message-input" data-req-text="message"></label>
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6LdemxkUAAAAAPEY2D8ckaczqIRex0Bo5WZre5rB" data-callback="recaptchaCallBack"></div>
-                    <div class="submit-container">
-                        <input type="submit" id="submit" class="submit" value="Submit">
-                    </div>
-                </form>
+        <footer class="section-bg clearfix">
+            
+            <div class="row title">
+                <h2>Contact Me</h2>
             </div>
             
-            <div class="social-icons-container">
-                <ul class="clearfix">
-                    <li>
-                        <a href="https://github.com/ilitvak" target="_blank">
-                            <i class="fa fa-github-alt fa-3x github" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://codepen.io/purewisdom1/" target="_blank">
-                            <i class="fa fa-codepen fa-3x codepen" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ilitvak" target="_blank">
-                            <i class="fa fa-linkedin fa-3x linkedin" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="row clearfix">
+                <div class="form-container">
+                    <div class="footer-info">
+                        <h2>Have something interesting to say?<br>Tell me all about it. </h2>
+                    </div>
+                    <form action="email.php" method="post"> 
+                        
+                        <div class="input-container text-fields">
+                            <input id="input-name" type="text" name="name" autocomplete="false" required>
+                            <label class="animated-label" for="input-name" data-req-text="Name">Name</label>
+                        </div>
+                        
+                        <div class="email-container text-fields">
+                            <input id="email-input" type="email" name="email" autocomplete="false" required>
+                            <label class="animated-label" for="email-input" data-req-text="Email">Email</label>
+                        </div>
+                        
+                        <div class="phone-container text-fields">
+                            <input id="phone-input" type="phone" name="phone" autocomplete="false" required>
+                            <label class="animated-label" for="phone-input" data-req-text="Phone">Phone</label>
+                        </div>
+                        
+                        <div class="message-container text-fields" autocomplete="false">
+                            <textarea id="message-input" name="message" rows="5" required></textarea>
+                            <label class="animated-label" for="message-input" data-req-text="message">Message</label>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LdemxkUAAAAAPEY2D8ckaczqIRex0Bo5WZre5rB" data-callback="recaptchaCallBack"></div>
+                        <div class="submit-container">
+                            <input type="submit" id="submit" class="submit" value="Submit">
+                        </div>
+                    </form> 
+                </div>
+                
+                <div class="social-icons-container">
+                    <div class="title">
+                        <h3>Check Me Out</h3>
+                    </div>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="https://github.com/ilitvak" target="_blank">
+                                <i class="fa fa-github fa-3x github" aria-hidden="true"></i>
+                                <p class="i-text">Github</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://codepen.io/purewisdom1/" target="_blank">
+                                <i class="fa fa-codepen fa-3x codepen" aria-hidden="true"></i>
+                                <p class="i-text">Codepen</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/ilitvak" target="_blank">
+                                <i class="fa fa-linkedin-square fa-3x linkedin" aria-hidden="true"></i>
+                                <p class="i-text">Linkedin</p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/assets/Irwin-Litvak-Resume-2017.pdf" download>
+                                <i class="fa fa-file-pdf-o fa-3x pdf" aria-hidden="true"></i>
+                                <p class="i-text">Resume</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
+   
+        </footer>
         
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="script.js"></script>
@@ -330,5 +360,8 @@
             ga('create', 'UA-98519409-1', 'auto');
             ga('send', 'pageview');
         </script>
+        
+        
+        
     </body>
 </html>
