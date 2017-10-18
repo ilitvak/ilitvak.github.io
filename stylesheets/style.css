@@ -683,12 +683,31 @@ i {
 }
 
 .i-text {
+    position: relative;
     display: inline-block;
     height:100%;
     margin-left: 10px;
     vertical-align: middle;
     font-family: "Montserrat";
     font-size: 15px;
+}
+
+.social-icons-grid a p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 50%;
+    border-bottom: 2px solid #2ecc71;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.social-icons-grid a:hover p::after {
+    width: 20px;
+    transition: width 1s;
 }
 
 .github:hover {
