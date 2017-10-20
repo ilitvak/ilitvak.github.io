@@ -730,24 +730,33 @@ label {
 }
 
 .submit-container {
-    margin: 25px 0 50px;
-    text-align: center;
-}
-
-.submit {
     padding: 10px;
     border: 2px solid #000;
     border-radius: 8px;
+    margin: 25px 0 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submit {
+    margin-bottom: 0;
     font-size: 16px;
     color: #000;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-.submit:hover {
+.submit-container:hover {
     border-color: #2980b9;
     transition: border-color 1s;
 }
+
+.submit-container:hover input{
+    color: #2980b9;
+    transition: color .5s;
+}
+
+
 
 /* Social icons */
 
@@ -843,13 +852,109 @@ i {
 /* --------------------------------------- */ 
 
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
-@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1200px){
+    
+    header.row,
+    .projects-grid .grid-1.row,
+    .grid-2 {
+        max-width: 950px;
+    }
+    
+    .grid-1-of-3 {
+        width: 30%;
+    }
+    
+    .grid-1 .box-1 {
+        width: 100%;
+    }
+    
+    .grid-1-of-3 img, .box-1 img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .grid-1-of-3 .box-overlay {
+        width: 300px;
+        height: 179px;
+    }
+    
+    .grid-2 .box-cont:first-child, 
+    .grid-2 .box-cont:last-child {
+        width: 30%;
+    }
+    
+    .grid-2 .box-cont:first-child .box-1 {
+        width: 100%;
+    }
+    
+    .grid-2 .box-cont:nth-child(2) {
+        width: 65%;
+    }
+    
+    .grid-2 .box-cont .big-box {
+        width: 100%;
+        height: 462px;
+    }
+    
+    .grid-2 .box-cont .box-overlay {
+        height: 462px;
+    }
+    
+    .grid-2 .box-cont:last-child .box-1 {
+        width: 100%;
+    }
+    
+    .grid-2 .box-cont:last-child .box-overlay {
+        height: 188px;
+    }
+    
+    .grid-2 .big-box .box-2 {
+        width: 100%;
+        top: 0;
+        height: 100%;
+        transform: scale(1);
+    }
+    
+    .grid-2 .big-box .box-2 img {
+        position: relative;
+        width: 136%;
+        height: 100%;
+        left: -115px;
+    }
+    
+    .skills .row {
+        margin: 0 100px;
+    }
+    
+    .about-me .row {
+        margin: 0 100px;
+    }
+    
+    footer .row {
+        margin: 0 100px;
+    }
+    
+    .contact-me-section .title {
+        margin-bottom: 20px;
+    }
+}
 
 /* Small tablet to big tablet: from 763px to 1023px */
-@media only screen and (max-width: 1023px){}
+@media only screen and (max-width: 1023px){
+    
+    
+    
+}
 
 /* Small phones to small tablets from 481px to 767px */
-@media only screen and (max-width: 767px){}
+@media only screen and (max-width: 767px){
+    
+    
+    
+}
 
 /* Small phones from 0 to 480px */
-@media only screen and (max-width: 480px){}
+@media only screen and (max-width: 480px){
+    
+    
+}
