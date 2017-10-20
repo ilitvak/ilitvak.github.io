@@ -1,4 +1,14 @@
 /* --------------------------------------- */
+/* Color Scheme For Site */
+/* --------------------------------------- */
+
+/* 
+
+    Blue color =  #2980b9; 
+
+*/
+
+/* --------------------------------------- */
 /* Basic Setup */
 /* --------------------------------------- */
 
@@ -39,17 +49,30 @@ a {
 
 h1, h2, h3 {
     font-family: "Montserrat";
+    font-size: 16px;
     text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 h3 {
     margin-top: 5px;
-    font-size: 16px;
-    text-align: center;
 }
 
 h3 a:hover {
     color: #2980b9;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* --------------------------------------- */
@@ -122,7 +145,7 @@ nav {
     position: absolute;
     width: 0;
     height: 2px;
-    border-bottom: 2px solid #2ecc71;
+    border-bottom: 2px solid #2980b9;
     margin-top: 20px;
     left: 0;
     right: 0;
@@ -167,6 +190,14 @@ nav {
     position: relative;
     display: inline-block;
     width: 33%;
+    margin-bottom: 60px;
+    vertical-align: bottom;
+}
+
+.grid-5 {
+    position: relative;
+    display: inline-block;
+    width: 20%;
     margin-bottom: 60px;
     vertical-align: bottom;
 }
@@ -293,7 +324,7 @@ nav {
     content: "";
     display: block;
     width: 0;
-    border-bottom: 2px solid #2ecc71;
+    border-bottom: 2px solid #2980b9;
     margin-top: 10px;
     transition: width .5s;
 }
@@ -317,17 +348,13 @@ nav {
     margin: 75px 0;
 }
 
-.skills .title {
+.skills .title h2 {
+    font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.skills h1 {
-    display: inline-block;
-    font-family: "Montserrat";
-}
-
-.skills h2 {
+.skills h3 {
     display: inline-block;
     vertical-align: top;
     font-size: 12px;
@@ -346,7 +373,7 @@ nav {
     color: #fff;
 }
 
-.html span, .html h2 {
+.html span, .html h3 {
     color: #e67e22;
 }
 
@@ -354,7 +381,7 @@ nav {
     text-align: center;
 }
 
-.css span, .css h2 {
+.css span, .css h3 {
     color: #2980b9;
 }
 
@@ -362,7 +389,7 @@ nav {
     text-align: right;
 }
 
-.js span, .js h2 {
+.js span, .js h3 {
     color: #f1c40f;
 }
 
@@ -370,7 +397,7 @@ nav {
     margin-right: 6px;
 }
 
-.jquery span, .jquery h2 {
+.jquery span, .jquery h3 {
     color:#3498db;
 }
 
@@ -378,7 +405,7 @@ nav {
     text-align: center;
 }
 
-.sass span, .sass h2 {
+.sass span, .sass h3 {
     color: #D2527F;
 }
 
@@ -388,6 +415,38 @@ nav {
 
 .git {
     text-align: right;
+}
+
+.git .icons, .git h3 {
+    color: #000;
+}
+
+.heroku img {
+    width: 70px;
+}
+
+.heroku h3 {
+    color: #8e44ad;
+}
+
+.bootstrap {
+    text-align: center;
+}
+
+.bootstrap img {
+    width: 65px;
+}
+
+.bootstrap h3 {
+    color: #8e44ad;
+}
+
+.nodejs {
+    text-align: right;
+}
+
+.nodejs span, .nodejs h3 {
+    color: #27ae60;
 }
 
 .bar {
@@ -437,10 +496,6 @@ nav {
 
 .nodejs .bar {
     border-color: #27ae60;
-}
-
-.git .icons, .git h2 {
-    color: #000;
 }
 
 .color-in-bar {
@@ -497,34 +552,84 @@ nav {
     background: linear-gradient(#fff 0%, #27ae60 100%);
 }
 
-.heroku img {
-    width: 70px;
+/* --------------------------------------- */
+/* About Me Section */
+/* --------------------------------------- */ 
+
+.about-me-grid-container {
+    width: 100%;
+    margin-bottom: 75px;
 }
 
-.heroku h2 {
-    color: #8e44ad;
-}
-
-.bootstrap {
+.progress-bar li {
+    position: relative;
+    float: left;
+    list-style-type: none;
     text-align: center;
 }
 
-.bootstrap img {
-    width: 65px;
+.progress-bar li::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+    z-index: 10;
 }
 
-.bootstrap h2 {
-    color: #8e44ad;
-}
-
-.nodejs {
-    text-align: right;
-}
-
-.nodejs span, .nodejs h2 {
+.active {
     color: #27ae60;
 }
 
+.progress-bar li.active::before {
+    border-color: #27ae60;
+}
+
+.progress-bar li:first-child::before {
+    content: "1";
+}
+
+.progress-bar li:nth-child(2)::before {
+    content: "2";
+}
+.progress-bar li:nth-child(3)::before {
+    content: "3";
+}
+.progress-bar li:nth-child(4)::before {
+    content: "4";
+}
+.progress-bar li:last-child::before {
+    content: "5";
+}
+
+.progress-bar li:nth-child(2)::after {
+    content: '';
+    position: absolute; 
+    width: 0%;
+    height: 2px;
+    top: 25px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progress-bar li:first-child::after {
+    content: none;
+}
+
+.progress-bar li.active + li::after {
+    background-color: #2ecc71;
+}
+
+.progress-bar-animation .progress-bar li:nth-child(2)::after {
+    transition: width 3.5s linear;
+    width: 400%;
+    background-color: #2ecc71;
+}
 /* --------------------------------------- */
 /* Footer Section */
 /* --------------------------------------- */ 
@@ -541,11 +646,8 @@ footer .title {
     text-align: center; 
 }
 
-footer h2 {
+footer .footer-info h3 {
     font-size: 20px;
-}
-
-footer .footer-info {
     text-align: left;
 }
 
@@ -571,7 +673,6 @@ form {
     display: block;
     border-bottom: 2px solid #000;
 }
-
 
 input, textarea {
     width: 100%;
@@ -629,26 +730,24 @@ label {
 }
 
 .submit-container {
-    margin-top: 15px;
-    text-align: right;
+    margin: 25px 0 50px;
+    text-align: center;
 }
 
 .submit {
+    padding: 10px;
+    border: 2px solid #000;
     border-radius: 8px;
-    background-image: linear-gradient(forestgreen, forestgreen), linear-gradient(forestgreen, forestgreen);
-    background-position: top left, top right;
-    background-size: 0% 100%, 0% 100%;
-    background-repeat: no-repeat, no-repeat;
-    font-size: 23px;
-    color: #fff;
-    transition: background-size .5s;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .submit:hover {
-    background-size: 51% 100%, 51% 100%;
+    border-color: #2980b9;
+    transition: border-color 1s;
 }
-
-
 
 /* Social icons */
 
@@ -698,7 +797,7 @@ i {
     display: block;
     width: 0;
     height: 50%;
-    border-bottom: 2px solid #2ecc71;
+    border-bottom: 2px solid #2980b9;
     top: 0;
     bottom: 0;
     left: 0;
@@ -739,424 +838,18 @@ i {
 }
 
 
+/* --------------------------------------- */
+/* Media Queries */
+/* --------------------------------------- */ 
 
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px){}
 
-/* Media query section */
+/* Small tablet to big tablet: from 763px to 1023px */
+@media only screen and (max-width: 1023px){}
 
-@media (max-width: 1252px) {
-    .form-container::before,
-    .social-icons-container::before {
-        font-size: 41px;
-    }
-    
-    .form-container label::before {
-        font-size: 21px;
-    }
-    
-    .skills h2 {
-        font-size: 53px;
-    }
-}
+/* Small phones to small tablets from 481px to 767px */
+@media only screen and (max-width: 767px){}
 
-
-/* Query for Macbook Pro 1200px screen */
-@media (max-width: 1200px) {
-    
-    .intro p {
-        font-size: 20px;
-    }
-    
-    .projects-section-container {
-        padding-right: 7.5%;
-        padding-left: 15%;
-    }
-    .projects-section-container h1 {
-        width: 15%;
-        margin: 0;
-        -webkit-transform: rotateZ(-90deg);
-        -ms-transform: rotateZ(-90deg);
-        transform: rotateZ(-90deg);
-    }
-    
-    .form-container {
-        padding: 5% 0;
-    }
-    
-    .social-icons-container {
-        padding: 5% 0 0 11%;
-    }
-    
-    .social-icons-container h1 {
-        font-size: 2.5vw;
-    }
-    
-    .skills h2 {
-        font-size: 40px;
-    }
-    
-    .credential-list li span {
-        top: calc(100% - 72%);
-    }
-    
-    .credential-list p {
-        top: calc(100% - 35%);
-    }
-}
-
-@media (max-width: 1092px) {
-    
-    .form-container::before, 
-    .social-icons-container::before {
-        font-size: 38px;
-    }
-}
-
-/* Media Query for 1024 x 768 screen size */
-
-@media (max-width: 1024px){
-    
-    .credential-list li img {
-        top: calc(100% - 73%);
-    }
-    
-    .section-bg {
-        padding: 0 7%;
-        background-size: cover;
-    }
-    
-    .form-container, .social-icons-container {
-        padding-top: 14%;
-    }
-    
-    .form-container::before, 
-    .social-icons-container::before {
-        font-size: 37px;
-    }
-}
-
-    
-
-/* Media Query for 960 x 720 screen size */
-
-@media (max-width: 960px){
-    
-    .project-info .credential-list::before {
-        font-size: 20px;
-    }
-    
-    .project-info .credential-list li {
-        width: 35px;
-        padding-top: 35px;
-    }
-    
-    .project-info .icons {
-        top: calc(50% - 11px);
-        font-size: 23px;
-    }
-    
-    .project-info .angular span {
-        top: calc(50% - 12px);
-    }
-    
-    .form-container::before, 
-    .social-icons-container::before {
-        font-size: 34px;
-        text-shadow: 3px 3px 3px black;
-    }
-    
-    .social-icons-container i {
-        font-size: 2.8em;
-    }
-    
-    .project-info .credential-list img {
-        width: 28px;
-        top: calc(50% - 11px);
-        left: calc(50% - 12px);
-    }
-    
-    .credential-list li span {
-        top: calc(50% - 26%);
-    }
-    
-    .credential-list p {
-        top: calc(100% - 41%);
-    }
-    
-    .credential-list li img {
-        top: calc(100% - 76%);
-    }
-    
-    .form-container {
-        width: 100%;
-        padding-top: 8%;
-    }
-    
-    .social-icons-container {
-        width: 100%;
-        padding-top: 0;
-        padding-left: 0;
-    }
-    
-    .social-icons-container::before {
-        float: left;
-    }
-    
-    .social-icons-container ul {
-        margin-top: 0;
-    }
-    
-    .social-icons-container li {
-        margin-bottom: 0;
-        margin-left: 10%;
-        float: left;
-    }
-    
-    .submit-container .submit {
-        font-size: 21px;
-    }
-}
-
-
-/* Media Query for Tablet*/
-
-@media (max-width: 768px) {
-    .intro h1 {
-        font-size: 6.5vw;
-    }
-    
-    .intro p {
-        font-size: 2.3vw;
-    }
-
-    .projects-section-container {
-        padding: 0 5% 5%;
-    }
-    .projects-section-container h1 {
-        position: relative; 
-        width: auto;
-        padding: 5% 0;
-        -webkit-transform: rotateZ(0deg);
-        -ms-transform: rotateZ(0deg);
-        transform: rotateZ(0deg);
-    }
-    
-    .section-bg {
-        background-size: cover;
-    }
-    
-    p {
-        font-size: 16px;    
-    }
-    
-    .project-info .credential-list::before  {
-        font-size: 20px;
-    }
-    
-    .project-info .credential-list li {
-        width: 35px;
-        padding-top: 35px;
-    }
-    
-    .project-info .icons {
-        top: calc(50% - 10px);
-        font-size: 22px;
-    }
-    
-    .project-info li.angular span {
-        top: calc(50% - 11px);
-    }
-    .project-info .credential-list img {
-        width: 26px;
-        top: calc(50% - 11px);
-        left: calc(50% - 11px);
-    }
-    
-    .form-container {
-        padding-left: 0;
-    }
-    
-    .form-container label::before {
-        font-size: 2vw;
-    }
-    
-    .skills h2 {
-        font-size: 5vw;
-    }
-    
-    .credential-list p {
-        font-size: 1.8vw;
-    }
-    
-    .credential-list li span {
-        top: calc(50% - 31%);
-        font-size: 4.5vw;
-    }
-    
-    .credential-list li img {
-        width: 6.2vw;
-        top: calc(50% - 35%);
-        left: calc(50% - 21%);
-    }
-    
-    div input.submit {
-        font-size: 2vw;
-    }
-    
-    .social-icons-container li i {
-        font-size: 5.5vw;
-    }
-}
-    
-@media (max-width: 696px) {
-    
-    .projects-section-container {
-        padding-left: 12.5%;
-        padding-right: 12.5%;
-    }
-    
-    .projects-section-container h1 {
-        font-size: 7vw;
-    }
-    
-    .project-info {
-        width: 100%;
-        float: none;
-    }
-    
-    .project-info .credential-list::before {
-        font-size: 21px;
-    }
-    
-    .title {
-        width: 100%;
-        margin-top: 10%;
-        float: none;
-    }
-    
-    .title h2 {
-        font-size: 28px;
-    }
-    
-    .title p {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 640px) {
-    
-    .intro h1 {
-        font-size: 6.5vw;
-    }
-    .intro p {
-        font-size: 2.8vw;
-    }
-    .projects-section-container h1{
-        font-size: 6.5vw;
-    }
-    .title h2 {
-        font-size: 20px;
-    }
-    
-    p {
-        font-size: 15px;
-    }
-
-    .skills h2 {
-        font-size: 5.5vw;
-    }
-    
-    .section-bg {
-        padding-top: 7.5%;
-    }
-    
-    .form-container::before, .social-icons-container::before {
-        font-size: 4.3vw;
-    }
-    
-    .form-container {
-        width: 100%;
-        padding-top: 0;
-        padding-right: 0;
-    }
-    
-    .form-container label::before {
-        font-size: 2.9vw;
-    }
-    
-    .social-icons-container {
-        width: 100%;
-        margin-top: 10%;
-        padding-left: 0;
-    }
-    
-    .social-icons-container::before {
-        float: left;
-    }
-    
-    .social-icons-container ul {
-        margin-top: 0;
-    }
-    
-    .social-icons-container li {
-        margin-left: 13%;
-        float: left;
-    }
-    
-    .section-bg {
-        height: auto;
-        padding-bottom: 3%;
-    }
-}
-    
-@media (max-width: 480px) {
-    
-    #bg {
-        background-size: cover;
-    }
-    
-    .intro h1 {
-        font-size: 7.5vw;
-    }
-    .intro p {
-        font-size: 3.5vw;
-    }
-    .projects-section-container h1 {
-        font-size: 8.5vw;
-    }
-    .title h2 {
-        font-size: 22px;
-    }
-    
-    .form-container::before {
-        font-size: 5.5vw;
-    }
-
-    .form-container label::before {
-        font-size: 3.1vw;
-    }
-    .social-icons-container::before {
-        font-size: 5.1vw;
-    }
-    .social-icons-container li {
-        margin-left: 11%;
-    }
-    .skills {
-        display: none;
-    }
-}
-    
-@media (max-width: 413px) {
-
-    #bg {
-        background-size: cover;
-    }
-
-    .intro h1 {
-        font-size: 7vw;
-    }
-    .intro p {
-        font-size: 3.8vw;
-    }
-}
-
-    
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px){}

@@ -27,34 +27,59 @@ $(window).scroll(function(){
         $(".color-in-bar").each(function(){
             $(this).addClass("color-in-bar-now");
         })
-    } else if( $(window).scrollTop() <= 350 ){
+        
+    } else if( $(window).scrollTop() <= 344 ){
         $(".color-in-bar").each(function(){
             $(this).removeClass("color-in-bar-now");
         })
     }
-
 });
 
 
+/************************************/
+
+/* Fills In My Typical Day Bar */
+
+/************************************/
+
+
+$(window).scroll(function(){
+
+    if( $(window).scrollTop() >= 1280 ) {
+        $(".about-me-grid-container").addClass("progress-bar-animation");  
+        
+        var a = setTimeout(function(){
+            $(".progress-bar li.grid-5:first-child").addClass("active");
+        }, .05) 
+        
+        var b = setTimeout(function(){
+            $(".progress-bar li.grid-5:first-child").next().addClass("active");
+        }, 800) 
+
+        var c = setTimeout(function(){
+            $(".progress-bar li.grid-5:first-child").next().next().addClass("active");
+        },1700)
+
+        var d = setTimeout(function(){
+            $(".progress-bar li.grid-5:first-child").next().next().next().addClass("active");
+        },2600)
+
+        var e = setTimeout(function(){
+            $(".progress-bar li.grid-5:first-child").next().next().next().next().addClass("active");
+        },3500)
+        
+    } else if ($(window).scrollTop() <= 966 ) {
+        $(".about-me-grid-container").removeClass("progress-bar-animation");
+        
+        $(".progress-bar li").siblings().removeClass("active");
+    }
+    
+});
 /************************************/
 
 /* Checks if form inputs have text */
 
 /************************************/
-/*
-var form = document.querySelector("form");
-
-var hasText = document.querySelectorAll(".text-fields");
-var convertNodeToArr = Array.prototype.slice.call(hasText);
-
-form.addEventListener("focus", function(){
-    console.log("wow");
-});
-*/
-
-//$(".text-fields input, .text-fields textarea").focusin(function(){
-//  
-//});
 
 $(".text-fields input, .text-fields textarea").blur(function(){
     if( $(this).val() !== "") {
@@ -62,16 +87,6 @@ $(".text-fields input, .text-fields textarea").blur(function(){
     }
 });
 
-
-//var blur = document.addEventListener("blur", changeFunction);
-
-function changeFunction(){
-    var addToLabel = document.querySelector(".animated-label");
-    convertNodeToArr.forEach(function(cur){
-            console.log( cur );
-            addToLabel.classList.add("not-empty");
-    });   
-}
 
 /*Hides input text when clicked on*/
 
