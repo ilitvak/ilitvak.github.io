@@ -856,7 +856,10 @@ i {
     
     header.row,
     .projects-grid .grid-1.row,
-    .grid-2 {
+    .grid-2,
+    .skills .row,
+    section.about-me .row,
+    footer div.row{
         max-width: 950px;
     }
     
@@ -922,18 +925,6 @@ i {
         left: -115px;
     }
     
-    .skills .row {
-        margin: 0 100px;
-    }
-    
-    .about-me .row {
-        margin: 0 100px;
-    }
-    
-    footer .row {
-        margin: 0 100px;
-    }
-    
     .contact-me-section .title {
         margin-bottom: 20px;
     }
@@ -942,7 +933,32 @@ i {
 /* Small tablet to big tablet: from 763px to 1023px */
 @media only screen and (max-width: 1023px){
     
+    header.row,
+    .projects-grid .title,
+    section.projects-grid .grid-1.row,
+    section.projects-grid .grid-2.row,
+    section.skills div.row,
+    footer.contact-me-section .row{
+        max-width: 860px;
+    }
     
+    .intro h1 {
+        line-height: 28px;
+    }
+    
+    .skills .row {
+        margin: 0 auto;
+    }
+    
+    .skills .grid-3.sass img,
+    .skills .grid-3.bootstrap img,
+    .skills .grid-3.heroku img {
+        width: 60px;
+    }
+    
+    section.about-me .title {
+        margin-bottom: 20px;
+    }
     
 }
 
