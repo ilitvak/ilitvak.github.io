@@ -75,13 +75,20 @@ h3 a:hover {
     text-align: center;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* --------------------------------------- */
 /* Header Section */
 /* --------------------------------------- */
 
 .header-main {
     position: relative;
-    margin-top: 15px;
+    width: 90%;
+    margin: 15px auto 0;
 }
 
 .intro {
@@ -160,8 +167,8 @@ nav {
 /* --------------------------------------- */
 
 .projects-grid {
-    margin-top: 100px;
-    width: 100%;
+    margin: 100px auto 0;
+    width: 90%;
 }
 
 .projects-grid .title {
@@ -174,16 +181,20 @@ nav {
     font-family: "Montserrat";
 }
 
-.flex-this {
-    display: flex;
+.grid-1 {
+    margin-bottom: 4%;
 }
 
 .grid-1-of-3 {
     position: relative;
-    display: inline-block;
-    width: auto;
-    margin: 0 auto 50px;
+    width: 31.33%;
+    float: left;
     overflow: hidden;
+}
+
+.grid-1-of-3:first-child,
+.grid-1-of-3:nth-child(2) {
+    margin-right: 3.005%;
 }
 
 .grid-3 {
@@ -203,8 +214,9 @@ nav {
 }
 
 .box-1 {
-    width: 330px;
-    height: 200px;
+    position: relative;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -219,34 +231,33 @@ nav {
 
 .big-box {
     position: relative;
-    width: 736px;
-    height: 477px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+}
+
+.grid-2 .box-cont:first-child,
+.grid-2 .box-cont:last-child {
+    width: 31.33%;
+}
+
+.grid-2 .box-cont:first-child {
+    margin-bottom: 4%;
 }
 
 .grid-2 .box-cont {
     position: relative;
-    margin: 0 auto 50px;
     float: left;
 }
 
 .grid-2 .box-cont:nth-child(2) {
+    width: 66%;
     float: right;
 }
 
 /* --------------------------------------- */
 /* Grid Photos */
-/* --------------------------------------- */
-
-.grid-1-of-3 img, .box-1 img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    -webkit-transform: scale(1.35);
-    -ms-transform: scale(1.35);
-    transform: scale(1.35);
-    top: 25px;
-}
+/* --------------------------------------- */   
 
 .grid-1-of-3:hover h3 a, .box-cont:hover a {
     color: #2980b9;
@@ -263,14 +274,10 @@ nav {
     transform: scale(1.35);
 }
 
-.box-2 img {
-    width: 100%;
-}
-
 .box-overlay {
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 100%;
     top: 0;
     left: 0;
     opacity: 0;
@@ -301,7 +308,7 @@ nav {
     position: relative;
     padding: 0 20px 0;
     margin-top: 10px;
-    left: -350px;
+    left: -450px;
     font-size: 13px;
     color: #fff;
     text-align: left;
@@ -411,6 +418,7 @@ nav {
 
 .sass img {
     width: 80px;
+    margin: 0 auto;
 }
 
 .git {
@@ -435,6 +443,8 @@ nav {
 
 .bootstrap img {
     width: 65px;
+    margin: 0 auto;
+    
 }
 
 .bootstrap h3 {
@@ -854,50 +864,8 @@ i {
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px){
     
-    header.row,
-    .projects-grid .grid-1.row,
-    .grid-2,
-    .skills .row,
-    section.about-me .row,
-    footer div.row{
-        max-width: 950px;
-    }
+
     
-    .grid-1-of-3 {
-        width: 30%;
-    }
-    
-    .grid-1 .box-1 {
-        width: 100%;
-    }
-    
-    .grid-1-of-3 img, .box-1 img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .grid-1-of-3 .box-overlay {
-        width: 300px;
-        height: 179px;
-    }
-    
-    .grid-2 .box-cont:first-child, 
-    .grid-2 .box-cont:last-child {
-        width: 30%;
-    }
-    
-    .grid-2 .box-cont:first-child .box-1 {
-        width: 100%;
-    }
-    
-    .grid-2 .box-cont:nth-child(2) {
-        width: 65%;
-    }
-    
-    .grid-2 .box-cont .big-box {
-        width: 100%;
-        height: 462px;
-    }
     
     .grid-2 .box-cont .box-overlay {
         height: 462px;
