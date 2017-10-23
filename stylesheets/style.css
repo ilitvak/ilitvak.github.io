@@ -264,7 +264,7 @@ nav {
 }
 
 .box-1:hover img, .box-2:hover {
-    transform: scale(1.37);
+    transform: scale(1.05);
 }
 
 .box-2 {
@@ -342,7 +342,7 @@ nav {
 }
 
 .big-overlay {
-    height: 477px;
+    height: 100%;
 }
 
 /* --------------------------------------- */
@@ -351,8 +351,8 @@ nav {
 
 .skills {
     position: relative;
-    width: 100%;
-    margin: 75px 0;
+    width: 90%;
+    margin: 75px auto;
 }
 
 .skills .title h2 {
@@ -566,9 +566,17 @@ nav {
 /* About Me Section */
 /* --------------------------------------- */ 
 
+section.about-me {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .about-me-grid-container {
-    width: 100%;
     margin-bottom: 75px;
+}
+
+.timeline {
+    margin: 0 auto;
 }
 
 .progress-bar li {
@@ -646,14 +654,14 @@ nav {
 
 footer {
     position: relative;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 footer .title {
     content: "Contact Me";
     display: block;
     margin-bottom: 20px;
-    text-align: center; 
 }
 
 footer .footer-info h3 {
@@ -668,6 +676,7 @@ form {
 
 .form-container {
     width: 40%;
+    margin-right: 20%;
     text-align: center;
     float: left;
 }
@@ -771,24 +780,24 @@ label {
 /* Social icons */
 
 .social-icons-container {
-    width: 47%;
+    width: 40%;
     padding-left: 11%;
-    text-align: center;
     float: right;
 }
 
 .social-icons-container .title h3 {
     font-size: 20px;
+    text-align: right;
 }
 
 .social-icons-container ul {
     margin-top: 15px;
-    text-align: center;
 }
 
 .social-icons-container li {
     margin-bottom: 50px;
     list-style-type: none;
+    text-align: right;
 }
 
 .social-icons-container a {
