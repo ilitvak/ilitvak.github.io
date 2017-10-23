@@ -417,6 +417,7 @@ nav {
 }
 
 .sass img {
+    display: inline-block;
     width: 80px;
     margin: 0 auto;
 }
@@ -430,6 +431,7 @@ nav {
 }
 
 .heroku img {
+    display: inline-block;
     width: 70px;
 }
 
@@ -442,6 +444,7 @@ nav {
 }
 
 .bootstrap img {
+    display: inline-block;
     width: 65px;
     margin: 0 auto;
     
@@ -873,38 +876,19 @@ i {
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px){
     
+    .skills .sass img {
+        width: 65px;
+    }
+    
+    .skills .heroku img {
+        width: 60px;
+    }
+    
+    .skills .bootstrap img {
+        width: 55px;
+    }
+    
 
-    
-    
-    .grid-2 .box-cont .box-overlay {
-        height: 462px;
-    }
-    
-    .grid-2 .box-cont:last-child .box-1 {
-        width: 100%;
-    }
-    
-    .grid-2 .box-cont:last-child .box-overlay {
-        height: 188px;
-    }
-    
-    .grid-2 .big-box .box-2 {
-        width: 100%;
-        top: 0;
-        height: 100%;
-        transform: scale(1);
-    }
-    
-    .grid-2 .big-box .box-2 img {
-        position: relative;
-        width: 136%;
-        height: 100%;
-        left: -115px;
-    }
-    
-    .contact-me-section .title {
-        margin-bottom: 20px;
-    }
 }
 
 /* Small tablet to big tablet: from 763px to 1023px */
