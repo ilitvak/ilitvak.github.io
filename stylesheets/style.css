@@ -89,7 +89,7 @@ img {
 .header-main {
     position: relative;
     width: 90%;
-    margin: 15px auto 0;
+    margin: 1.5% auto 0;
 }
 
 .intro {
@@ -168,7 +168,7 @@ nav {
 /* --------------------------------------- */
 
 .projects-grid {
-    margin: 100px auto 0;
+    margin: 8% auto 0;
     width: 90%;
 }
 
@@ -208,6 +208,10 @@ nav {
     margin-bottom: 5%;
 }
 
+.grid-row:last-child {
+    margin-bottom: 0;
+}
+
 .grid-3-row-container {
     display: flex;
     width: 100%;
@@ -221,15 +225,6 @@ nav {
 .grid-3 {
     width: 100%;
 }
-/*
-.grid-3 {
-    position: relative;
-    display: inline-block;
-    width: 33%;
-    margin-bottom: 60px;
-    vertical-align: bottom;
-}
-*/
 
 .grid-5 {
     position: relative;
@@ -237,6 +232,10 @@ nav {
     width: 20%;
     margin-bottom: 60px;
     vertical-align: bottom;
+}
+
+.grid-5:nth-child(5), .grid-5:last-child {
+    margin-bottom: 0;
 }
 
 .box-1 {
@@ -376,7 +375,7 @@ nav {
 .skills {
     position: relative;
     width: 90%;
-    margin: 75px auto;
+    margin: 8% auto 0;
 }
 
 .skills .title h2 {
@@ -536,7 +535,7 @@ nav {
 }
 
 .color-in-bar {
-    width: 0;
+    width: 0%;
 }
 
 .color-in-bar-now {
@@ -594,12 +593,9 @@ nav {
 /* --------------------------------------- */ 
 
 section.about-me {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.about-me-grid-container {
-    margin-bottom: 75px;
+    width: 100%;
+    margin: 8% auto 0;
+    overflow: hidden;
 }
 
 .timeline {
@@ -700,7 +696,7 @@ section.about-me {
 footer {
     position: relative;
     width: 90%;
-    margin: 0 auto;
+    margin: 8% auto 0;
 }
 
 footer .title {
@@ -1091,5 +1087,27 @@ i {
 /* Small phones from 0 to 480px */
 @media only screen and (max-width: 480px){
     
+    .header-main {
+        margin: 5% auto 0;
+    }
+    
+    header .nav-list li {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .grid-1-of-3 {
+        margin-bottom: 7%;
+    }
+    
+    .grid-2 .box-cont:first-child, .grid-2 .box-cont {
+        margin-bottom: 7%;
+    }
+    
+    .social-icons-grid ul li .i-text {
+        display: block;
+        margin-left: 0;
+    }
     
 }
+
