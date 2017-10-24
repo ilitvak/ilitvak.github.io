@@ -609,6 +609,7 @@ section.about-me {
 .progress-bar li {
     position: relative;
     float: left;
+    width: 45%;
     list-style-type: none;
     text-align: center;
 }
@@ -648,11 +649,15 @@ section.about-me {
 .progress-bar li:nth-child(4)::before {
     content: "4";
 }
-.progress-bar li:last-child::before {
+.progress-bar li:nth-child(5)::before {
     content: "5";
 }
 
-.progress-bar li:nth-child(2)::after {
+.progress-bar li:last-child::before {
+    content: "6";
+}
+
+.progress-bar li::after {
     content: '';
     position: absolute; 
     width: 0%;
@@ -671,8 +676,21 @@ section.about-me {
 }
 
 .progress-bar-animation .progress-bar li:nth-child(2)::after {
-    transition: width 3.5s linear;
+    transition: width 3s linear;
     width: 400%;
+    background-color: #2ecc71;
+}
+.progress-bar-animation .progress-bar li:nth-child(3)::after {
+    transition: width 3s linear;
+    transition-delay: 1.4s;
+    width: 400%;
+    background-color: #2ecc71;
+}
+
+.progress-bar-animation .progress-bar li:nth-child(5)::after {
+    transition: width 2s linear;
+    transition-delay: 3.5s;
+    width: 200%;
     background-color: #2ecc71;
 }
 /* --------------------------------------- */
@@ -1027,6 +1045,7 @@ i {
     }
     
     .progress-bar li {
+        width: 45%;
         font-size: 13px;
         line-height: 13px;
     }
@@ -1035,6 +1054,26 @@ i {
         width: 35px;
         height: 35px;
         line-height: 35px;
+    }
+    
+    .progress-bar li:nth-child(3)::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        top: 20px;
+        left: -50%;
+        z-index: -1;
+    }
+    
+    .progress-bar li:last-child::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        top: 20px;
+        left: -50%;
+        z-index: -1;
     }
     
     .progress-bar li:nth-child(2)::after {

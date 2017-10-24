@@ -55,19 +55,23 @@ $(window).scroll(function(){
         
         var b = setTimeout(function(){
             $(".progress-bar li.grid-5:first-child").next().addClass("active");
-        }, 800) 
+        }, 700) 
 
         var c = setTimeout(function(){
             $(".progress-bar li.grid-5:first-child").next().next().addClass("active");
-        },1700)
+        },2100)
 
         var d = setTimeout(function(){
             $(".progress-bar li.grid-5:first-child").next().next().next().addClass("active");
-        },2600)
+        },2900)
 
         var e = setTimeout(function(){
             $(".progress-bar li.grid-5:first-child").next().next().next().next().addClass("active");
-        },3500)
+        },4500)
+        
+        var f = setTimeout(function(){
+            $(".progress-bar li.grid-5:first-child").next().next().next().next().next().addClass("active");
+        },5500)
         
     } else if ($(window).scrollTop() <= 966 ) {
         $(".about-me-grid-container").removeClass("progress-bar-animation");
