@@ -23,7 +23,7 @@ if($(window).width() > 1){
 
 $(window).scroll(function(){
     
-    if($(window).scrollTop() > 850 ){
+    if($(window).scrollTop() >= $(".skills").offset().top - 70){
         $(".color-in-bar").each(function(){
             $(this).addClass("color-in-bar-now");
         })
@@ -45,7 +45,7 @@ $(window).scroll(function(){
 
 $(window).scroll(function(){
 
-    if( $(window).scrollTop() >= 1280 ) {
+    if( $(window).scrollTop() >= $(".about-me").offset().top - 70 ) {
         $(".about-me-grid-container").addClass("progress-bar-animation");  
         
         var a = setTimeout(function(){

@@ -56,6 +56,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 28px;
+    line-height: 28px;
 }
 
 h2 {
@@ -192,11 +193,35 @@ nav {
     overflow: hidden;
 }
 
+.grid-2-of-3 {
+    position: relative;
+    width: 65.556%;
+    float: right;
+}
+
 .grid-1-of-3:first-child,
 .grid-1-of-3:nth-child(2) {
     margin-right: 3.005%;
 }
 
+.grid-row {
+    margin-bottom: 5%;
+}
+
+.grid-3-row-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.grid-3 {
+    width: 100%;
+}
+/*
 .grid-3 {
     position: relative;
     display: inline-block;
@@ -204,6 +229,7 @@ nav {
     margin-bottom: 60px;
     vertical-align: bottom;
 }
+*/
 
 .grid-5 {
     position: relative;
@@ -236,9 +262,13 @@ nav {
     overflow: hidden;
 }
 
-.grid-2 .box-cont:first-child,
-.grid-2 .box-cont:last-child {
+.grid-2 {
     width: 31.33%;
+    float: left;
+}
+
+.grid-2 .box-cont {
+    width: 100%;
 }
 
 .grid-2 .box-cont:first-child {
@@ -247,12 +277,6 @@ nav {
 
 .grid-2 .box-cont {
     position: relative;
-    float: left;
-}
-
-.grid-2 .box-cont:nth-child(2) {
-    width: 66%;
-    float: right;
 }
 
 /* --------------------------------------- */
@@ -894,32 +918,42 @@ i {
 /* Small tablet to big tablet: from 763px to 1023px */
 @media only screen and (max-width: 1023px){
     
-    header.row,
-    .projects-grid .title,
-    section.projects-grid .grid-1.row,
-    section.projects-grid .grid-2.row,
-    section.skills div.row,
-    footer.contact-me-section .row{
-        max-width: 860px;
-    }
-    
-    .intro h1 {
-        line-height: 28px;
-    }
-    
-    .skills .row {
-        margin: 0 auto;
+    .nav-list li {
+        font-size: 1.56vw;
+        line-height: 1.56vw;
     }
     
     .skills .grid-3.sass img,
     .skills .grid-3.bootstrap img,
     .skills .grid-3.heroku img {
-        width: 60px;
+        width: 50px;
     }
     
-    section.about-me .title {
-        margin-bottom: 20px;
+    section.about-me {
+        width: 100%;
     }
+    
+    .form-container {
+        width: 50%;
+        margin-right: 10%;
+    }
+    
+    .animated-label, .submit {
+        font-size: 14px;
+    }
+    
+    footer .footer-info h3 {
+        font-size: 18px;
+    }
+    
+    .social-icons-container {
+        padding-left: 0;
+    }
+    
+    .social-icons-container .title h3 {
+        font-size: 18px;
+    }
+    
     
 }
 
