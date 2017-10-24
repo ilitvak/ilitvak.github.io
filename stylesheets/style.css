@@ -1059,6 +1059,33 @@ i {
         top: 20px;
     }
     
+    .form-container {
+        margin-right: 0;
+    }
+    
+    .form-container, .social-icons-container {
+        width: 100%;
+        float: none;
+    }
+    
+    footer .form-container h3 {
+        font-size: 16px;
+    }
+    
+    footer .social-icons-container .title h3 {
+        text-align: center;
+    }
+    
+    footer .social-icons-container li {
+        width: 40%;
+        text-align: center;
+        float: left;
+    }
+    
+    footer .social-icons-container li:first-child,
+    footer .social-icons-container li:nth-child(3) {
+        margin-right: 20%;
+    }
 }
 
 /* Small phones from 0 to 480px */
