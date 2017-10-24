@@ -1045,7 +1045,6 @@ i {
     }
     
     .progress-bar li {
-        width: 45%;
         font-size: 13px;
         line-height: 13px;
     }
@@ -1056,27 +1055,7 @@ i {
         line-height: 35px;
     }
     
-    .progress-bar li:nth-child(3)::after {
-        content: '';
-        position: absolute;
-        width: 0%;
-        height: 2px;
-        top: 20px;
-        left: -50%;
-        z-index: -1;
-    }
-    
-    .progress-bar li:last-child::after {
-        content: '';
-        position: absolute;
-        width: 0%;
-        height: 2px;
-        top: 20px;
-        left: -50%;
-        z-index: -1;
-    }
-    
-    .progress-bar li:nth-child(2)::after {
+    .progress-bar li::after {
         top: 20px;
     }
     
