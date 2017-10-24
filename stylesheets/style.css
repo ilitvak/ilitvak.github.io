@@ -960,7 +960,86 @@ i {
 /* Small phones to small tablets from 481px to 767px */
 @media only screen and (max-width: 767px){
     
+    header .intro {
+        float: left;
+    }
     
+    header .intro p {
+        display: block;
+        padding-left: 0;
+    }
+    
+    header nav {
+        position: relative;
+        margin-top: 1%;
+        float: right;
+    }
+    
+    header .nav-list li {
+        display: block;
+        margin: 0 0 15% 0;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .nav-list li a::after {
+        margin-top: 15px;
+    }
+    
+    .grid-1-of-3 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .grid-2, .grid-2-of-3 {
+        width: 100%;
+    }
+    
+    .grid-2 .box-cont:first-child, 
+    .grid-2 .box-cont {
+        margin-bottom: 5%;
+    }
+    
+    
+    .skills .grid-3-row-container {
+        display: block;
+    }
+    
+    .skills .grid-3 {
+        margin-bottom: 5%;
+    }
+    
+    .skills .grid-3 .icons {
+        font-size: 30px;
+    }
+    
+    .skills .grid-3 .bar {
+        width: 100%;
+    }
+    
+    .skills .grid-3.sass img,
+    .skills .grid-3.heroku img {
+        width: 40px;
+    }
+    
+    .skills .grid-3.bootstrap img {
+        width: 30px;
+    }
+    
+    .progress-bar li {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    
+    .progress-bar li::before {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    
+    .progress-bar li:nth-child(2)::after {
+        top: 20px;
+    }
     
 }
 

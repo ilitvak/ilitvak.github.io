@@ -36,6 +36,7 @@ $(window).scroll(function(){
 });
 
 
+
 /************************************/
 
 /* Fills In My Typical Day Bar */
