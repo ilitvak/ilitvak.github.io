@@ -23,7 +23,7 @@ if($(window).width() > 1){
 
 $(window).scroll(function(){
     
-    if($(window).scrollTop() >= $(".skills").offset().top - 70){
+    if($(window).scrollTop() >= $(".projects-grid").offset().top + $(".projects-grid").outerHeight(true) - 150 ){
         $(".color-in-bar").each(function(){
             $(this).addClass("color-in-bar-now");
         })
@@ -46,7 +46,8 @@ $(window).scroll(function(){
 
 $(window).scroll(function(){
 
-    if( $(window).scrollTop() >= $(".about-me").offset().top - 70 ) {
+    // checks the scroll top against the bottom position of the skills section
+    if( $(window).scrollTop() >= $(".skills").offset().top + $(".skills").outerHeight(true) - 150 ) {
         $(".about-me-grid-container").addClass("progress-bar-animation");  
         
         var a = setTimeout(function(){
