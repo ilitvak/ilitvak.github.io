@@ -534,12 +534,48 @@ nav {
     border-color: #27ae60;
 }
 
+.html .color-in-bar {
+    background: linear-gradient(#fff 0%, #e67e22 100%);
+}
+
+.css .color-in-bar {
+    background: linear-gradient(#fff 0%, dodgerblue 100%);
+}
+
+.js .color-in-bar {
+    background: linear-gradient(#fff 0%, #f1c40f 100%);
+}
+
+.jquery .color-in-bar {
+    background: linear-gradient(#fff 0%, #3498db 100%);
+}
+
+.sass .color-in-bar {
+    background: linear-gradient(#fff 0%, #D2527F 100%);
+}
+
+.git .color-in-bar {
+    background: linear-gradient(#fff 0%, #000 100%); 
+}
+
+.heroku .color-in-bar {
+    background: linear-gradient(#fff 0%, #9b59b6 100%);
+}
+
+.bootstrap .color-in-bar {
+    background: linear-gradient(#fff 0%, #8e44ad 100%);
+}
+
+.nodejs .color-in-bar {
+    background: linear-gradient(#fff 0%, #27ae60 100%);
+}
+
 .color-in-bar {
     width: 0%;
+    height: 16px;
 }
 
 .color-in-bar-now {
-    height: 16px;
     transition: width 1.5s;
 }
 
@@ -550,42 +586,34 @@ nav {
 
 .css .color-in-bar-now {
     width: 85%;
-    background: linear-gradient(#fff 0%, dodgerblue 100%);
 }
 
 .js .color-in-bar-now {
     width: 85%;
-    background: linear-gradient(#fff 0%, #f1c40f 100%);
 }
 
 .jquery .color-in-bar-now {
     width: 80%;
-    background: linear-gradient(#fff 0%, #3498db 100%);
 }
 
 .sass .color-in-bar-now {
     width: 70%;
-    background: linear-gradient(#fff 0%, #D2527F 100%);
 }
 
 .git .color-in-bar-now {
     width: 70%;
-    background: linear-gradient(#fff 0%, #000 100%); 
 }
 
 .heroku .color-in-bar-now {
     width: 70%;
-    background: linear-gradient(#fff 0%, #9b59b6 100%);
 }
 
 .bootstrap .color-in-bar-now {
     width: 85%;
-    background: linear-gradient(#fff 0%, #8e44ad 100%);
 }
 
 .nodejs .color-in-bar-now {
     width: 40%;
-    background: linear-gradient(#fff 0%, #27ae60 100%);
 }
 
 /* --------------------------------------- */
