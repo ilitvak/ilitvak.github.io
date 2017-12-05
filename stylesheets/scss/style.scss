@@ -2,11 +2,8 @@
 /* Color Scheme For Site */
 /* --------------------------------------- */
 
-/* 
-
-    Blue color =  #2980b9; 
-
-*/
+ $primary-color: #2980b9;
+ $main-font : "Montserrat";
 
 /* --------------------------------------- */
 /* Basic Setup */
@@ -22,10 +19,11 @@
     transition: all .5s;
 }
 
-body, html {
+body, 
+html {
     width: 100%;
     height: 100%;
-    font-family: 'Rubik', sans-serif;
+    font-family: $main-font;
 }
 
 .row {   
@@ -47,9 +45,9 @@ a {
     cursor: pointer;
 }
 
-h1, h2, h3 {
-    font-family: "Montserrat";
-    font-size: 16px;
+h1, 
+h2, 
+h3 {
     text-transform: uppercase;
     text-align: center;
 }
@@ -59,16 +57,17 @@ h1 {
     line-height: 28px;
 }
 
-h2 {
-    font-size: 24px;
+h2 { font-size: 24px; }
+
+h3 { 
+    margin-top: 5px; 
+    font-size: 16px;
 }
 
 h3 {
-    margin-top: 5px;
-}
-
-h3 a:hover {
-    color: #2980b9;
+    a:hover {
+        color: $primary-color;
+    }
 }
 
 .title {
@@ -94,19 +93,18 @@ img {
 
 .intro {
     display: inline-block;
-}
 
-.intro h1, 
-.intro p {
-    display: inline-block;
-}
+    h1 { 
+        display: inline-block; 
+    }
 
-.intro p {
-    padding-left: 5px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "Montserrat";
-    color: #000;
+    p { 
+        display: inline-block; 
+        padding-left: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000;
+    }
 }
 
 /* --------------------------------------- */
@@ -125,109 +123,264 @@ nav {
     display: none;
 }
 
-.nav-list li {
-    display: inline-block;
-    margin-left: 10px;
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    list-style-type: none;
-    font-weight: bold;
-}
+.nav-list {
+    li {  
+        display: inline-block;
+        margin-left: 10px;
+        text-transform: uppercase;
+        list-style-type: none;
+        font-weight: bold;
+    }
 
-.nav-list li:first-child {
-    margin-left: 0;
-}
+    li:first-child {
+        margin-left: 0;
+    }
 
-.nav-list li a { 
-    position: relative;
-    color: #000;
-}
-
-.nav-list li a:hover {
-    color: #2980b9;
-}
-
-.nav-list li a,
-.nav-list li a::after {
-    transition: all .5s;
-}
-
-.nav-list li a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    border-bottom: 2px solid #2980b9;
-    margin-top: 20px;
-    left: 0;
-    right: 0;
-}
-
-.nav-list li a:hover::after {
-    width: 30px;
+    li {
+        a {
+            position: relative;
+            color: #000;
+            
+            &:hover {
+                color: $primary-color;
+            }
+    
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                border-bottom: 2px solid $primary-color;
+                margin-top: 20px;
+                left: 0;
+                right: 0;
+                transition: all .5s;
+            }
+    
+            &:hover::after {
+                width: 30px;
+            }
+        }
+    }
 }
 
 /* --------------------------------------- */
-/* Grid Container */
+/* Grid Container for Projects */
 /* --------------------------------------- */
 
 .projects-grid {
     margin: 8% auto 0;
     width: 90%;
-}
 
-.projects-grid .title {
-    margin-bottom: 20px;
-    text-align: center;
-}
+    .title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-.projects-grid h1 {
-    display: inline-block;
-    font-family: "Montserrat";
-}
+    h1 {
+        display: inline-block;
+    }
 
-.grid-1 {
-    margin-bottom: 4%;
-}
+    .grid-1 {
+        margin-bottom: 4%;
 
-.grid-1-of-3 {
-    position: relative;
-    width: 31.33%;
-    float: left;
-    overflow: hidden;
-}
+        .grid-1-of-3 {
+            position: relative;
+            width: 31.33%;
+            float: left;
+            overflow: hidden;
 
-.grid-2-of-3 {
-    position: relative;
-    width: 65.556%;
-    float: right;
-}
+            &:first-child {
+                margin-left: 0;
+            }
 
-.grid-1-of-3:first-child,
-.grid-1-of-3:nth-child(2) {
-    margin-right: 3.005%;
-}
+            &:first-child,
+            &:nth-child(2) {
+                margin-right: 3.005%;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover h3 a {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .grid-2 {
+        width: 31.33%;
+        float: left;
+    
+        .box-cont {
+            position: relative;
+            width: 100%;
+
+            &:first-child {
+                margin-bottom: 4%;
+            }
+
+            &:hover a {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .grid-2-of-3 {
+        position: relative;
+        width: 65.556%;
+        float: right;
+    
+        .box-cont {
+            overflow: hidden;
+
+            .big-box {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                
+                &:hover {
+                    a:first-child {
+                        transform: scale(1.05);
+                    }
+                }
+                
+                .box-overlay.big-overlay {
+                    height: 100%;
+
+                    .text-overlay {
+                        p {
+                            left: -390px;
+                        }
+                    }
+
+                    &:hover {
+                        .text-overlay {
+                            h3 {
+                                left: 0;
+                            }
+    
+                            p {
+                                transition-delay: .5s;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* --------------------------------------- */
+    /* grid [global] css selectors  */
+    /* --------------------------------------- */
+
+    .box-1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    
+        &:hover img {
+            transform: scale(1.05);
+        }
+    }
+
+    .box-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background-color: #000;
+        cursor: pointer;
+        
+        &:hover {
+            opacity: .8;
+            transition: opacity .5s;
+        } 
+
+        .text-overlay {
+            overflow: hidden;
+
+            h3 {
+                position: relative;
+                padding: 10px 0 0 20px;
+                left: -200px;
+                font-family: $main-font;
+                color: #fff;
+                text-align: left;
+            }
+
+            p {
+                position: relative;
+                padding: 0 20px 0;
+                margin-top: 10px;
+                left: -450px;
+                font-size: 13px;
+                color: #fff;
+                text-align: left;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    border-bottom: 2px solid #2980b9;
+                    margin-top: 10px;
+                    transition: width .5s;
+                }
+            }  
+        } 
+
+        
+        &:hover {
+            .text-overlay {
+                h3 {
+                    left: 0;
+                }
+
+                p {
+                    transition-delay: .5s;
+                    left: 0;
+
+                    &::after {
+                        transition-delay: 1.2s;
+                        width: 40px;
+                    }
+                }
+            }
+        } 
+    }
+} 
+
+/* --------------------------------------- */
+/* Grid Container for Skills */
+/* --------------------------------------- */
 
 .grid-row {
     margin-bottom: 5%;
-}
 
-.grid-row:last-child {
-    margin-bottom: 0;
-}
+    .grid-row:last-child {
+        margin-bottom: 0;
+    }
 
-.grid-3-row-container {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-flow: row nowrap;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-}
+    .grid-3-row-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-flow: row nowrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
 
-.grid-3 {
-    width: 100%;
+        .grid-3 {
+            width: 100%;
+        }
+    }
 }
 
 .grid-5 {
@@ -240,136 +393,6 @@ nav {
 
 .grid-5:nth-child(5), .grid-5:last-child {
     margin-bottom: 0;
-}
-
-.box-1 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.grid-1-of-3:first-child {
-    margin-left: 0;
-}
-
-
-.grid-1-of-3:last-child {
-    margin-right: 0;
-}
-
-.big-box {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.grid-2 {
-    width: 31.33%;
-    float: left;
-}
-
-.grid-2 .box-cont {
-    width: 100%;
-}
-
-.grid-2 .box-cont:first-child {
-    margin-bottom: 4%;
-}
-
-.grid-2 .box-cont {
-    position: relative;
-}
-
-/* --------------------------------------- */
-/* Grid Photos */
-/* --------------------------------------- */   
-
-.grid-1-of-3:hover h3 a, .box-cont:hover a {
-    color: #2980b9;
-}
-
-.box-1:hover img, .box-2:hover {
-    transform: scale(1.05);
-}
-
-.box-2 {
-    position: absolute;
-    width: 100%;
-    top: 65px;
-    transform: scale(1.35);
-}
-
-.box-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity .5s;
-    background-color: #000;
-    cursor: pointer;    
-}
-
-.box-overlay:hover {
-    opacity: .8;
-    transition: opacity .5s;
-}
-
-.text-overlay {
-    overflow: hidden;
-}
-
-.text-overlay h3 {
-    position: relative;
-    padding: 10px 0 0 20px;
-    left: -200px;
-    font-family: "Montserrat";
-    color: #fff;
-    text-align: left;
-}
-
-.text-overlay p {
-    position: relative;
-    padding: 0 20px 0;
-    margin-top: 10px;
-    left: -450px;
-    font-size: 13px;
-    color: #fff;
-    text-align: left;
-}
-
-.big-overlay .text-overlay p {
-    left: -390px;
-}
-
-.box-overlay:hover .text-overlay h3 {
-    left: 0;
-}
-
-.box-overlay:hover .text-overlay p {
-    transition-delay: .5s;
-    left: 0;
-}
-
-.text-overlay p::after {
-    content: "";
-    display: block;
-    width: 0;
-    border-bottom: 2px solid #2980b9;
-    margin-top: 10px;
-    transition: width .5s;
-}
-
-.box-overlay:hover .text-overlay p::after {
-    transition-delay: 1.2s;
-    width: 40px;
-}
-
-.big-overlay {
-    height: 100%;
 }
 
 /* --------------------------------------- */
@@ -601,7 +624,7 @@ nav {
 }
 
 .sass .color-in-bar-now {
-    width: 70%;
+    width: 85%;
 }
 
 .git .color-in-bar-now {
@@ -812,7 +835,7 @@ form #phone-input:focus ~ .animated-label, form #message-input:focus ~ .animated
 }
 
 label {
-    font-family: "Montserrat";
+    font-family: $main-font;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -888,7 +911,7 @@ i {
     height:100%;
     margin-left: 10px;
     vertical-align: middle;
-    font-family: "Montserrat";
+    font-family: $main-font;
     font-size: 15px;
 }
 
