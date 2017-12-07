@@ -984,7 +984,6 @@ footer {
     }
 }   
 
-
 /* --------------------------------------- */
 /* Media Queries */
 /* --------------------------------------- */ 
@@ -992,19 +991,19 @@ footer {
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px){
     
-    .skills .sass img {
-        width: 65px;
-    }
-    
-    .skills .heroku img {
-        width: 60px;
-    }
-    
-    .skills .bootstrap img {
-        width: 55px;
-    }
-    
+    .skills {
+        .sass img {
+            width: 65px;
+        }
 
+        .heroku img {
+            width: 60px;
+        }
+
+        .bootstrap img {
+            width: 55px;
+        }
+    }
 }
 
 /* Small tablet to big tablet: from 763px to 1023px */
@@ -1015,177 +1014,231 @@ footer {
         line-height: 1.56vw;
     }
     
-    .skills .grid-3.sass img,
-    .skills .grid-3.bootstrap img,
-    .skills .grid-3.heroku img {
-        width: 50px;
+    .skills .grid-3 {
+        .sass img, 
+        .bootstrap img, 
+        .heroku img {
+            width: 50px;
+        }
     }
     
     section.about-me {
         width: 100%;
     }
-    
-    .form-container {
-        width: 50%;
-        margin-right: 10%;
+
+    footer {
+        .form-container {
+            width: 50%;
+            margin-right: 10%;
+
+            .footer-info h3 {
+                font-size: 18px;
+            }
+
+            form {
+                .animated-label, .submit {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .social-icons-container {
+            padding-left: 0;
+
+            .title h3 {
+                font-size: 18px;
+            }
+        }
     }
-    
-    .animated-label, .submit {
-        font-size: 14px;
-    }
-    
-    footer .footer-info h3 {
-        font-size: 18px;
-    }
-    
-    .social-icons-container {
-        padding-left: 0;
-    }
-    
-    .social-icons-container .title h3 {
-        font-size: 18px;
-    }
-    
-    
 }
 
 /* Small phones to small tablets from 481px to 767px */
 @media only screen and (max-width: 767px){
-    
-    header .intro {
-        float: left;
+
+    header.header-main {
+        .intro {
+            float: left;
+
+            p {
+                display: block;
+                padding-left: 0;
+            }
+        }
+
+        nav {
+            position: relative;
+            margin-top: 1%;
+            float: right;
+
+            .nav-list-container {
+                .nav-list {
+                    li {
+                        display: block;
+                        margin: 0 0 15% 0;
+                        font-size: 16px;
+                        line-height: 16px;
+
+                        a::after {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
-    
-    header .intro p {
-        display: block;
-        padding-left: 0;
+
+    .projects-grid {
+        .grid-1 {
+            .grid-1-of-3 {
+                width: 100%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .grid-2, .grid-2-of-3 {
+            width: 100%;
+        }
+
+        .grid-2 {
+            .box-cont:first-child, 
+            .box-cont {
+               margin-bottom: 5%;
+           }
+        }
     }
-    
-    header nav {
-        position: relative;
-        margin-top: 1%;
-        float: right;
+
+    .skills {
+        .grid-3-row-container {
+            display: block;
+
+            .grid-3 {
+                margin-bottom: 5%;
+
+                span.icons {
+                    font-size: 30px;
+                }
+
+                .bar {
+                    width: 100%;
+                }
+
+                &.sass img,
+                &.heroku img {
+                    width: 40px;
+                }
+
+                &.bootstrap img {
+                    width: 30px;
+                }
+            }
+        }
     }
-    
-    header .nav-list li {
-        display: block;
-        margin: 0 0 15% 0;
-        font-size: 16px;
-        line-height: 16px;
+
+    section.about-me {
+        .progress-bar {
+            li {
+                font-size: 13px;
+                line-height: 13px;
+
+                &::before {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                }
+
+                &::after {
+                    top: 20px;
+                }
+            }
+        }
     }
-    
-    .nav-list li a::after {
-        margin-top: 15px;
+
+    footer {
+        form {
+            .form-container {
+                margin-right: 0;
+
+                h3 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .form-container, 
+        .social-icons-container {
+            width: 100%;
+            float: none;
+        }
+
+        .social-icons-container {
+            .title {
+                h3 {
+                    text-align: center;
+                }
+            }
+
+            .social-icons-grid {
+                ul {
+                    li {
+                        width: 40%;
+                        text-align: center;
+                        float: left;
+
+                        &:first-child, 
+                        &:nth-child(3) {
+                            margin-right: 20%;
+                        }
+                    }
+                }
+            }
+        }
     }
-    
-    .grid-1-of-3 {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-    
-    .grid-2, .grid-2-of-3 {
-        width: 100%;
-    }
-    
-    .grid-2 .box-cont:first-child, 
-    .grid-2 .box-cont {
-        margin-bottom: 5%;
-    }
-    
-    
-    .skills .grid-3-row-container {
-        display: block;
-    }
-    
-    .skills .grid-3 {
-        margin-bottom: 5%;
-    }
-    
-    .skills .grid-3 .icons {
-        font-size: 30px;
-    }
-    
-    .skills .grid-3 .bar {
-        width: 100%;
-    }
-    
-    .skills .grid-3.sass img,
-    .skills .grid-3.heroku img {
-        width: 40px;
-    }
-    
-    .skills .grid-3.bootstrap img {
-        width: 30px;
-    }
-    
-    .progress-bar li {
-        font-size: 13px;
-        line-height: 13px;
-    }
-    
-    .progress-bar li::before {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-    }
-    
-    .progress-bar li::after {
-        top: 20px;
-    }
-    
-    .form-container {
-        margin-right: 0;
-    }
-    
-    .form-container, .social-icons-container {
-        width: 100%;
-        float: none;
-    }
-    
-    footer .form-container h3 {
-        font-size: 16px;
-    }
-    
-    footer .social-icons-container .title h3 {
-        text-align: center;
-    }
-    
-    footer .social-icons-container li {
-        width: 40%;
-        text-align: center;
-        float: left;
-    }
-    
-    footer .social-icons-container li:first-child,
-    footer .social-icons-container li:nth-child(3) {
-        margin-right: 20%;
-    }
+
 }
 
 /* Small phones from 0 to 480px */
 @media only screen and (max-width: 480px){
     
-    .header-main {
+    header.header-main {
         margin: 5% auto 0;
-    }
-    
-    header .nav-list li {
-        font-size: 14px;
-        line-height: 14px;
-    }
-    
-    .grid-1-of-3 {
-        margin-bottom: 7%;
-    }
-    
-    .grid-2 .box-cont:first-child, .grid-2 .box-cont {
-        margin-bottom: 7%;
-    }
-    
-    .social-icons-grid ul li .i-text {
-        display: block;
-        margin-left: 0;
-    }
-    
-}
 
+        .nav-list-container {
+            .nav-list {
+                li {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+    .projects-grid {
+        .grid-1 {
+            .grid-1-of-3 {
+                margin-bottom: 7%;
+            }
+        }
+
+        .grid-2 {
+            .box-cont:first-child, .grid-2 .box-cont {
+                margin-bottom: 7%;
+            }
+        }
+    }
+
+    footer {
+        .social-icons-container {
+            .social-icons-grid {
+                ul {
+                    li {
+                        .i-text {
+                            display: block;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
