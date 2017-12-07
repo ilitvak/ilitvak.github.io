@@ -43,7 +43,6 @@ $(window).scroll(function(){
 
 /************************************/
 
-
 $(window).scroll(function(){
 
     // checks the scroll top against the bottom position of the skills section
@@ -73,12 +72,12 @@ $(window).scroll(function(){
         var f = setTimeout(function(){
             $(".progress-bar li.grid-5:first-child").next().next().next().next().next().addClass("active");
         },5500)
-        
-    } else if ($(window).scrollTop() <= 966 ) {
-        $(".about-me-grid-container").removeClass("progress-bar-animation");
-        
-        $(".progress-bar li").siblings().removeClass("active");
     }
+    // } else if ($(window).scrollTop() <= 966 ) {
+    //     $(".about-me-grid-container").removeClass("progress-bar-animation");
+        
+    //     $(".progress-bar li").siblings().removeClass("active");
+    // }
     
 });
 /************************************/
