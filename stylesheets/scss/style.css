@@ -270,189 +270,133 @@ nav {
   position: relative;
   width: 90%;
   margin: 8% auto 0; }
-
-.skills .title h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center; }
-
-.skills h3 {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center; }
-
-.credential-list li img {
-  width: 80px;
-  vertical-align: bottom; }
-
-.icons {
-  margin-right: 2px;
-  font-size: 4.5vw;
-  color: #fff; }
-
-.html span, .html h3 {
-  color: #e67e22; }
-
-.css {
-  text-align: center; }
-
-.css span, .css h3 {
-  color: #2980b9; }
-
-.js {
-  text-align: right; }
-
-.js span, .js h3 {
-  color: #f1c40f; }
-
-.js span {
-  margin-right: 6px; }
-
-.jquery span, .jquery h3 {
-  color: #3498db; }
-
-.sass {
-  text-align: center; }
-
-.sass span, .sass h3 {
-  color: #D2527F; }
-
-.sass img {
-  display: inline-block;
-  width: 80px;
-  margin: 0 auto; }
-
-.git {
-  text-align: right; }
-
-.git .icons, .git h3 {
-  color: #000; }
-
-.heroku img {
-  display: inline-block;
-  width: 70px; }
-
-.heroku h3 {
-  color: #8e44ad; }
-
-.bootstrap {
-  text-align: center; }
-
-.bootstrap img {
-  display: inline-block;
-  width: 65px;
-  margin: 0 auto; }
-
-.bootstrap h3 {
-  color: #8e44ad; }
-
-.nodejs {
-  text-align: right; }
-
-.nodejs span, .nodejs h3 {
-  color: #27ae60; }
-
-.bar {
-  width: 80%;
-  height: 20px;
-  border: 2px solid #000;
-  border-radius: 4px;
-  margin: 10px auto 0;
-  text-align: center; }
-
-.grid-3 .bar-one {
-  margin-left: 0; }
-
-.grid-3 .bar-three {
-  margin-right: 0; }
-
-.html .bar {
-  border-color: #e67e22; }
-
-.css .bar {
-  border-color: #2980b9; }
-
-.js .bar {
-  border-color: #f1c40f; }
-
-.jquery .bar {
-  border-color: #3498db; }
-
-.sass .bar {
-  border-color: #D2527F; }
-
-.heroku .bar {
-  border-color: #8e44ad; }
-
-.bootstrap .bar {
-  border-color: #8e44ad; }
-
-.nodejs .bar {
-  border-color: #27ae60; }
-
-.html .color-in-bar {
-  background: linear-gradient(#fff 0%, #e67e22 100%); }
-
-.css .color-in-bar {
-  background: linear-gradient(#fff 0%, dodgerblue 100%); }
-
-.js .color-in-bar {
-  background: linear-gradient(#fff 0%, #f1c40f 100%); }
-
-.jquery .color-in-bar {
-  background: linear-gradient(#fff 0%, #3498db 100%); }
-
-.sass .color-in-bar {
-  background: linear-gradient(#fff 0%, #D2527F 100%); }
-
-.git .color-in-bar {
-  background: linear-gradient(#fff 0%, #000 100%); }
-
-.heroku .color-in-bar {
-  background: linear-gradient(#fff 0%, #9b59b6 100%); }
-
-.bootstrap .color-in-bar {
-  background: linear-gradient(#fff 0%, #8e44ad 100%); }
-
-.nodejs .color-in-bar {
-  background: linear-gradient(#fff 0%, #27ae60 100%); }
-
-.color-in-bar {
-  width: 0%;
-  height: 16px; }
-
-.color-in-bar-now {
-  transition: width 1.5s; }
-
-.html .color-in-bar-now {
-  width: 90%;
-  background: linear-gradient(#fff 0%, #e67e22 100%); }
-
-.css .color-in-bar-now {
-  width: 85%; }
-
-.js .color-in-bar-now {
-  width: 85%; }
-
-.jquery .color-in-bar-now {
-  width: 80%; }
-
-.sass .color-in-bar-now {
-  width: 85%; }
-
-.git .color-in-bar-now {
-  width: 70%; }
-
-.heroku .color-in-bar-now {
-  width: 70%; }
-
-.bootstrap .color-in-bar-now {
-  width: 85%; }
-
-.nodejs .color-in-bar-now {
-  width: 40%; }
+  .skills .title h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .skills h3 {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center; }
+  .skills .grid-3-row-container .grid-3.html span, .skills .grid-3-row-container .grid-3.html h3 {
+    color: #e67e22; }
+  .skills .grid-3-row-container .grid-3.html .bar {
+    border-color: #e67e22; }
+    .skills .grid-3-row-container .grid-3.html .bar .color-in-bar {
+      background: linear-gradient(#fff 0%, #e67e22 100%); }
+      .skills .grid-3-row-container .grid-3.html .bar .color-in-bar.color-in-bar-now {
+        width: 90%; }
+  .skills .grid-3-row-container .grid-3.css {
+    text-align: center; }
+    .skills .grid-3-row-container .grid-3.css span, .skills .grid-3-row-container .grid-3.css h3 {
+      color: #2980b9; }
+    .skills .grid-3-row-container .grid-3.css .bar {
+      border-color: #2980b9; }
+      .skills .grid-3-row-container .grid-3.css .bar .color-in-bar {
+        background: linear-gradient(#fff 0%, dodgerblue 100%); }
+        .skills .grid-3-row-container .grid-3.css .bar .color-in-bar.color-in-bar-now {
+          width: 85%; }
+  .skills .grid-3-row-container .grid-3 .icons {
+    margin-right: 2px;
+    font-size: 4.5vw;
+    color: #fff; }
+  .skills .grid-3-row-container .grid-3.js {
+    text-align: right; }
+    .skills .grid-3-row-container .grid-3.js span, .skills .grid-3-row-container .grid-3.js h3 {
+      color: #f1c40f; }
+    .skills .grid-3-row-container .grid-3.js span {
+      margin-right: 6px; }
+    .skills .grid-3-row-container .grid-3.js .bar {
+      border-color: #f1c40f; }
+      .skills .grid-3-row-container .grid-3.js .bar .color-in-bar {
+        background: linear-gradient(#fff 0%, #f1c40f 100%); }
+        .skills .grid-3-row-container .grid-3.js .bar .color-in-bar.color-in-bar-now {
+          width: 85%; }
+  .skills .grid-3-row-container .grid-3.jquery span, .skills .grid-3-row-container .grid-3.jquery h3 {
+    color: #3498db; }
+  .skills .grid-3-row-container .grid-3.jquery .bar {
+    border-color: #3498db; }
+    .skills .grid-3-row-container .grid-3.jquery .bar .color-in-bar {
+      background: linear-gradient(#fff 0%, #3498db 100%); }
+      .skills .grid-3-row-container .grid-3.jquery .bar .color-in-bar.color-in-bar-now {
+        width: 80%; }
+  .skills .grid-3-row-container .grid-3.sass {
+    text-align: center; }
+    .skills .grid-3-row-container .grid-3.sass span, .skills .grid-3-row-container .grid-3.sass h3 {
+      color: #D2527F; }
+    .skills .grid-3-row-container .grid-3.sass img {
+      display: inline-block;
+      width: 80px;
+      margin: 0 auto; }
+    .skills .grid-3-row-container .grid-3.sass .bar {
+      border-color: #D2527F; }
+      .skills .grid-3-row-container .grid-3.sass .bar .color-in-bar {
+        background: linear-gradient(#fff 0%, #D2527F 100%); }
+        .skills .grid-3-row-container .grid-3.sass .bar .color-in-bar.color-in-bar-now {
+          width: 85%; }
+  .skills .grid-3-row-container .grid-3.git {
+    text-align: right; }
+    .skills .grid-3-row-container .grid-3.git span, .skills .grid-3-row-container .grid-3.git h3 {
+      color: #000; }
+    .skills .grid-3-row-container .grid-3.git .bar {
+      border-color: #000; }
+      .skills .grid-3-row-container .grid-3.git .bar .color-in-bar {
+        background: linear-gradient(#fff 0%, #000 100%); }
+        .skills .grid-3-row-container .grid-3.git .bar .color-in-bar.color-in-bar-now {
+          width: 70%; }
+  .skills .grid-3-row-container .grid-3.heroku img {
+    display: inline-block;
+    width: 70px; }
+  .skills .grid-3-row-container .grid-3.heroku h3 {
+    color: #8e44ad; }
+  .skills .grid-3-row-container .grid-3.heroku .bar {
+    border-color: #8e44ad; }
+    .skills .grid-3-row-container .grid-3.heroku .bar .color-in-bar {
+      background: linear-gradient(#fff 0%, #9b59b6 100%); }
+      .skills .grid-3-row-container .grid-3.heroku .bar .color-in-bar.color-in-bar-now {
+        width: 70%; }
+  .skills .grid-3-row-container .grid-3.bootstrap {
+    text-align: center; }
+    .skills .grid-3-row-container .grid-3.bootstrap img {
+      display: inline-block;
+      width: 65px;
+      margin: 0 auto; }
+    .skills .grid-3-row-container .grid-3.bootstrap h3 {
+      color: #8e44ad; }
+    .skills .grid-3-row-container .grid-3.bootstrap .bar {
+      border-color: #8e44ad; }
+      .skills .grid-3-row-container .grid-3.bootstrap .bar .color-in-bar {
+        background: linear-gradient(#fff 0%, #8e44ad 100%); }
+        .skills .grid-3-row-container .grid-3.bootstrap .bar .color-in-bar.color-in-bar-now {
+          width: 85%; }
+  .skills .grid-3-row-container .grid-3.nodejs {
+    text-align: right; }
+    .skills .grid-3-row-container .grid-3.nodejs span, .skills .grid-3-row-container .grid-3.nodejs h3 {
+      color: #27ae60; }
+    .skills .grid-3-row-container .grid-3.nodejs .bar {
+      border-color: #27ae60; }
+    .skills .grid-3-row-container .grid-3.nodejs .color-in-bar {
+      background: linear-gradient(#fff 0%, #27ae60 100%); }
+      .skills .grid-3-row-container .grid-3.nodejs .color-in-bar.color-in-bar-now {
+        width: 40%; }
+  .skills .grid-3-row-container .grid-3 .bar {
+    width: 80%;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin: 10px auto 0;
+    text-align: center; }
+    .skills .grid-3-row-container .grid-3 .bar.bar-one {
+      margin-left: 0; }
+    .skills .grid-3-row-container .grid-3 .bar.bar-three {
+      margin-right: 0; }
+    .skills .grid-3-row-container .grid-3 .bar .color-in-bar {
+      width: 0%;
+      height: 16px; }
+      .skills .grid-3-row-container .grid-3 .bar .color-in-bar.color-in-bar-now {
+        transition: width 1.5s; }
 
 /* --------------------------------------- */
 /* About Me Section */

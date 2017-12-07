@@ -401,244 +401,251 @@ nav {
     position: relative;
     width: 90%;
     margin: 8% auto 0;
-}
 
-.skills .title h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+    .title h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-.skills h3 {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-}
+    h3 {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
 
-.credential-list li img {
-    width: 80px;
-    vertical-align: bottom;
-}
+    .grid-3-row-container {
+        .grid-3 {
+            &.html {
+                span, h3 {
+                    color: #e67e22;
+                }
 
-.icons {
-    margin-right: 2px;
-    font-size: 4.5vw;
-    color: #fff;
-}
+                .bar {
+                    border-color: #e67e22;
 
-.html span, .html h3 {
-    color: #e67e22;
-}
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, #e67e22 100%);
 
-.css {
-    text-align: center;
-}
+                        &.color-in-bar-now{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
 
-.css span, .css h3 {
-    color: #2980b9;
-}
+            &.css {
+                text-align: center;
 
-.js {
-    text-align: right;
-}
+                span, h3 {
+                    color: #2980b9;
+                }
 
-.js span, .js h3 {
-    color: #f1c40f;
-}
+                .bar {
+                    border-color: #2980b9;
 
-.js span {
-    margin-right: 6px;
-}
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, dodgerblue 100%);
 
-.jquery span, .jquery h3 {
-    color:#3498db;
-}
+                        &.color-in-bar-now {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
 
-.sass {
-    text-align: center;
-}
+            .icons {
+                margin-right: 2px;
+                font-size: 4.5vw;
+                color: #fff;
+            }
 
-.sass span, .sass h3 {
-    color: #D2527F;
-}
+            &.js {
+                text-align: right;
 
-.sass img {
-    display: inline-block;
-    width: 80px;
-    margin: 0 auto;
-}
+                span, h3 {
+                    color: #f1c40f;
+                }
 
-.git {
-    text-align: right;
-}
+                span {
+                    margin-right: 6px;
+                }
 
-.git .icons, .git h3 {
-    color: #000;
-}
+                .bar {
+                    border-color: #f1c40f;
 
-.heroku img {
-    display: inline-block;
-    width: 70px;
-}
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, #f1c40f 100%);
 
-.heroku h3 {
-    color: #8e44ad;
-}
+                        &.color-in-bar-now {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
 
-.bootstrap {
-    text-align: center;
-}
+            &.jquery {
+                span, h3 {
+                    color:#3498db;
+                }
 
-.bootstrap img {
-    display: inline-block;
-    width: 65px;
-    margin: 0 auto;
-    
-}
+                .bar {
+                    border-color: #3498db;
 
-.bootstrap h3 {
-    color: #8e44ad;
-}
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, #3498db 100%);
 
-.nodejs {
-    text-align: right;
-}
+                        &.color-in-bar-now {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
 
-.nodejs span, .nodejs h3 {
-    color: #27ae60;
-}
+            &.sass {
+                text-align: center;
 
-.bar {
-    width: 80%;
-    height: 20px;
-    border: 2px solid #000;
-    border-radius: 4px;
-    margin: 10px auto 0;
-    text-align: center;
-}
+                span, h3 {
+                    color: #D2527F;
+                }
 
-.grid-3 .bar-one {
-    margin-left: 0;
-}
+                img {
+                    display: inline-block;
+                    width: 80px;
+                    margin: 0 auto;
+                }
 
-.grid-3 .bar-three {
-    margin-right: 0;
-}
+                .bar {
+                    border-color: #D2527F;
 
-.html .bar {
-    border-color: #e67e22;
-}
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, #D2527F 100%);
 
-.css .bar {
-    border-color: #2980b9;
-}
+                        &.color-in-bar-now {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
 
-.js .bar {
-    border-color: #f1c40f;
-}
+            &.git {
+                text-align: right;
 
-.jquery .bar {
-    border-color: #3498db;
-}
+                span, h3 {
+                    color: #000;
+                }
 
-.sass .bar {
-    border-color: #D2527F;
-}
+                .bar {
+                    border-color: #000;
+                    
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, #000 100%); 
 
-.heroku .bar {
-    border-color: #8e44ad;
-}
+                        &.color-in-bar-now {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
 
-.bootstrap .bar {
-    border-color: #8e44ad;
-}
+            &.heroku {
+                img {
+                    display: inline-block;
+                    width: 70px;
+                }
 
-.nodejs .bar {
-    border-color: #27ae60;
-}
+                h3 {
+                    color: #8e44ad;
+                }
 
-.html .color-in-bar {
-    background: linear-gradient(#fff 0%, #e67e22 100%);
-}
+                .bar {
+                    border-color: #8e44ad;
 
-.css .color-in-bar {
-    background: linear-gradient(#fff 0%, dodgerblue 100%);
-}
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, #9b59b6 100%);
 
-.js .color-in-bar {
-    background: linear-gradient(#fff 0%, #f1c40f 100%);
-}
+                        &.color-in-bar-now {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
 
-.jquery .color-in-bar {
-    background: linear-gradient(#fff 0%, #3498db 100%);
-}
+            &.bootstrap {
+                text-align: center;
 
-.sass .color-in-bar {
-    background: linear-gradient(#fff 0%, #D2527F 100%);
-}
+                img {
+                    display: inline-block;
+                    width: 65px;
+                    margin: 0 auto;
+                }
 
-.git .color-in-bar {
-    background: linear-gradient(#fff 0%, #000 100%); 
-}
+                h3 {
+                    color: #8e44ad;
+                }
 
-.heroku .color-in-bar {
-    background: linear-gradient(#fff 0%, #9b59b6 100%);
-}
+                .bar {
+                    border-color: #8e44ad;
 
-.bootstrap .color-in-bar {
-    background: linear-gradient(#fff 0%, #8e44ad 100%);
-}
+                    .color-in-bar {
+                        background: linear-gradient(#fff 0%, #8e44ad 100%);
 
-.nodejs .color-in-bar {
-    background: linear-gradient(#fff 0%, #27ae60 100%);
-}
+                        &.color-in-bar-now {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
 
-.color-in-bar {
-    width: 0%;
-    height: 16px;
-}
+            &.nodejs {
+                text-align: right;
 
-.color-in-bar-now {
-    transition: width 1.5s;
-}
+                span, h3 {
+                    color: #27ae60;
+                }
 
-.html .color-in-bar-now{
-    width: 90%;
-    background: linear-gradient(#fff 0%, #e67e22 100%);
-}
+                .bar {
+                    border-color: #27ae60;
+                }
 
-.css .color-in-bar-now {
-    width: 85%;
-}
+                .color-in-bar {
+                    background: linear-gradient(#fff 0%, #27ae60 100%);
 
-.js .color-in-bar-now {
-    width: 85%;
-}
+                    &.color-in-bar-now {
+                        width: 40%;
+                    }
+                }
+            }
 
-.jquery .color-in-bar-now {
-    width: 80%;
-}
+            .bar {
+                width: 80%;
+                height: 20px;
+                border: 2px solid #000;
+                border-radius: 4px;
+                margin: 10px auto 0;
+                text-align: center;
 
-.sass .color-in-bar-now {
-    width: 85%;
-}
+                &.bar-one {
+                    margin-left: 0;
+                }
 
-.git .color-in-bar-now {
-    width: 70%;
-}
+                &.bar-three {
+                    margin-right: 0;
+                }
+                
+                .color-in-bar {
+                    width: 0%;
+                    height: 16px;
 
-.heroku .color-in-bar-now {
-    width: 70%;
-}
-
-.bootstrap .color-in-bar-now {
-    width: 85%;
-}
-
-.nodejs .color-in-bar-now {
-    width: 40%;
+                    &.color-in-bar-now {
+                        transition: width 1.5s;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* --------------------------------------- */
