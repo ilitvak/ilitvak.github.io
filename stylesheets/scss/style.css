@@ -253,16 +253,6 @@ nav {
     .grid-row .grid-3-row-container .grid-3 {
       width: 100%; }
 
-.grid-5 {
-  position: relative;
-  display: inline-block;
-  width: 20%;
-  margin-bottom: 60px;
-  vertical-align: bottom; }
-
-.grid-5:nth-child(5), .grid-5:last-child {
-  margin-bottom: 0; }
-
 /* --------------------------------------- */
 /* Skills Section */
 /* --------------------------------------- */
@@ -405,85 +395,73 @@ section.about-me {
   width: 100%;
   margin: 8% auto 0;
   overflow: hidden; }
-
-.timeline {
-  margin: 0 auto; }
-
-.progress-bar li {
-  position: relative;
-  float: left;
-  width: 45%;
-  list-style-type: none;
-  text-align: center; }
-
-.progress-bar li::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #fff;
-  z-index: 10; }
-
-.active {
-  color: #27ae60; }
-
-.progress-bar li.active::before {
-  border-color: #27ae60; }
-
-.progress-bar li:first-child::before {
-  content: "1"; }
-
-.progress-bar li:nth-child(2)::before {
-  content: "2"; }
-
-.progress-bar li:nth-child(3)::before {
-  content: "3"; }
-
-.progress-bar li:nth-child(4)::before {
-  content: "4"; }
-
-.progress-bar li:nth-child(5)::before {
-  content: "5"; }
-
-.progress-bar li:last-child::before {
-  content: "6"; }
-
-.progress-bar li::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  top: 25px;
-  left: -50%;
-  z-index: -1; }
-
-.progress-bar li:first-child::after {
-  content: none; }
-
-.progress-bar li.active + li::after {
-  background-color: #2ecc71; }
-
-.progress-bar-animation .progress-bar li:nth-child(2)::after {
-  transition: width 3s linear;
-  width: 400%;
-  background-color: #2ecc71; }
-
-.progress-bar-animation .progress-bar li:nth-child(3)::after {
-  transition: width 3s linear;
-  transition-delay: 1.4s;
-  width: 400%;
-  background-color: #2ecc71; }
-
-.progress-bar-animation .progress-bar li:nth-child(5)::after {
-  transition: width 2s linear;
-  transition-delay: 3.5s;
-  width: 200%;
-  background-color: #2ecc71; }
+  section.about-me .timeline {
+    margin: 0 auto; }
+    section.about-me .timeline .progress-bar li {
+      position: relative;
+      float: left;
+      width: 45%;
+      list-style-type: none;
+      text-align: center; }
+      section.about-me .timeline .progress-bar li.grid-5 {
+        display: inline-block;
+        margin-bottom: 60px; }
+      section.about-me .timeline .progress-bar li.grid-5:nth-child(5), section.about-me .timeline .progress-bar li.grid-5:last-child {
+        margin-bottom: 0; }
+      section.about-me .timeline .progress-bar li::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #fff;
+        z-index: 10; }
+      section.about-me .timeline .progress-bar li.active {
+        color: #27ae60; }
+      section.about-me .timeline .progress-bar li.active::before {
+        border-color: #27ae60; }
+      section.about-me .timeline .progress-bar li:first-child::before {
+        content: "1"; }
+      section.about-me .timeline .progress-bar li:nth-child(2)::before {
+        content: "2"; }
+      section.about-me .timeline .progress-bar li:nth-child(3)::before {
+        content: "3"; }
+      section.about-me .timeline .progress-bar li:nth-child(4)::before {
+        content: "4"; }
+      section.about-me .timeline .progress-bar li:nth-child(5)::before {
+        content: "5"; }
+      section.about-me .timeline .progress-bar li:last-child::before {
+        content: "6"; }
+      section.about-me .timeline .progress-bar li::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        top: 25px;
+        left: -50%;
+        z-index: -1; }
+      section.about-me .timeline .progress-bar li::first-child::after {
+        content: none; }
+      section.about-me .timeline .progress-bar li.active + section.about-me .timeline .progress-bar li::after {
+        background-color: #2ecc71; }
+    section.about-me .timeline .progress-bar-animation .progress-bar li:nth-child(2)::after {
+      transition: width 3s linear;
+      width: 400%;
+      background-color: #2ecc71; }
+    section.about-me .timeline .progress-bar-animation .progress-bar li:nth-child(3)::after {
+      transition: width 3s linear;
+      transition-delay: 1.4s;
+      width: 400%;
+      background-color: #2ecc71; }
+    section.about-me .timeline .progress-bar-animation .progress-bar li:nth-child(5)::after {
+      transition: width 2s linear;
+      transition-delay: 3.5s;
+      width: 200%;
+      background-color: #2ecc71; }
 
 /* --------------------------------------- */
 /* Footer Section */
@@ -492,60 +470,56 @@ footer {
   position: relative;
   width: 90%;
   margin: 8% auto 0; }
-
-footer .title {
-  content: "Contact Me";
-  display: block;
-  margin-bottom: 20px; }
-
-footer .footer-info h3 {
-  font-size: 20px;
-  text-align: left; }
-
-form {
-  margin-top: 5%;
-  text-align: center; }
-
-.form-container {
-  width: 40%;
-  margin-right: 20%;
-  text-align: center;
-  float: left; }
-
-.input-container, .email-container, .phone-container, .message-container {
-  position: relative;
-  margin-bottom: 30px; }
-
-.input-container::after, .email-container::after,
-.phone-container::after, .message-container::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #000; }
-
-input, textarea {
-  width: 100%;
-  padding: 3px 0;
-  margin-bottom: 5px;
-  background-color: transparent;
-  color: #000;
-  font-size: 16px;
-  z-index: 1000; }
-
-input:focus, textarea:focus {
-  outline: none;
-  font-size: 16px; }
-
-.animated-label {
-  position: absolute;
-  margin: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  cursor: text;
-  transition: 0.2s ease all;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none; }
+  footer .title {
+    content: "Contact Me";
+    display: block;
+    margin-bottom: 20px; }
+  footer .form-container {
+    width: 40%;
+    margin-right: 20%;
+    text-align: center;
+    float: left; }
+    footer .form-container .footer-info h3 {
+      font-size: 20px;
+      text-align: left; }
+    footer .form-container form {
+      margin-top: 5%;
+      text-align: center; }
+      footer .form-container form .input-container,
+      footer .form-container form .email-container,
+      footer .form-container form .phone-container,
+      footer .form-container form .message-container {
+        position: relative;
+        margin-bottom: 30px; }
+      footer .form-container form .input-container::after,
+      footer .form-container form .email-container::after,
+      footer .form-container form .phone-container::after,
+      footer .form-container form .message-container::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid #000; }
+      footer .form-container form input, footer .form-container form textarea {
+        width: 100%;
+        padding: 3px 0;
+        margin-bottom: 5px;
+        background-color: transparent;
+        color: #000;
+        font-size: 16px;
+        z-index: 1000; }
+      footer .form-container form input:focus, footer .form-container form textarea:focus {
+        outline: none;
+        font-size: 16px; }
+      footer .form-container form .animated-label {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        cursor: text;
+        transition: 0.2s ease all;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none; }
 
 form #input-name:focus ~ .animated-label, form #email-input:focus ~ .animated-label,
 form #phone-input:focus ~ .animated-label, form #message-input:focus ~ .animated-label {
