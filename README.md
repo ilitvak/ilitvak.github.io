@@ -93,4 +93,7 @@ This library is used to help you to easily include and manage sounds in your web
 Screenshots
 -----------
 
+![Imgur](https://i.imgur.com/eZHaUlA.png)
+![Imgur](https://i.imgur.com/RkuP8Od.png)
+![Imgur](https://i.imgur.com/DMEkRIn.png)
 
