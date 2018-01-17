@@ -463,6 +463,22 @@ section.about-me {
 /* --------------------------------------- */
 /* Footer Section */
 /* --------------------------------------- */
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); }
+  50% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); }
+  100% {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); } }
 footer {
   position: relative;
   width: 90%;
@@ -471,90 +487,18 @@ footer {
     content: "Contact Me";
     display: block;
     margin-bottom: 20px; }
-  footer .form-container {
+  footer .avatar-container {
     width: 40%;
-    margin-right: 20%;
-    text-align: center;
     float: left; }
-    footer .form-container .footer-info h3 {
-      font-size: 20px;
-      text-align: left; }
-    footer .form-container form {
-      margin-top: 5%;
-      text-align: center; }
-      footer .form-container form .input-container,
-      footer .form-container form .email-container,
-      footer .form-container form .phone-container,
-      footer .form-container form .message-container {
-        position: relative;
-        margin-bottom: 30px; }
-      footer .form-container form .input-container::after,
-      footer .form-container form .email-container::after,
-      footer .form-container form .phone-container::after,
-      footer .form-container form .message-container::after {
-        content: "";
-        display: block;
-        border-bottom: 2px solid #000; }
-      footer .form-container form input, footer .form-container form textarea {
-        width: 100%;
-        padding: 3px 0;
-        margin-bottom: 5px;
-        background-color: transparent;
-        color: #000;
-        font-size: 16px;
-        z-index: 1000; }
-      footer .form-container form input:focus, footer .form-container form textarea:focus {
-        outline: none;
-        font-size: 16px; }
-      footer .form-container form #input-name:focus ~ .animated-label,
-      footer .form-container form #email-input:focus ~ .animated-label,
-      footer .form-container form #phone-input:focus ~ .animated-label,
-      footer .form-container form #message-input:focus ~ .animated-label {
-        top: -15px;
-        color: #2980b9;
-        font-size: 12px; }
-      footer .form-container form .animated-label {
-        position: absolute;
-        margin: 0;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        cursor: text;
-        transition: 0.2s ease all;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none; }
-      footer .form-container form .not-empty {
-        top: -15px;
-        font-size: 12px;
-        color: #2980b9; }
-      footer .form-container form .email-container, footer .form-container form .message-container {
-        margin-top: 5px; }
-      footer .form-container form label {
-        font-family: "Montserrat";
-        text-transform: uppercase;
-        font-weight: bold; }
-      footer .form-container form .g-recaptcha {
-        margin-top: 7px; }
-      footer .form-container form .submit-container {
-        padding: 10px;
-        border: 2px solid #000;
-        border-radius: 8px;
-        margin: 25px 0 50px;
-        text-align: center;
-        cursor: pointer; }
-        footer .form-container form .submit-container .submit {
-          margin-bottom: 0;
-          font-size: 16px;
-          color: #000;
-          text-transform: uppercase;
-          cursor: pointer; }
-        footer .form-container form .submit-container:hover {
-          border-color: #2980b9;
-          transition: border-color 1s; }
-          footer .form-container form .submit-container:hover input {
-            color: #2980b9;
-            transition: color .5s; }
+    footer .avatar-container h3 {
+      font-size: 20px; }
+    footer .avatar-container .avatar {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      margin: 25px auto 0;
+      overflow: hidden;
+      animation: float 6s ease-in-out infinite; }
   footer .social-icons-container {
     width: 40%;
     padding-left: 11%;
