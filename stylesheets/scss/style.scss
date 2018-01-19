@@ -930,7 +930,7 @@ footer {
     }
 }
 
-/* Small tablet to big tablet: from 763px to 1023px */
+/* Small tablet to big tablet: from 766px to 1023px */
 @media only screen and (max-width: 1023px){
     
     .nav-list li {
@@ -1077,24 +1077,15 @@ footer {
         }
     }
 
-    footer {
-        form {
-            .form-container {
-                margin-right: 0;
-
-                h3 {
-                    font-size: 16px;
-                }
-            }
-        }
-
-        .form-container, 
+    footer.contact-me-section {
+        
+		.avatar-container,
+		.social-icons-container {
+			width: 40%;
+		}
+		
         .social-icons-container {
-            width: 100%;
-            float: none;
-        }
-
-        .social-icons-container {
+			
             .title {
                 h3 {
                     text-align: center;
@@ -1112,12 +1103,17 @@ footer {
                         &:nth-child(3) {
                             margin-right: 20%;
                         }
+						
+						a {
+							p {
+								display: block;
+							}
+						}
                     }
                 }
             }
         }
     }
-
 }
 
 /* Small phones from 0 to 480px */
@@ -1150,8 +1146,21 @@ footer {
         }
     }
 
-    footer {
+    footer.contact-me-section {
+		
+		.avatar-container,
+		.social-icons-container {
+			width: 100%;
+			margin: 0 auto;
+			float: none;
+		}
+		
+		.avatar-container {
+			margin-top: 15%;
+		}
+		
         .social-icons-container {
+			margin-top: 15%;
             .social-icons-grid {
                 ul {
                     li {
@@ -1164,5 +1173,4 @@ footer {
             }
         }
     }
-
 }

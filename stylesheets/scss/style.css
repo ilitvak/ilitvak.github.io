@@ -565,7 +565,7 @@ footer {
     width: 60px; }
   .skills .bootstrap img {
     width: 55px; } }
-/* Small tablet to big tablet: from 763px to 1023px */
+/* Small tablet to big tablet: from 766px to 1023px */
 @media only screen and (max-width: 1023px) {
   .nav-list li {
     font-size: 1.56vw;
@@ -641,22 +641,19 @@ footer {
     section.about-me .progress-bar li::after {
       top: 20px; }
 
-  footer form .form-container {
-    margin-right: 0; }
-    footer form .form-container h3 {
-      font-size: 16px; }
-  footer .form-container,
-  footer .social-icons-container {
-    width: 100%;
-    float: none; }
-  footer .social-icons-container .title h3 {
+  footer.contact-me-section .avatar-container,
+  footer.contact-me-section .social-icons-container {
+    width: 40%; }
+  footer.contact-me-section .social-icons-container .title h3 {
     text-align: center; }
-  footer .social-icons-container .social-icons-grid ul li {
+  footer.contact-me-section .social-icons-container .social-icons-grid ul li {
     width: 40%;
     text-align: center;
     float: left; }
-    footer .social-icons-container .social-icons-grid ul li:first-child, footer .social-icons-container .social-icons-grid ul li:nth-child(3) {
-      margin-right: 20%; } }
+    footer.contact-me-section .social-icons-container .social-icons-grid ul li:first-child, footer.contact-me-section .social-icons-container .social-icons-grid ul li:nth-child(3) {
+      margin-right: 20%; }
+    footer.contact-me-section .social-icons-container .social-icons-grid ul li a p {
+      display: block; } }
 /* Small phones from 0 to 480px */
 @media only screen and (max-width: 480px) {
   header.header-main {
@@ -670,8 +667,17 @@ footer {
   .projects-grid .grid-2 .box-cont:first-child, .projects-grid .grid-2 .grid-2 .box-cont {
     margin-bottom: 7%; }
 
-  footer .social-icons-container .social-icons-grid ul li .i-text {
-    display: block;
-    margin-left: 0; } }
+  footer.contact-me-section .avatar-container,
+  footer.contact-me-section .social-icons-container {
+    width: 100%;
+    margin: 0 auto;
+    float: none; }
+  footer.contact-me-section .avatar-container {
+    margin-top: 15%; }
+  footer.contact-me-section .social-icons-container {
+    margin-top: 15%; }
+    footer.contact-me-section .social-icons-container .social-icons-grid ul li .i-text {
+      display: block;
+      margin-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
