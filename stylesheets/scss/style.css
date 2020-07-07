@@ -104,6 +104,10 @@ header.header-main .intro p {
 /* --------------------------------------- */
 /* Nav Section */
 /* --------------------------------------- */
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 nav {
   position: absolute;
   display: inline-block;
