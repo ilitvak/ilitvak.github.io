@@ -19,6 +19,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: "Montserrat";
+  -webkit-tap-highlight-color: transparent;
 }
 
 .row {
@@ -104,10 +105,6 @@ header.header-main .intro p {
 /* --------------------------------------- */
 /* Nav Section */
 /* --------------------------------------- */
-html {
-  -webkit-tap-highlight-color: transparent;
-}
-
 nav {
   position: absolute;
   display: inline-block;
