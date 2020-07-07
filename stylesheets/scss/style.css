@@ -553,6 +553,9 @@ footer {
             color: #e74c3c; }
             footer .social-icons-container .social-icons-grid ul li a .pdf:hover {
               color: #c0392b; }
+              footer .ending {
+                text-align: center;
+                padding: 20px 0; }
 
 /* --------------------------------------- */
 /* Media Queries */

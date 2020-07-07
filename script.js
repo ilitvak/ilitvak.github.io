@@ -129,4 +129,19 @@ function recaptchaCallBack(token) {
     recaptchaToken = token;
 }
 
-    
+var iLoveLolaColors = ["#d63031","#e84393","#6c5ce7","#0984e3","#00cec9","#74b9ff","#55efc4","#ffeaa7", "#fdcb6e", "#e17055", "#636e72"];
+var heartBeat = 0;
+function iLoveYouLola(){
+
+    document.querySelector('.fa-heart').style.color = iLoveLolaColors[heartBeat];
+    heartBeat++;
+
+    if(heartBeat == iLoveLolaColors.length) {
+        heartBeat = 0;
+    }
+
+}
+
+setInterval(function(){
+    iLoveYouLola();
+}, 1000)
