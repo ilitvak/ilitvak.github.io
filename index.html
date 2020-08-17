@@ -295,12 +295,47 @@
             </div>
             
             <div class="row clearfix">
-                <div class="avatar-container">
-                    <h3>Click Me!</h3>
-                    <div class="avatar">
-                        <a href="mailto:irwin.litvak@gmail.com">
-                            <img src="./assets/selfie.png" alt="photo of me">
-                        </a>
+                <div class="form-container">
+                    <div class='form-header-section'>
+                        <div class='icons'>
+                            <ul>
+                                <li class='red'></li>
+                                <li class='yellow'></li>
+                                <li class='green'></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='contact-us-grid-1'>
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class='contact-us-grid-2'>
+                        <form action="">
+                            <div class='info-1'>
+                                <label for="Name"></label>
+                                <input type="text" placeholder='Name' required>
+                                <label for="Email"></label>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            
+                            <div class='info-2'>
+                                <label for="phone"></label>
+                                <input type="tel" id="phone" name="phone" placeholder='Phone Number' required>
+                            </div>
+
+                            <h3>Select Service</h3>
+
+                            <div class='info-3'>
+                                <select name="" id="service">
+                                    <option value="1">Website Redesign</option>
+                                    <option value="2">Website SEO</option>
+                                    <option value="3">Website Consultation Call</option>
+                                    <option value="4">Change Existing Website Code</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </div>
+                            <textarea name="textarea" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                        </form>
+                        <button>Submit</button>
                     </div>
                 </div>
                 
@@ -350,15 +385,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="script.js"></script>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98519409-3"></script>
         <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-98519409-1', 'auto');
-            ga('send', 'pageview');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-98519409-3');
         </script>
 
-        
     </body>
 </html>
