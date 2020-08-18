@@ -98,7 +98,7 @@ $(".text-fields input, .text-fields textarea").blur(function(){
 
 /*Hides input text when clicked on*/
 
-$("form").submit(function(e){
+/*$("form").submit(function(e){
     e.preventDefault();
     if(recaptchaToken == "") {
         alert("Please complete the recaptcha challenge");
@@ -122,15 +122,15 @@ $("form").submit(function(e){
             window.location.reload();
         }
     ); 
-});
+});*/
 
-var recaptchaToken = ""; 
+/*var recaptchaToken = ""; 
 function recaptchaCallBack(token) {
     // prints token once recaptcha challenge is completed
     // console.log(token);
     recaptchaToken = token;
 }
-
+*/
 var iLoveLolaColors = ["#d63031","#e84393","#6c5ce7","#0984e3","#00cec9","#74b9ff","#55efc4","#ffeaa7", "#fdcb6e", "#e17055", "#636e72"];
 var heartBeat = 0;
 function iLoveYouLola(){
@@ -147,3 +147,70 @@ function iLoveYouLola(){
 setInterval(function(){
     iLoveYouLola();
 }, 1000)
+
+
+/************************************/
+/* Grab User Info Form */
+/************************************/
+let telephone = $('.telephone')[0];
+let address = $('.address')[0];
+let zipCode = $('#zip')[0];
+let formOne = $('.form-1')[0];
+let formTwo = $('.form-2')[0];
+let formThree = $('.form-3')[0];
+let getQuoteBtn = $('.get-quote')[0];
+let continueBtn = $('.continueBtn')[0];
+let fullName = $('.fullName')[0];
+let emailAddress = $('.emailAddress')[0];
+let grabUserPlanOption = '';
+let lastBtnSubmit = $('.lastBtnSubmit')[0];
+let formSubmitted = $('#finalForm')[0];
+
+
+$(getQuoteBtn).click(function(e){
+    e.preventDefault();
+    if(!telephone.value || !address.value || !zipCode.value){
+        alertify.error('Please check your entries');
+    } else {
+        telephone = telephone.value;
+        address = address.value;
+        zipCode = zipCode.value;
+
+        $(formOne).hide();
+        $(formTwo).show();
+
+        $(continueBtn).click(function(e){
+            e.preventDefault();
+            if(!fullName.value || !emailAddress.value) {
+                alertify.error('Please check your entries');
+            } else {
+                fullName = fullName.value;
+                emailAddress = emailAddress.value;
+
+                $(formTwo).hide();
+                $(formThree).show();
+
+                
+            }
+        });
+    }
+})
+
+function sendEmail() {
+    grabUserPlanOption = $('#plans').find(':selected').text();
+
+    Email.send({
+        SecureToken: "3976e595-4e69-4d24-b0e7-a6cc7db74767 ",
+        To: "irwin.litvak@gmail.com",
+        From: "ilitvak24@gmail.com",
+        Subject: "Free Quote Inquiry",
+        Body: "test",
+
+    }).then(function(message){
+        if(message == 'OK') {
+            alertify.success('sent!')
+        } else {
+            alertify.error('Not sent.')
+        }
+    });
+}

@@ -1023,8 +1023,51 @@ footer {
         text-align: center;
         padding: 20px 0;
     }
-}   
+} 
 
+.test-form {
+    width: 60%;
+    margin: 0 auto;
+    form {
+        text-align: center;
+        input {
+            width: 30%;
+            display: block;
+            padding: 10px 0 10px 10px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            margin: 0 auto 10px;
+        }
+        // adds error class if not filled in
+        .error {
+            border: 2px solid #ff3f34; 
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #40739e;
+            color: #fff;
+            cursor: pointer;
+        }
+        select {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px 0 10px 5px;
+            option {
+             
+            }
+        }
+    }
+    .form-1,
+    .form-2,
+    .form-3 {
+        margin-bottom: 10px;
+    }
+    .form-2,
+    .form-3 {
+        display: none;
+    }
+}
 /* --------------------------------------- */
 /* Media Queries */
 /* --------------------------------------- */ 
