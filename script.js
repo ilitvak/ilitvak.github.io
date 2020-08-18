@@ -1,7 +1,5 @@
 /************************************/
-
 /* Scrolls to Section Upon Nav Click */
-
 /************************************/
 
 if($(window).width() > 1){
@@ -16,9 +14,7 @@ if($(window).width() > 1){
 } 
 
 /************************************/
-
 /* Fills In Skill Bar Color */
-
 /************************************/
 
 $(window).scroll(function(){
@@ -35,12 +31,27 @@ $(window).scroll(function(){
     }
 });
 
+/************************************/
+/* Increase Form Size */
+/************************************/
+let greenIcon = document.querySelector('.green');
+let redIcon = document.querySelector('.red');
+let form = document.querySelector('.form-container');
+
+
+$(greenIcon).click(function(e){
+    e.preventDefault();
+    form.classList.add('superSizeMe');
+})
+
+$(redIcon).click(function(e){
+    e.preventDefault();
+    form.classList.remove('superSizeMe');
+})
 
 
 /************************************/
-
 /* Fills In My Typical Day Bar */
-
 /************************************/
 
 $(window).scroll(function(){
@@ -73,17 +84,9 @@ $(window).scroll(function(){
             $(".progress-bar li.grid-5:first-child").next().next().next().next().next().addClass("active");
         },5500)
     }
-    // } else if ($(window).scrollTop() <= 966 ) {
-    //     $(".about-me-grid-container").removeClass("progress-bar-animation");
-        
-    //     $(".progress-bar li").siblings().removeClass("active");
-    // }
-    
 });
 /************************************/
-
 /* Checks if form inputs have text */
-
 /************************************/
 
 $(".text-fields input, .text-fields textarea").blur(function(){
@@ -94,7 +97,6 @@ $(".text-fields input, .text-fields textarea").blur(function(){
 
 
 /*Hides input text when clicked on*/
-
 
 $("form").submit(function(e){
     e.preventDefault();
