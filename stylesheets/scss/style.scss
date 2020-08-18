@@ -1085,7 +1085,6 @@ footer {
 
         .social-icons-container {
             width: 100%;
-            padding-left: 0;
 
             .title h3 {
                 font-size: 18px;
@@ -1195,15 +1194,36 @@ footer {
         }
     }
 
-    footer.contact-me-section {
+    footer {
+        .form-container {
+            width: 95%;
+            height: auto;
+
+            .contact-us-grid-1,
+            .contact-us-grid-2 {
+                display: block;
+                float: none;
+                width: 85%;
+                margin: 0 auto;
+            }
+
+            .contact-us-grid-1 {
+                padding-top: 20px;
+            }
+            .contact-us-grid-2 {
+                padding-bottom: 20px;
+            }
+
+            .contact-us-grid-1 {
+                h3 {
+                    margin-top: 0;
+                }
+            }
+        }
         
-		.avatar-container,
-		.social-icons-container {
-			width: 40%;
-		}
-		
         .social-icons-container {
-			
+            padding: 0;
+            
             .title {
                 h3 {
                     text-align: center;
@@ -1211,18 +1231,14 @@ footer {
             }
 
             .social-icons-grid {
+                width: 100%;
                 ul {
+                    display: flex;
+                    width: 80%;
+                    margin: 0 auto;
                     li {
-                        width: 40%;
-                        text-align: center;
-                        float: left;
-
-                        &:first-child, 
-                        &:nth-child(3) {
-                            margin-right: 20%;
-                        }
-						
 						a {
+                            text-align: center;
 							p {
 								display: block;
 							}

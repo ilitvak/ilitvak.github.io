@@ -1120,7 +1120,6 @@ footer .ending {
   }
   footer .social-icons-container {
     width: 100%;
-    padding-left: 0;
   }
   footer .social-icons-container .title h3 {
     font-size: 18px;
@@ -1192,22 +1191,46 @@ footer .ending {
   section.about-me .progress-bar li::after {
     top: 20px;
   }
-  footer.contact-me-section .avatar-container,
-  footer.contact-me-section .social-icons-container {
-    width: 40%;
+  footer .form-container {
+    width: 95%;
+    height: auto;
   }
-  footer.contact-me-section .social-icons-container .title h3 {
+  footer .form-container .contact-us-grid-1,
+  footer .form-container .contact-us-grid-2 {
+    display: block;
+    float: none;
+    width: 85%;
+    margin: 0 auto;
+  }
+  footer .form-container .contact-us-grid-1 {
+    padding-top: 20px;
+  }
+  footer .form-container .contact-us-grid-2 {
+    padding-bottom: 20px;
+  }
+  footer .form-container .contact-us-grid-1 h3 {
+    margin-top: 0;
+  }
+  footer .social-icons-container {
+    padding: 0;
+  }
+  footer .social-icons-container .title h3 {
     text-align: center;
   }
-  footer.contact-me-section .social-icons-container .social-icons-grid ul li {
-    width: 40%;
+  footer .social-icons-container .social-icons-grid {
+    width: 100%;
+  }
+  footer .social-icons-container .social-icons-grid ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer .social-icons-container .social-icons-grid ul li a {
     text-align: center;
-    float: left;
   }
-  footer.contact-me-section .social-icons-container .social-icons-grid ul li:first-child, footer.contact-me-section .social-icons-container .social-icons-grid ul li:nth-child(3) {
-    margin-right: 20%;
-  }
-  footer.contact-me-section .social-icons-container .social-icons-grid ul li a p {
+  footer .social-icons-container .social-icons-grid ul li a p {
     display: block;
   }
 }
