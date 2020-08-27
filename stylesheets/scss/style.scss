@@ -9,6 +9,10 @@
 /* Basic Setup */
 /* --------------------------------------- */
 
+.planType {
+    display: none !important;
+}
+
 * {
     padding: 0;
     border: 0;
@@ -768,7 +772,6 @@ section.about-me {
 /* Footer Section */
 /* --------------------------------------- */ 
 
-
 footer {
     position: relative;
     width: 90%;
@@ -1025,9 +1028,34 @@ footer {
     }
 } 
 
+
+.header-actions-action{
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 300px;
+    background-color:green;
+    color: #000;
+
+    a {
+        color: #000;
+    }
+}
+
 .test-form {
     width: 60%;
+    text-align: center;
     margin: 0 auto;
+
+    .showDaFormBtn {
+        padding: 10px 20px;
+        background-color: navy;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .showDaForm {
+        display: none;
+    }
     form {
         text-align: center;
         input {

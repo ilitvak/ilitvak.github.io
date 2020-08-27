@@ -88,13 +88,13 @@ $(window).scroll(function(){
 /************************************/
 /* Checks if form inputs have text */
 /************************************/
-let formFinal = $('#formFinal')[0];
+let contactMeForm = document.getElementById('contactMeForm')
 
-formFinal.addEventListener('submit', function(e){
+document.getElementById('contactMeForm').addEventListener('submit', function(e){
     console.log('clicked');
     e.preventDefault();
     
-    emailjs.sendForm('gmail', 'template_B5reWA9h', formFinal)
+    emailjs.sendForm('gmail', 'template_B5reWA9h', contactMeForm)
     .then(function(response){
         alertify.success('hell yeah!');
         console.log('SUCCESS!', response.status, response.text);
@@ -103,6 +103,12 @@ formFinal.addEventListener('submit', function(e){
         console.log("Error is: " + error);
     }
 })
+
+
+
+
+
+
 
 
 
@@ -122,3 +128,72 @@ function iLoveYouLola(){
 setInterval(function(){
     iLoveYouLola();
 }, 1000)
+
+
+/************************************/
+/* Grab User Info Form */
+/************************************/
+var telephone = $('.telephone')[0];
+var fullName = $('.fullName')[0];
+var emailAddress = $('.emailAddress')[0];
+var grabUserPlanOption = '';
+var message = $('.message')[0];
+var lastBtnSubmit = $('.lastBtnSubmit')[0];
+
+
+// Info from EmailJS admin
+var serviceID = 'gmail';
+var template_id = "portfolio";
+
+var userInfo = {
+    fullName: '',
+    email: '',
+    telephone: '',
+    message: '',
+    service: ''
+};
+
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}    
+              
+
+document.getElementById('contactMeForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(fullName.value == '' || emailAddress.value == '' || telephone.value == ''){
+        alertify.error('Please check your inputs');
+    } else {
+        grabUserPlanOption = $('#service').find(':selected').text();
+
+        userInfo = {
+            fullName: fullName.value,
+            email: emailAddress.value,
+            telephone: telephone.value,
+            service: grabUserPlanOption,
+            message: message.value
+        };
+    }
+   
+    console.log(userInfo);
+
+    emailjs.send('gmail', 'client_inquiry', userInfo)
+    .then(function(response){
+        alertify.success('Your message has been successfully. I will reply to your shortly!');
+ 
+        console.log('SUCCESS!', response.status, response.text);
+
+        fullName.value = '';
+        emailAddress.value = '';
+        telephone.value = '';
+        message.value = '';
+    }), function (error) {
+        alertify.error('failed');
+        console.log("Error is: " + error);
+    }
+})
+
+

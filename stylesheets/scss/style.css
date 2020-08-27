@@ -4,6 +4,10 @@
 /* --------------------------------------- */
 /* Basic Setup */
 /* --------------------------------------- */
+.planType {
+  display: none !important;
+}
+
 * {
   padding: 0;
   border: 0;
@@ -1078,9 +1082,33 @@ footer .ending {
   padding: 20px 0;
 }
 
+.header-actions-action {
+  padding: 10px 20px;
+  margin: 0 auto;
+  width: 300px;
+  background-color: green;
+  color: #000;
+}
+
+.header-actions-action a {
+  color: #000;
+}
+
 .test-form {
   width: 60%;
+  text-align: center;
   margin: 0 auto;
+}
+
+.test-form .showDaFormBtn {
+  padding: 10px 20px;
+  background-color: navy;
+  color: #fff;
+  cursor: pointer;
+}
+
+.test-form .showDaForm {
+  display: none;
 }
 
 .test-form form {
