@@ -1198,7 +1198,7 @@ footer {
     .projects-grid {
         .grid-1 {
             width: 100%;
-            margin-bottom: 10%;
+            margin-bottom: 25%;
 
            .image-container {
                display: block;
@@ -1210,7 +1210,7 @@ footer {
 
            .smaller-image-container {
                position: relative;
-               top: -125px;
+               top: -20%;
                left: 20%;
            }
         }
@@ -1355,12 +1355,12 @@ footer {
            }
 
            a {
-               height: 325px;
+                height: 325px;
            }
 
            .smaller-image-container {
                position: relative;
-               top: -125px;
+               top: -20%;
                left: 20%;
            }
         }
