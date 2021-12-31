@@ -161,6 +161,24 @@ nav .nav-list-container .nav-list li a:hover::after {
 /* --------------------------------------- */
 /* Grid Container for Projects */
 /* --------------------------------------- */
+/*
+@-webkit-keyframes levitate {
+    0% {
+    top: 100px;
+    -webkit-transform:scale(0.9);
+    }
+  
+    50% {
+    top: 100px;
+    -webkit-transform:scale(1.0);
+    }
+  
+    100% {
+    top: 100px;
+    -webkit-transform: scale(0.9);
+    }
+}  
+*/
 .projects-grid {
   margin: 8% auto 0;
   width: 90%;
@@ -187,6 +205,11 @@ nav .nav-list-container .nav-list li a:hover::after {
   margin-right: auto;
 }
 
+.projects-grid .grid-1:hover .smaller-image-container {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .projects-grid .grid-1 .image-container {
   display: inline-block;
   width: 100%;
@@ -202,6 +225,13 @@ nav .nav-list-container .nav-list li a:hover::after {
   left: -100px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+  -webkit-animation-name: levitate;
+          animation-name: levitate;
+  -webkit-animation-duration: 5s !important;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transition-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-ease: ease-in;
 }
 
 .projects-grid .grid-2 {
