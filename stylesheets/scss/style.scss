@@ -172,9 +172,12 @@ nav {
 /* Grid Container for Projects */
 /* --------------------------------------- */
 
+
+
 .projects-grid {
     margin: 8% auto 0;
     width: 90%;
+    text-align: center;;
 
     .title {
         margin-bottom: 20px;
@@ -185,31 +188,27 @@ nav {
         display: inline-block;
     }
 
+
     .grid-1 {
+        position: relative;
+        width: 65%;
         margin-bottom: 4%;
+        margin-left: auto;
+        margin-right: auto;
 
-        .grid-1-of-3 {
-            position: relative;
-            width: 31.33%;
-            float: left;
-            overflow: hidden;
-
-            &:first-child {
-                margin-left: 0;
-            }
-
-            &:first-child,
-            &:nth-child(2) {
-                margin-right: 3.005%;
-            }
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            &:hover h3 a {
-                color: $primary-color;
-            }
+        .image-container {
+            display:inline-block;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+       
+        .smaller-image-container {
+            position: absolute;
+            width: 50%;
+            top: 24%;
+            left: -100px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
 
