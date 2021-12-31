@@ -1222,9 +1222,20 @@ footer .ending {
   header.header-main nav .nav-list-container .nav-list li a::after {
     margin-top: 15px;
   }
-  .projects-grid .grid-1 .grid-1-of-3 {
+  .projects-grid .grid-1 {
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+  }
+  .projects-grid .grid-1 .image-container {
+    display: block;
+  }
+  .projects-grid .grid-1 a {
+    height: 325px;
+  }
+  .projects-grid .grid-1 .smaller-image-container {
+    position: relative;
+    top: -125px;
+    left: 20%;
   }
   .projects-grid .grid-2, .projects-grid .grid-2-of-3 {
     width: 100%;

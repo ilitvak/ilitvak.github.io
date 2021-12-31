@@ -1197,10 +1197,22 @@ footer {
 
     .projects-grid {
         .grid-1 {
-            .grid-1-of-3 {
-                width: 100%;
-                margin-bottom: 5%;
-            }
+            width: 100%;
+            margin-bottom: 10%;
+
+           .image-container {
+               display: block;
+           }
+
+           a {
+               height: 325px;
+           }
+
+           .smaller-image-container {
+               position: relative;
+               top: -125px;
+               left: 20%;
+           }
         }
 
         .grid-2, .grid-2-of-3 {
