@@ -47,8 +47,12 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
+  font-family: Acme;
 }
 
 h1 {
@@ -319,6 +323,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 
 .seo-section .blue-section .grid-1-of-3 {
   display: inline-block;
+  vertical-align: top;
   width: 33%;
 }
 
@@ -342,6 +347,7 @@ nav .nav-list-container .nav-list li a:hover::after {
   font-size: 19px;
   color: #2c3e50;
   text-transform: none;
+  padding-bottom: 10px;
 }
 
 .seo-section .blue-section .grid-1-of-3 div img {
