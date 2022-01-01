@@ -988,6 +988,12 @@ footer .ending {
     width: 100% !important;
     margin: 2% 0;
   }
+  .seo-section .blue-section {
+    padding: 65px 0 15% 0;
+  }
+  .seo-section .section-swoop-2 {
+    top: -60px;
+  }
   section.about-me .progress-bar li {
     font-size: 13px;
     line-height: 13px;
