@@ -18,6 +18,7 @@ if($(window).width() > 1){
 /* Animates in small container box for Portfolio */
 /************************************/
 
+
 /************************************/
 /* Fills In Skill Bar Color */
 /************************************/
@@ -62,7 +63,7 @@ $(redIcon).click(function(e){
 $(window).scroll(function(){
 
     // checks the scroll top against the bottom position of the skills section
-    if( $(window).scrollTop() >= $(".skills").offset().top + $(".skills").outerHeight(true) - 150 ) {
+    if( $(window).scrollTop() >= $(".seo-section").offset().top + $(".skills").outerHeight(true) - 150 ) {
         $(".about-me-grid-container").addClass("progress-bar-animation");  
         
         var a = setTimeout(function(){
