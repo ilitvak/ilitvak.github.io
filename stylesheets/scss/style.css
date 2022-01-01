@@ -217,7 +217,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 .projects-grid .grid-1 .smaller-image-container {
   position: absolute;
   width: 60%;
-  top: 19%;
+  top: 16%;
   left: -100px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
