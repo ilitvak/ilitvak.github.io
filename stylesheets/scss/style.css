@@ -373,7 +373,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 
 .seo-section .blue-section .grid-1-of-3 .seo:hover {
   background-image: url("/assets/Client Website Images/Icons/google-seo-increase-for-gif.gif");
-  background-position-x: 40%;
+  background-position: center;
 }
 
 .seo-section .blue-section .grid-1-of-3 .seo:hover img {
@@ -397,7 +397,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 .seo-section .blue-section .grid-1-of-3 .social-media:hover {
   background-image: url("/assets/Client Website Images/Icons/social media.gif");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
