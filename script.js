@@ -69,6 +69,12 @@ $(window).scroll(function(){
         $('.intro p').addClass("pSmall");
         $('.intro a').addClass("aSmall");
         $('.intro i').addClass("phoneSmall");
+
+
+        $('.above-navigation-bar').addClass("aboveNavNumber");
+
+
+
     } else {
         $('.fa-phone-alt').removeClass("itsTimeToWiggle");
 
@@ -76,6 +82,8 @@ $(window).scroll(function(){
         $('.intro p').removeClass("pSmall");
         $('.intro a').removeClass("aSmall");
         $('.intro i').removeClass("phoneSmall");
+
+        $('.above-navigation-bar').removeClass("aboveNavNumber");
     };
 })
 

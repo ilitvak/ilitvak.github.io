@@ -1040,22 +1040,7 @@ footer {
         right: 20px;
     }
 
-    .h1Small {
-        font-size: 21px !important;
-        line-height: 21px !important;
-    }
-
-    .pSmall {
-        font-size: 12px !important;
-    }
-
-    .aSmall {
-        font-size: 16px !important;
-    }
-
-    .phoneSmall {
-        font-size: 14px !important;
-    }
+   
 
     header.header-main {
         .intro {
@@ -1084,8 +1069,9 @@ footer {
         }
 
         .customBG{
+            width: 90%;
             background-color: #fff;
-            padding: 15px 15px 0;
+            padding: 5px 15px 0;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
         }
@@ -1112,6 +1098,32 @@ footer {
                 }
             }
         }
+    }
+
+    .h1Small {
+        font-size: 21px !important;
+        line-height: 21px !important;
+    }
+
+    .pSmall {
+        display: inline-block !important;
+        font-size: 12px !important;
+    }
+
+    .aSmall {
+        font-size: 16px !important;
+    }
+
+    .phoneSmall {
+        font-size: 14px !important;
+    }
+
+    .aboveNavNumber {
+        padding: 10px 0;
+        display: inline-block;
+        position: relative;
+        right: -10%;
+        width: auto;
     }
 
     .projects-grid {
