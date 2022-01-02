@@ -15,9 +15,23 @@ if($(window).width() > 1){
 
 
 /************************************/
-/* Animates in small container box for Portfolio */
+/* Back to top btn animated in after 400px scrolling */
 /************************************/
-
+  var scrolled = 400;
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > scrolled ) {
+      $('a.btt').fadeIn('slow');
+    } else {
+      $('a.btt').fadeOut('slow');
+    }
+  });
+  
+  // Back to top btn smooth scroll animation
+  $('a.btt').on('click touchstart', function(event){
+  	event.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 700);
+    return false;
+  }) 
 
 /************************************/
 /* Fills In Skill Bar Color */
@@ -111,18 +125,12 @@ document.getElementById('contactMeForm').addEventListener('submit', function(e){
 })
 
 
-
-
-
-
-
-
-
 var iLoveLolaColors = ["#d63031","#e84393","#6c5ce7","#0984e3","#00cec9","#74b9ff","#55efc4","#ffeaa7", "#fdcb6e", "#e17055", "#636e72"];
 var heartBeat = 0;
 function sendMeDaEmail(){
 
     document.querySelector('.fa-heart').style.color = iLoveLolaColors[heartBeat];
+    document.querySelector('a.btt').style.backgroundColor = iLoveLolaColors[heartBeat];
     heartBeat++;
 
     if(heartBeat == iLoveLolaColors.length) {
@@ -200,7 +208,6 @@ document.getElementById('contactMeForm').addEventListener('submit', function(e){
     }
    
     console.log(userInfo);
-
  
 })
 

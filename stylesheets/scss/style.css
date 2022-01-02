@@ -61,12 +61,12 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 40px;
 }
 
 h3 {
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 h3 a:hover {
@@ -84,6 +84,39 @@ img {
   height: auto;
 }
 
+/*******************************/
+/* Floating back-to-top */
+/*******************************/
+a.btt {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  right: 55px;
+  bottom: 50px;
+  background: #000;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px 10px rgba(23, 25, 25, 0.2);
+          box-shadow: 3px 3px 10px rgba(23, 25, 25, 0.2);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+a.btt i {
+  color: #fff;
+  position: relative;
+  top: 14px;
+  left: 18px;
+}
+
+a.btt:hover {
+  -webkit-transform: translatey(-10%);
+          transform: translatey(-10%);
+}
+
 /* --------------------------------------- */
 /* Header Section */
 /* --------------------------------------- */
@@ -95,6 +128,10 @@ header.header-main {
 
 header.header-main .intro {
   display: inline-block;
+  position: fixed;
+  width: auto;
+  left: 50px;
+  z-index: 10000;
 }
 
 header.header-main .intro h1 {
@@ -109,14 +146,26 @@ header.header-main .intro p {
   color: #000;
 }
 
+header.header-main .above-navigation-bar {
+  padding: 10px 0;
+}
+
+header.header-main .above-navigation-bar a {
+  display: inline-block;
+  font-family: Acme;
+  font-size: 18px;
+}
+
 /* --------------------------------------- */
 /* Nav Section */
 /* --------------------------------------- */
 nav {
-  position: absolute;
-  display: inline-block;
+  position: relative;
+  display: block;
   right: 0;
   bottom: 0;
+  text-align: right;
+  width: 100%;
 }
 
 nav .nav-list-container h3 {
@@ -316,7 +365,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 
 .seo-section .blue-section h2 {
   color: #fff;
-  font-size: 24px;
+  font-size: 40px;
   padding-bottom: 100px;
   text-transform: none;
 }
@@ -344,7 +393,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 .seo-section .blue-section .grid-1-of-3 div h3 {
-  font-size: 19px;
+  font-size: 22px;
   color: #2c3e50;
   text-transform: none;
   padding-bottom: 10px;
@@ -357,6 +406,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 
 .seo-section .blue-section .grid-1-of-3 div p {
   color: #2c3e50;
+  font-size: 16px;
 }
 
 .seo-section .blue-section .grid-1-of-3 .webdev:hover {
@@ -371,9 +421,12 @@ nav .nav-list-container .nav-list li a:hover::after {
   color: #fff;
 }
 
+.seo-section .blue-section .grid-1-of-3 .seo {
+  background-position: center;
+}
+
 .seo-section .blue-section .grid-1-of-3 .seo:hover {
   background-image: url("/assets/Client Website Images/Icons/google-seo-increase-for-gif.gif");
-  background-position: center;
 }
 
 .seo-section .blue-section .grid-1-of-3 .seo:hover img {
@@ -394,11 +447,14 @@ nav .nav-list-container .nav-list li a:hover::after {
   visibility: hidden;
 }
 
+.seo-section .blue-section .grid-1-of-3 .social-media {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .seo-section .blue-section .grid-1-of-3 .social-media:hover {
   background-image: url("/assets/Client Website Images/Icons/social media.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .seo-section .blue-section .grid-1-of-3 .social-media:hover img {
@@ -997,6 +1053,8 @@ footer .ending {
 @media only screen and (max-width: 767px) {
   header.header-main .intro {
     float: left;
+    width: auto;
+    left: 5%;
   }
   header.header-main .intro p {
     display: block;
@@ -1009,12 +1067,14 @@ footer .ending {
   }
   header.header-main nav .nav-list-container .nav-list li {
     display: block;
-    margin: 0 0 15% 0;
+    margin: 0 0 5% 0;
     font-size: 16px;
     line-height: 16px;
+    cursor: pointer;
+    z-index: 10001;
   }
   header.header-main nav .nav-list-container .nav-list li a::after {
-    margin-top: 15px;
+    display: none;
   }
   .projects-grid .grid-1 {
     width: 100%;

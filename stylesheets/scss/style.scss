@@ -64,11 +64,11 @@ h1 {
     line-height: 28px;
 }
 
-h2 { font-size: 24px; }
+h2 { font-size: 40px; }
 
 h3 { 
     margin-top: 5px; 
-    font-size: 16px;
+    font-size: 19px;
 }
 
 h3 {
@@ -89,6 +89,40 @@ img {
 }
 
 
+/*******************************/
+/* Floating back-to-top */
+/*******************************/
+
+// btn background
+a.btt {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    right: 55px;
+    bottom: 50px;
+    background: #000;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(23, 25, 25, 0.2);
+    transition: transform 0.3s ease-in-out;
+  } 
+  
+  // btn arrow
+  a.btt i {
+    color: #fff;
+    position: relative;
+    top: 14px;
+    left: 18px;
+  } 
+  
+  a.btt:hover{
+    transform: translatey(-10%);
+  }
+
+
 /* --------------------------------------- */
 /* Header Section */
 /* --------------------------------------- */
@@ -100,6 +134,12 @@ header.header-main {
 
     .intro {
         display: inline-block;
+        position: fixed;
+        width: auto;
+        left: 50px;
+        z-index:10000;
+        
+        
     
         h1 { 
             display: inline-block; 
@@ -113,6 +153,16 @@ header.header-main {
             color: #000;
         }
     }
+
+    .above-navigation-bar {
+        padding: 10px 0;
+
+        a {
+            display: inline-block;
+            font-family: Acme;
+            font-size: 18px;
+        }
+    }
 }
 
 /* --------------------------------------- */
@@ -121,10 +171,12 @@ header.header-main {
 
 
 nav {
-    position: absolute;
-    display: inline-block;
+    position: relative;
+    display: block;
     right: 0;
     bottom: 0;
+    text-align: right;
+    width: 100%;
 
     .nav-list-container {
         h3{
@@ -335,7 +387,7 @@ nav {
 
             h2 {
                 color: #fff;
-                font-size: 24px;
+                font-size: 40px;
                 padding-bottom: 100px;
                 text-transform: none;
             }
@@ -361,7 +413,7 @@ nav {
                     background-color: #fff;
 
                     h3 {
-                        font-size: 19px;
+                        font-size: 22px;
                         color: #2c3e50;
                         text-transform: none;
                         padding-bottom: 10px;
@@ -374,6 +426,7 @@ nav {
 
                     p {
                         color: #2c3e50;
+                        font-size: 16px;
                     }
                 }
 
@@ -392,9 +445,9 @@ nav {
                 }
 
                 .seo {
+                    background-position: center;
                     &:hover {
                         background-image: url("/assets/Client Website Images/Icons/google-seo-increase-for-gif.gif");
-                        background-position: center;
                         
                         img {
                             transition: none;
@@ -413,11 +466,12 @@ nav {
                 }
 
                 .social-media {
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+
                     &:hover {
                         background-image: url("/assets/Client Website Images/Icons/social media.gif");
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
 
                         img {
                             transition: none;
@@ -969,6 +1023,8 @@ footer {
     header.header-main {
         .intro {
             float: left;
+            width: auto;
+            left: 5%;
 
             p {
                 display: block;
@@ -985,12 +1041,14 @@ footer {
                 .nav-list {
                     li {
                         display: block;
-                        margin: 0 0 15% 0;
+                        margin: 0 0 5% 0;
                         font-size: 16px;
                         line-height: 16px;
+                        cursor: pointer;
+                        z-index: 10001;
 
                         a::after {
-                            margin-top: 15px;
+                           display: none;
                         }
                     }
                 }
