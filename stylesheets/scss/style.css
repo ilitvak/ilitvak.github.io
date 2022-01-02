@@ -371,6 +371,54 @@ nav .nav-list-container .nav-list li a:hover::after {
   color: #fff;
 }
 
+.seo-section .blue-section .grid-1-of-3 .seo:hover {
+  background-image: url("/assets/Client Website Images/Icons/google-seo-increase-for-gif.gif");
+  background-position-x: 40%;
+}
+
+.seo-section .blue-section .grid-1-of-3 .seo:hover img {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
+.seo-section .blue-section .grid-1-of-3 .seo:hover h3 {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
+.seo-section .blue-section .grid-1-of-3 .seo:hover p {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
+.seo-section .blue-section .grid-1-of-3 .social-media:hover {
+  background-image: url("/assets/Client Website Images/Icons/social media.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.seo-section .blue-section .grid-1-of-3 .social-media:hover img {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
+.seo-section .blue-section .grid-1-of-3 .social-media:hover h3 {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
+.seo-section .blue-section .grid-1-of-3 .social-media:hover p {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
 .seo-section .blue-section .grid-1-of-3 .fa-laptop-code {
   font-size: 55px;
   height: auto;

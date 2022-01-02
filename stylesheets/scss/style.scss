@@ -350,6 +350,7 @@ nav {
                         transform: scale(1.1);
                     }
                 }
+
                 div {
                     text-align: center;
                     width: 80%;
@@ -386,6 +387,50 @@ nav {
 
                         p {
                             color: #fff;
+                        }
+                    }
+                }
+
+                .seo {
+                    &:hover {
+                        background-image: url("/assets/Client Website Images/Icons/google-seo-increase-for-gif.gif");
+                        background-position-x: 40%;
+                        
+                        img {
+                            transition: none;
+                            visibility: hidden;
+                        }
+
+                        h3 {
+                            transition: none;
+                            visibility: hidden;
+                        }
+                        p {
+                            transition: none;
+                            visibility: hidden;
+                        }
+                    }
+                }
+
+                .social-media {
+                    &:hover {
+                        background-image: url("/assets/Client Website Images/Icons/social media.gif");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+
+                        img {
+                            transition: none;
+                            visibility: hidden;
+                        }
+
+                        h3 {
+                            transition: none;
+                            visibility: hidden;
+                        }
+                        p {
+                            transition: none;
+                            visibility: hidden;
                         }
                     }
                 }
