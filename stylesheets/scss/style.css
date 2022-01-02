@@ -1066,6 +1066,19 @@ footer .ending {
     bottom: 33px;
     right: 20px;
   }
+  .h1Small {
+    font-size: 21px !important;
+    line-height: 21px !important;
+  }
+  .pSmall {
+    font-size: 12px !important;
+  }
+  .aSmall {
+    font-size: 16px !important;
+  }
+  .phoneSmall {
+    font-size: 14px !important;
+  }
   header.header-main .intro {
     float: left;
     width: auto;

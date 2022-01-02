@@ -59,6 +59,25 @@ $(window).scroll(function(){
     };
 })
 
+/************************************/
+/* Changes some font sizes around on scroll on Main Nav*/
+/************************************/
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= 200) {
+        $('.intro h1').addClass("h1Small");
+        $('.intro p').addClass("pSmall");
+        $('.intro a').addClass("aSmall");
+        $('.intro i').addClass("phoneSmall");
+    } else {
+        $('.fa-phone-alt').removeClass("itsTimeToWiggle");
+
+        $('.intro h1').removeClass("h1Small");
+        $('.intro p').removeClass("pSmall");
+        $('.intro a').removeClass("aSmall");
+        $('.intro i').removeClass("phoneSmall");
+    };
+})
 
 
 /************************************/
