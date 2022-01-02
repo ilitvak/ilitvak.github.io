@@ -1091,7 +1091,7 @@ footer .ending {
   header.header-main .customBG {
     width: 90%;
     background-color: #fff;
-    padding: 5px 15px 0;
+    padding: 5px 15px;
     border-radius: 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
             box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
@@ -1117,7 +1117,7 @@ footer .ending {
     line-height: 21px !important;
   }
   .pSmall {
-    display: inline-block !important;
+    display: block !important;
     font-size: 12px !important;
   }
   .aSmall {
@@ -1127,10 +1127,10 @@ footer .ending {
     font-size: 14px !important;
   }
   .aboveNavNumber {
+    position: absolute;
     padding: 10px 0;
-    display: inline-block;
-    position: relative;
-    right: -10%;
+    top: 2px;
+    right: 15px;
     width: auto;
   }
   .projects-grid .title h2 {

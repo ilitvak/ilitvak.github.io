@@ -1052,7 +1052,6 @@ footer {
             p {
                 display: block;
                 padding-left: 0;
-                //text-transform: none;
             }
 
             .itsTimeToWiggle {
@@ -1071,7 +1070,7 @@ footer {
         .customBG{
             width: 90%;
             background-color: #fff;
-            padding: 5px 15px 0;
+            padding: 5px 15px;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
         }
@@ -1106,7 +1105,7 @@ footer {
     }
 
     .pSmall {
-        display: inline-block !important;
+        display: block !important;
         font-size: 12px !important;
     }
 
@@ -1119,10 +1118,10 @@ footer {
     }
 
     .aboveNavNumber {
+        position: absolute;
         padding: 10px 0;
-        display: inline-block;
-        position: relative;
-        right: -10%;
+        top: 2px;
+        right: 15px;
         width: auto;
     }
 
