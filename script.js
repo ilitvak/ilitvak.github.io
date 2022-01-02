@@ -33,6 +33,34 @@ if($(window).width() > 1){
     return false;
   }) 
 
+
+
+/************************************/
+/* Adds custom background for mobile when scrolling for Navigation */
+/************************************/
+$(window).scroll(function(){
+    if($(window).scrollTop() >= 200) {
+        $('.intro').addClass("customBG");
+    } else {
+        $('.intro').removeClass("customBG");
+    };
+})
+
+
+/************************************/
+/* Adds a custom wiggle to the phone icon in the Main Navigation on Mobile */
+/************************************/
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= 200) {
+        $('.fa-phone-alt').addClass("itsTimeToWiggle");
+    } else {
+        $('.fa-phone-alt').removeClass("itsTimeToWiggle");
+    };
+})
+
+
+
 /************************************/
 /* Fills In Skill Bar Color */
 /************************************/

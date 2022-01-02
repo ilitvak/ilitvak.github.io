@@ -1020,16 +1020,57 @@ footer {
 /* Small phones to small tablets from 481px to 767px */
 @media only screen and (max-width: 767px){
 
+
+    @-webkit-keyframes wiggle {
+        0% {
+            -webkit-transform: rotate(15deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(15deg);
+        }
+    }
+
+    a.btt {
+        bottom: 33px;
+        right: 20px;
+    }
+
     header.header-main {
         .intro {
             float: left;
             width: auto;
             left: 5%;
 
+
             p {
                 display: block;
                 padding-left: 0;
+                //text-transform: none;
             }
+
+            .itsTimeToWiggle {
+                -webkit-tranform: rotate(5deg);
+                transform:rotate(5deg);
+                animation-name: wiggle;
+                -webkit-animation-duration: 1.5s !important;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-transition-timing-function: ease;
+                -webkit-animation-fill-mode: forwards;
+                -webkit-animation-ease: ease-in;
+                color: #2ecc71;
+            }
+        }
+
+        .customBG{
+            background-color: #fff;
+            padding: 15px 15px 0;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
         }
 
         nav {
@@ -1057,6 +1098,11 @@ footer {
     }
 
     .projects-grid {
+        .title {
+            h2 {
+                font-size: 25px;
+            }
+        }
         .grid-1 {
             width: 100%;
             margin-bottom: 25%;
@@ -1096,6 +1142,10 @@ footer {
 
         .blue-section {
             padding: 65px 0 15% 0;
+
+            h2 {
+                font-size: 30px;
+            }
         }
 
         .section-swoop-2 {
