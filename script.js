@@ -120,7 +120,7 @@ document.getElementById('contactMeForm').addEventListener('submit', function(e){
 
 var iLoveLolaColors = ["#d63031","#e84393","#6c5ce7","#0984e3","#00cec9","#74b9ff","#55efc4","#ffeaa7", "#fdcb6e", "#e17055", "#636e72"];
 var heartBeat = 0;
-function iLoveYouLola(){
+function sendMeDaEmail(){
 
     document.querySelector('.fa-heart').style.color = iLoveLolaColors[heartBeat];
     heartBeat++;
@@ -132,7 +132,7 @@ function iLoveYouLola(){
 }
 
 setInterval(function(){
-    iLoveYouLola();
+    sendMeDaEmail();
 }, 1000)
 
 
@@ -182,24 +182,26 @@ document.getElementById('contactMeForm').addEventListener('submit', function(e){
             service: grabUserPlanOption,
             message: message.value
         };
+
+        emailjs.send('gmail', 'client_inquiry', userInfo)
+        .then(function(response){
+            alertify.success('Your message has been successfully. I will reply to your shortly!');
+     
+            console.log('SUCCESS!', response.status, response.text);
+    
+            fullName.value = '';
+            emailAddress.value = '';
+            telephone.value = '';
+            message.value = '';
+        }), function (error) {
+            alertify.error('failed');
+            console.log("Error is: " + error);
+        }
     }
    
     console.log(userInfo);
 
-    emailjs.send('gmail', 'client_inquiry', userInfo)
-    .then(function(response){
-        alertify.success('Your message has been successfully. I will reply to your shortly!');
  
-        console.log('SUCCESS!', response.status, response.text);
-
-        fullName.value = '';
-        emailAddress.value = '';
-        telephone.value = '';
-        message.value = '';
-    }), function (error) {
-        alertify.error('failed');
-        console.log("Error is: " + error);
-    }
 })
 
 
