@@ -249,7 +249,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 .projects-grid .grid-1 {
   position: relative;
   width: 65%;
-  margin-bottom: 4%;
+  margin-bottom: 25%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -269,9 +269,9 @@ nav .nav-list-container .nav-list li a:hover::after {
 
 .projects-grid .grid-1 .smaller-image-container {
   position: absolute;
-  width: 60%;
-  top: 16%;
-  left: -100px;
+  width: 70%;
+  top: 80%;
+  left: 15%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
   -webkit-animation-name: levitate;
