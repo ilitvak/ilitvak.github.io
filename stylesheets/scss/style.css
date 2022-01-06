@@ -249,7 +249,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 .projects-grid .grid-1 {
   position: relative;
   width: 65%;
-  margin-bottom: 25%;
+  margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
 }
