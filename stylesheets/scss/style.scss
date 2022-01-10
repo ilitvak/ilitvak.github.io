@@ -122,6 +122,43 @@ a.btt {
     transform: translatey(-10%);
   }
 
+/* --------------------------------------- */
+/* Body Section */
+/* --------------------------------------- */
+
+.animated-mario-container.first-mario {
+    position: fixed;
+    right: -150px;
+    top: 105px;
+
+    img {
+        width: 125px;
+        height: auto;
+    }
+}
+
+.animated-luigi-container {
+    position: fixed;
+    top: 500px;
+    left: -150px;
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+.animated-bowser-container {
+    position: fixed;
+    top: 900px;
+    right: -150px;
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
 
 /* --------------------------------------- */
 /* Header Section */
