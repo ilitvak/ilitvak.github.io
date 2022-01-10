@@ -71,7 +71,7 @@ $(window).scroll(function(e){
     } 
 
 
-    if($(window).scrollTop() >= 7000) {
+    if($(window).scrollTop() >= 6100) {
         $('.animated-bowser-container').css({'right': '-150px'});
     }
 });
