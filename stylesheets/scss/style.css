@@ -1105,6 +1105,11 @@ footer .ending {
     bottom: 33px;
     right: 20px;
   }
+  .animated-mario-container.first-mario,
+  .animated-luigi-container,
+  .animated-bowser-container {
+    display: none;
+  }
   header.header-main .intro {
     float: left;
     width: auto;
