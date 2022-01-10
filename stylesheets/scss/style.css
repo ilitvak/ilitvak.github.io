@@ -124,6 +124,7 @@ a.btt:hover {
   position: fixed;
   right: -150px;
   top: 105px;
+  z-index: 1000;
 }
 
 .animated-mario-container.first-mario img {
@@ -135,6 +136,7 @@ a.btt:hover {
   position: fixed;
   top: 500px;
   left: -150px;
+  z-index: 1000;
 }
 
 .animated-luigi-container img {
@@ -146,6 +148,7 @@ a.btt:hover {
   position: fixed;
   top: 900px;
   right: -150px;
+  z-index: 1000;
 }
 
 .animated-bowser-container img {

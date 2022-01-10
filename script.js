@@ -44,24 +44,24 @@ $(window).scroll(function(e){
 
     // mario enters
     if($(window).scrollTop() >= 500) {
-        $('.animated-mario-container.first-mario').css({'transform':'rotate(-45deg)', 'right': '-40px', 'left': 'auto'});
+        $('.animated-mario-container.first-mario').css({'-webkit-transform':'rotate(-45deg)', 'right': '-40px', 'left': 'auto'});
     } else {
-        $('.animated-mario-container.first-mario').css({'transform':'rotate(0deg)', 'right': '-150px', 'left': 'auto'});
+        $('.animated-mario-container.first-mario').css({'-webkit-transform':'rotate(0deg)', 'right': '-150px', 'left': 'auto'});
     }
     
     // mario leaves at 1800px
     if($(window).scrollTop() >= 1800) {
-        $('.animated-mario-container.first-mario').css({'transform':'rotate(0deg)', 'right': '-150px', 'left': 'auto'});
+        $('.animated-mario-container.first-mario').css({'-webkit-transform':'rotate(0deg)', 'right': '-150px', 'left': 'auto'});
     } 
 
     if($(window).scrollTop() >= 2400) {
-        $('.animated-luigi-container.babyluigi').css({'transform':'rotate(35deg)', 'left': '-30px', 'right': 'auto'});
+        $('.animated-luigi-container.babyluigi').css({'-webkit-transform':'rotate(35deg)', 'left': '-30px', 'right': 'auto'});
     } else {
-        $('.animated-luigi-container.babyluigi').css({'transform':'rotate(0deg)', 'left': '-150px', 'right': 'auto'});
+        $('.animated-luigi-container.babyluigi').css({'-webkit-transform':'rotate(0deg)', 'left': '-150px', 'right': 'auto'});
     } 
 
     if($(window).scrollTop() >= 3700) {
-        $('.animated-luigi-container.babyluigi').css({'transform':'rotate(0deg)', 'left': '-180px', 'right': 'auto'});
+        $('.animated-luigi-container.babyluigi').css({'-webkit-transform':'rotate(0deg)', 'left': '-180px', 'right': 'auto'});
     }
 
     if($(window).scrollTop() >= 4500) {
