@@ -841,7 +841,7 @@ footer {
             margin: 0 auto;
             ul {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 margin-top: 15px;
 
                 li {
@@ -886,10 +886,7 @@ footer {
                             transition: width 1s;
                         }
 
-                        .github:hover {
-                            color: #bdc3c7;
-                        }
-
+                
                         .instagram {
                             color: #fc5c65;
 
@@ -898,21 +895,7 @@ footer {
                             }
                         }
 
-                        .linkedin {
-                            color: #2980b9;
-
-                            &:hover {
-                                color:#3498db;
-                            }
-                        }
-
-                        .pdf {
-                            color: #e74c3c;
-
-                            &:hover {
-                                color: #c0392b;
-                            }
-                        }
+                                              
                     }
                 }
             }

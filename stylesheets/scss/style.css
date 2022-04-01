@@ -886,9 +886,9 @@ footer .social-icons-container .social-icons-grid ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15px;
 }
 
@@ -937,32 +937,12 @@ footer .social-icons-container .social-icons-grid ul li a:hover p::after {
   transition: width 1s;
 }
 
-footer .social-icons-container .social-icons-grid ul li a .github:hover {
-  color: #bdc3c7;
-}
-
 footer .social-icons-container .social-icons-grid ul li a .instagram {
   color: #fc5c65;
 }
 
 footer .social-icons-container .social-icons-grid ul li a .instagram:hover {
   color: #eb3b5a;
-}
-
-footer .social-icons-container .social-icons-grid ul li a .linkedin {
-  color: #2980b9;
-}
-
-footer .social-icons-container .social-icons-grid ul li a .linkedin:hover {
-  color: #3498db;
-}
-
-footer .social-icons-container .social-icons-grid ul li a .pdf {
-  color: #e74c3c;
-}
-
-footer .social-icons-container .social-icons-grid ul li a .pdf:hover {
-  color: #c0392b;
 }
 
 footer .ending {
