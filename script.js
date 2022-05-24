@@ -224,7 +224,7 @@ document.getElementById('contactMeForm').addEventListener('submit', function(e){
 
 var iLoveLolaColors = ["#d63031","#e84393","#6c5ce7","#0984e3","#00cec9","#74b9ff","#55efc4","#ffeaa7", "#fdcb6e", "#e17055", "#636e72"];
 var heartBeat = 0;
-function sendMeDaEmail(){
+function iloveYouLola(){
 
     document.querySelector('.fa-heart').style.color = iLoveLolaColors[heartBeat];
     document.querySelector('a.btt').style.backgroundColor = iLoveLolaColors[heartBeat];
@@ -237,7 +237,7 @@ function sendMeDaEmail(){
 }
 
 setInterval(function(){
-    sendMeDaEmail();
+    iloveYouLola();
 }, 1000)
 
 
