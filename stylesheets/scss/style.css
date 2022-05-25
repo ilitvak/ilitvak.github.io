@@ -1322,6 +1322,9 @@ footer .ending {
   .intro-section-bg p {
     display: none;
   }
+  .services-section {
+    padding: 65px 35px;
+  }
   .services-container {
     max-width: 100% !important;
   }
