@@ -168,7 +168,7 @@ a.btt {
 /* --------------------------------------- */
 
 header.header-main {
-    position: relative;
+    position: absolute;
     width: 90%;
     margin: 1.5% auto 0;
 
@@ -183,6 +183,8 @@ header.header-main {
     
         h1 { 
             display: inline-block; 
+            color: #fff;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.9);
         }
     
         p { 
@@ -190,17 +192,24 @@ header.header-main {
             padding-left: 5px;
             font-size: 14px;
             text-transform: uppercase;
-            color: #000;
+            color: #fff;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.9);
         }
     }
 
     .above-navigation-bar {
         padding: 10px 0;
 
+        i {
+            color: #fff;
+        }
+
         a {
             display: inline-block;
             font-family: Acme;
             font-size: 18px;
+            color: #fff;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.9);
         }
     }
 }
@@ -230,6 +239,7 @@ nav {
                 text-transform: uppercase;
                 list-style-type: none;
                 font-weight: bold;
+               
         
                 &:first-child {
                     margin-left: 0;
@@ -237,7 +247,8 @@ nav {
         
                 a {
                     position: relative;
-                    color: #000;
+                    color: #fff;
+                    text-shadow: 2px 4px 3px rgba(0,0,0,0.9);
                     
                     &:hover {
                         color: $primary-color;
@@ -265,6 +276,47 @@ nav {
 }
 
 /* --------------------------------------- */
+/* Main Section Background */
+/* --------------------------------------- */
+
+    .intro-section-bg {
+        display: flex;
+        background-image: url("/assets/Client Website images/background-image/ilwebdesign-background-image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+
+        .intro-text {
+            display: flex;
+            width: 40%;
+            padding: 10px 40px;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+
+            h1 {
+                margin-bottom: 10px;
+                font-size: 4rem;
+                line-height: 4rem;
+                text-align: left;
+                color: #fff;
+                text-shadow: 2px 4px 3px rgba(0,0,0,0.9);
+            }
+    
+            p {
+                line-height: 23px;
+                color: #fff;
+                font-weight: bold;
+                text-shadow: 2px 4px 3px rgba(0,0,0,0.9);
+            }
+        }
+
+       
+    }
+
+/* --------------------------------------- */
 /* Grid Container for Projects */
 /* --------------------------------------- */
 /*
@@ -288,7 +340,7 @@ nav {
 .projects-grid {
     margin: 8% auto 0;
     width: 90%;
-    text-align: center;;
+    text-align: center;
 
     .title {
         margin-bottom: 20px;
@@ -301,11 +353,11 @@ nav {
 
 
     .grid-1 {
+        display: inline-block;
         position: relative;
-        width: 65%;
-        margin-bottom: 5%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 49%;
+        margin-bottom: 15%;
+        padding: 0 2%;
 
         &:hover {
             .smaller-image-container {
@@ -324,8 +376,8 @@ nav {
         .smaller-image-container {
             position: absolute;
             width: 50%;
-            top: 23%;
-            left: -25%;
+            top: 80%;
+            left: 25%;
             box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
 
 
@@ -404,6 +456,100 @@ nav {
         }
     }
 }
+
+
+/* --------------------------------------- */
+/* My Services Grid  */
+/* --------------------------------------- */
+
+    .services-section {
+        padding: 65px 50px;
+        background-color: #EFF6FF;
+
+        .services-container {
+            max-width: 1140px;
+            margin: 0 auto;
+
+            .section-1 {
+                display: flex;
+            }
+
+            .first-row {
+                width: 48%;
+            }
+
+
+            .text-grid h3, .text-grid h2 {
+                text-align: left;
+            }
+
+            .mini-container-text {
+                padding: 25px 20px;
+                border-left: 3px solid blue;
+                margin-top: 15px;
+                background-color: #fff;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+
+            .services-grid-2-boxes {
+                display: flex;
+                width: 52%;
+                padding-left: 3.7%;
+                justify-content: space-between;
+                text-align: center;
+                
+
+                .boxes {
+                    background-color: #fff;
+                    width: 250px;
+                    height: auto;
+                    padding: 20px 15px;
+                    border-radius: 5px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    text-align: center;
+
+                    img {
+                        margin: 0 auto;
+                        width: 55px;
+                    }
+                }
+            }
+
+            .section-2{
+                margin-top: 3%;
+
+                .row-2 {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .boxes {
+                        background-color: #fff;
+                        width: 250px;
+                        height: auto;
+                        padding: 15px;
+                        border-radius: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        text-align: center;
+
+                        li {
+                            list-style-type: none;
+                        }
+
+                        .fa-check {
+                            color: #2ecc71;
+                        }
+    
+                        img {
+                            margin: 0 auto;
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 
 /* --------------------------------------- */
 /* Grid for SEO Section  */
@@ -979,19 +1125,7 @@ footer {
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px){
     
-    .skills {
-        .sass img {
-            width: 65px;
-        }
-
-        .heroku img {
-            width: 60px;
-        }
-
-        .bootstrap img {
-            width: 55px;
-        }
-    }
+ 
 }
 
 /* Small tablet to big tablet: from 766px to 1023px */
@@ -1075,7 +1209,6 @@ footer {
             width: auto;
             left: 5%;
 
-
             p {
                 display: block;
                 padding-left: 0;
@@ -1129,15 +1262,21 @@ footer {
     .h1Small {
         font-size: 21px !important;
         line-height: 21px !important;
+        color: #000 !important;
+        text-shadow: none !important;
     }
 
     .pSmall {
         display: block !important;
         font-size: 12px !important;
+        color: #000 !important;
+        text-shadow: none !important;
     }
 
     .aSmall {
         font-size: 16px !important;
+        color: #000 !important;
+        text-shadow: none !important;
     }
 
     .phoneSmall {
@@ -1152,6 +1291,58 @@ footer {
         width: auto;
     }
 
+    .intro-section-bg {
+        .intro-text {
+            width: 100%;
+        }
+        h1 {
+            font-size: 3rem !important;
+            line-height: 3rem !important;
+        }
+    }
+
+    .services-container {
+        max-width: 100% !important; 
+
+        .section-1 {
+            display: block !important;
+            width: 100%;
+
+            .first-row {
+                width: 100%;
+            }
+
+            .services-grid-2-boxes {
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin: 5% auto;
+
+                .boxes {
+                    width: 100%;
+                    margin: 5% auto;
+                }
+            }
+        }
+
+        .section-2 {
+            .row-2 {
+                display: block !important;
+            
+
+                .boxes {
+                    width: 100% !important;
+                    margin: 5% auto;
+                }
+            }
+        }
+    }
+
+    .section-2 {
+        display: block !important;
+        width: 100%;
+    }
+
     .projects-grid {
         .title {
             h2 {
@@ -1160,7 +1351,7 @@ footer {
         }
         .grid-1 {
             width: 100%;
-            margin-bottom: 25%;
+            margin-bottom: 5%;
 
            .image-container {
                display: block;
@@ -1298,6 +1489,8 @@ footer {
             }
         }
     }
+
+    
 
     .projects-grid {
         .grid-1 {
