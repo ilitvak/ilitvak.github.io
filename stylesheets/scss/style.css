@@ -188,6 +188,38 @@ header.header-main .intro p {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.9);
 }
 
+header.header-main .customBGDesktop {
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+header.header-main .customBGDesktop h1 {
+  color: #000;
+  text-shadow: none;
+}
+
+header.header-main .customBGDesktop p {
+  color: #000;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+header.header-main .customBGDesktop .above-navigation-bar {
+  padding-bottom: 0;
+}
+
+header.header-main .customBGDesktop .Phone-number-container i {
+  color: #2ecc71;
+}
+
+header.header-main .customBGDesktop .Phone-number-container a {
+  color: #000;
+  text-shadow: none;
+}
+
 header.header-main .above-navigation-bar {
   padding: 10px 0;
 }

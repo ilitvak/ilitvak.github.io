@@ -78,10 +78,23 @@ $(window).scroll(function(e){
 
 
 /************************************/
+/* Adds custom background for desktop navigation on scroll */
+/************************************/
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= 10 && $(window).width() > 768) {
+        $('.intro').addClass("customBGDesktop");
+    } else {
+        $('.intro').removeClass("customBGDesktop");
+    };
+})
+
+
+/************************************/
 /* Adds custom background for mobile when scrolling for Navigation */
 /************************************/
 $(window).scroll(function(){
-    if($(window).scrollTop() >= 200) {
+    if($(window).scrollTop() >= 200 && $(window).width() < 768) {
         $('.intro').addClass("customBG");
     } else {
         $('.intro').removeClass("customBG");
@@ -130,23 +143,7 @@ $(window).scroll(function(){
 })
 
 
-/************************************/
-/* Fills In Skill Bar Color */
-/************************************/
 
-$(window).scroll(function(){
-    
-    if($(window).scrollTop() >= $(".projects-grid").offset().top + $(".projects-grid").outerHeight(true) - 150 ){
-        $(".color-in-bar").each(function(){
-            $(this).addClass("color-in-bar-now");
-        })
-        
-    } else if( $(window).scrollTop() <= 344 ){
-        $(".color-in-bar").each(function(){
-            $(this).removeClass("color-in-bar-now");
-        })
-    }
-});
 
 /************************************/
 /* Increase Form Size */
