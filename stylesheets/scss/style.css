@@ -1293,6 +1293,7 @@ footer .ending {
   .pSmall {
     display: block !important;
     font-size: 12px !important;
+    font-weight: bold;
     color: #000 !important;
     text-shadow: none !important;
   }
@@ -1317,6 +1318,9 @@ footer .ending {
   .intro-section-bg h1 {
     font-size: 3rem !important;
     line-height: 3rem !important;
+  }
+  .intro-section-bg p {
+    display: none;
   }
   .services-container {
     max-width: 100% !important;
@@ -1354,7 +1358,7 @@ footer .ending {
   }
   .projects-grid .grid-1 {
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
   }
   .projects-grid .grid-1 .image-container {
     display: block;

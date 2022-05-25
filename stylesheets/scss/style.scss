@@ -1269,6 +1269,7 @@ footer {
     .pSmall {
         display: block !important;
         font-size: 12px !important;
+        font-weight: bold;
         color: #000 !important;
         text-shadow: none !important;
     }
@@ -1298,6 +1299,9 @@ footer {
         h1 {
             font-size: 3rem !important;
             line-height: 3rem !important;
+        }
+        p {
+            display: none;
         }
     }
 
@@ -1351,7 +1355,7 @@ footer {
         }
         .grid-1 {
             width: 100%;
-            margin-bottom: 5%;
+            margin-bottom: 20px;
 
            .image-container {
                display: block;
