@@ -1316,9 +1316,9 @@ footer .ending {
   .mobile-section-bg .intro-text {
     position: relative;
     width: 100% !important;
-    -webkit-transform: scale(0.9) !important;
-            transform: scale(0.9) !important;
-    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    top: 45px;
     left: 0;
     text-align: center;
   }
