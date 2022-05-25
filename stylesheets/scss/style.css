@@ -1290,7 +1290,7 @@ footer .ending {
   }
   .projects-grid .grid-1 {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
   .projects-grid .grid-1 .image-container {
     display: block;
