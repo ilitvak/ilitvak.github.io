@@ -266,7 +266,7 @@ nav .nav-list-container .nav-list li a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/assets/Client Website Images/background-image/ilwebdesign-background-image.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/ilwebdesign-background-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
