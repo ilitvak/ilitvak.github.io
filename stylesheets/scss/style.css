@@ -1290,7 +1290,7 @@ footer .ending {
   }
   .projects-grid .grid-1 {
     width: 100%;
-    margin-bottom: 20px !important;
+    margin-bottom: -25px !important;
   }
   .projects-grid .grid-1 .image-container {
     display: block;
@@ -1316,6 +1316,7 @@ footer .ending {
   .mobile-section-bg .intro-text {
     position: relative;
     width: 100% !important;
+    padding: 10px 25px;
     -webkit-transform: none;
             transform: none;
     top: 45px;
