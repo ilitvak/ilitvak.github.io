@@ -1423,6 +1423,25 @@ footer .ending {
     font-size: 14px;
     line-height: 14px;
   }
+  .intro-section-bg .intro-text h1 {
+    text-align: center;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+    letter-spacing: 1.2px;
+  }
+  .mobile-section-bg .intro-text {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile-section-bg .intro-text h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+    letter-spacing: 1.2px;
+  }
   .projects-grid .grid-1 {
     width: 100%;
     margin-bottom: 10%;

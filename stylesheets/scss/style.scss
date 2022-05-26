@@ -1449,6 +1449,7 @@ footer {
     header.header-main {
         margin: 5% auto 0;
 
+
         .nav-list-container {
             .nav-list {
                 li {
@@ -1459,7 +1460,30 @@ footer {
         }
     }
 
-    
+    .intro-section-bg {
+        .intro-text {
+            h1 {
+                text-align: center;
+                text-shadow:0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+
+    .mobile-section-bg {
+        .intro-text {
+            transform: scale(0.95);
+            position: relative;
+            justify-content: center;
+
+            h1 {
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+                text-shadow:0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
 
     .projects-grid {
         .grid-1 {
