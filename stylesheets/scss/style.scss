@@ -416,52 +416,40 @@ nav {
 #webdev-page .website-development-projects {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 75px 50px;
     background-color: #fff;
     height: auto;
 
     .col-1-of-2 {
-        width: 45%;
+        width: 50%;
 
         .title-container {
             width: 80%;
             margin: 0 auto;
-            text-align: center;
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            flex-direction: column;
 
             h2 {
                 margin-bottom: 10px;
+                text-align: left;
             }
 
             .benefits {
                 display: flex;
-                justify-content: space-evenly;
-                margin-top: 20px;
+                justify-content: space-between;
+                margin-top: 5px;
+
+                p {
+                    margin: 10px 0;
+                }
 
                 i {
                     color: #2ecc71;
                 }
             }
-        }
-
-        
-
-        .floating { 
-            animation-name: floating;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            margin-left: 30px;
-            margin-top: 5px;
-        }
-
-        @keyframes floating {
-            0% { transform: translate(0,  0px); }
-            50%  { transform: translate(0, 15px); }
-            100%   { transform: translate(0, -0px); }   
-        }
-
-        .title-container {
-            justify-content: center;
         }
     }
 }
@@ -474,47 +462,37 @@ nav {
     height: auto;
 
     .col-1-of-2 {
-        width: 45%;
+        width: 50%;
         margin: 0 auto;
 
         .image-container img {
-            transform: rotateY(180deg);
+            transform: rotateY(180deg); 
         }
+
         .title-container {
             width: 80%;
             margin: 0 auto;
-            text-align: center;
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            flex-direction: column;
 
             h2 {
                 margin-bottom: 10px;
+                text-align: left;
             }
 
             .benefits {
-                display: flex;
-                justify-content: space-evenly;
                 margin-top: 20px;
+
+                p {
+                    margin: 10px 0;
+                }
 
                 i {
                     color: #2ecc71;
                 }
             }
-        }
-
-        
-
-        .floating { 
-            animation-name: floating;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            margin-left: 30px;
-            margin-top: 5px;
-        }
-
-        @keyframes floating {
-            0% { transform: translate(0,  0px); }
-            50%  { transform: translate(0, 15px); }
-            100%   { transform: translate(0, -0px); }   
         }
     }
 }
