@@ -474,6 +474,10 @@ nav {
                 text-align: left;
             }
 
+            p {
+                line-height: 25px;
+            }
+
             .benefits {
                 display: flex;
                 justify-content: space-between;
@@ -517,6 +521,10 @@ nav {
             h2 {
                 margin-bottom: 10px;
                 text-align: left;
+            }
+
+            p {
+                line-height: 25px;
             }
 
             .benefits {
@@ -567,6 +575,10 @@ nav {
                 text-align: left;
             }
 
+            p {
+                line-height: 25px;
+            }
+
             .benefits {
                 margin-top: 10px;
 
@@ -615,6 +627,10 @@ nav {
                 text-align: left;
             }
 
+            p {
+                line-height: 25px;
+            }
+
             .benefits {
                 margin-top: 10px;
 
@@ -629,6 +645,192 @@ nav {
         }
     }
 }
+
+
+/* --------------------------------------- */
+/* Main Section Background  - Search Engine Optimization Page */
+/* --------------------------------------- */
+
+#seo-page {
+    .header-main {
+        .intro {
+            h1, p, a {
+                text-shadow: none;
+            }
+        }
+
+        .nav-list-container {
+            a {
+                text-shadow: none;
+            }
+        }
+    }
+}
+
+
+#seo-page .intro-section-bg-web-dev {
+    background-image: url("/assets/Client Website Images/background-image-folder/search-engine-optimization.jpg");
+    justify-content: start;
+}
+
+#seo-page .intro-section-bg-web-dev {
+    .intro-text {
+        display: flex;
+        width: 40%;
+        padding: 10px 40px;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 4rem;
+            line-height: 4rem;
+            text-align: left;
+            color: #fff;
+            text-shadow: 2px 4px 3px rgba(0,0,0,1);
+        }
+    }
+}
+
+#seo-page .services-container {
+    .section-1 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .first-row {
+            width: 80%;
+
+            h2, h3 {
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+#seo-page .search-engine-optimization-services {
+    .section-2 {
+        .website-content-box {
+            p {
+                padding: 5px 0;
+            }
+
+        }
+    }
+}
+
+#seo-page .search-engine-optimization-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 50px;
+    background-color: #fff;
+    height: auto;
+
+    .col-1-of-2 {
+        width: 50%;
+
+        .image-container {
+            width: 550px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+
+        .title-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            p {
+                line-height: 25px;
+            }
+
+            .benefits {
+                display: flex;
+                justify-content: start;
+                margin-top: 5px;
+
+                p {
+                    margin: 10px 5px;
+                }
+
+                i {
+                    color: #3498db;
+                }
+            }
+        }
+    }
+}
+
+#seo-page .projects-2 {
+    background-color: #EFF6FF;
+
+    .col-1-of-2 {
+        width: 50%;
+        margin: 0 auto;
+
+        .image-container {
+            width: 450px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+#seo-page .projects-3 {
+    background-color: #fff;
+
+
+    .col-1-of-2 {
+        width: 50%;
+        margin: 0 auto;
+
+        .image-container {
+            width: 500px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#seo-page .projects-4 {
+    background-color: #EFF6FF;
+ 
+
+    .col-1-of-2 {
+        width: 50%;
+        margin: 0 auto;
+
+        .image-container {
+             width: 450px;
+             margin: 0 auto;
+
+             img {
+                 width: 100%;
+             }
+        }
+    }
+}
+
 
 /* --------------------------------------- */
 /* Grid Container for Projects */
@@ -1482,6 +1684,9 @@ footer {
 
             .nav-list-container {
                 .nav-list {
+
+                    // we are going to be adding the mobile hamburger icon here
+                    display: none;
                     li {
                         display: block;
                         margin: 0 0 5% 0;
@@ -1532,8 +1737,9 @@ footer {
         width: auto;
     }
 
-
-    /*Home Page */
+    /********************************/
+    /* Home Page */
+    /********************************/
     .intro-section-bg {
         .intro-text {
             width: 100%;
@@ -1652,7 +1858,9 @@ footer {
        }
    }
 
-   /* Website Development Page*/
+   /********************************/
+   /* Website Development Page */
+   /********************************/
    #webdev-page {
        .intro-section-bg-web-dev {
             display: flex;
@@ -1795,8 +2003,6 @@ footer {
                 }
             }
         }
-
-
     }   
 
 
