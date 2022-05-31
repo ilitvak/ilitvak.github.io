@@ -440,7 +440,7 @@ nav {
             .benefits {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 5px;
+                margin-top: 10px;
 
                 p {
                     margin: 10px 0;
@@ -483,7 +483,103 @@ nav {
             }
 
             .benefits {
-                margin-top: 20px;
+                margin-top: 10px;
+
+                p {
+                    margin: 10px 0;
+                }
+
+                i {
+                    color: #2ecc71;
+                }
+            }
+        }
+    }
+}
+
+#webdev-page .website-development-projects-3 {
+    display: flex;
+    justify-content: center;
+    padding: 75px 50px;
+    background-color: #fff;
+    height: auto;
+
+    .col-1-of-2 {
+        width: 50%;
+        margin: 0 auto;
+
+        .image-container {
+            width: 400px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .title-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            .benefits {
+                margin-top: 10px;
+
+                p {
+                    margin: 10px 0;
+                }
+
+                i {
+                    color: #2ecc71;
+                }
+            }
+        }
+    }
+}
+
+#webdev-page .website-development-projects-4 {
+    display: flex;
+    justify-content: center;
+    padding: 75px 50px;
+    background-color: #EFF6FF;
+    height: auto;
+
+    .col-1-of-2 {
+        width: 50%;
+        margin: 0 auto;
+
+        .image-container {
+             width: 350px;
+             margin: 0 auto;
+
+             img {
+                 width: 100%;
+             }
+        }
+
+        .title-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            .benefits {
+                margin-top: 10px;
 
                 p {
                     margin: 10px 0;
