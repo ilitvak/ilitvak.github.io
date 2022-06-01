@@ -1070,7 +1070,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #social-media-page .projects-3 .col-1-of-2 .image-container {
-  width: 180px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -2636,7 +2636,7 @@ footer .ending {
     width: 100%;
   }
   #social-media-page .projects-3 .col-1-of-2 .image-container {
-    width: 20%;
+    width: 75%;
   }
   #social-media-page .projects-3 .col-1-of-2 .title-container {
     width: 100%;
