@@ -402,6 +402,21 @@ nav {
 /* Main Section Background  - Website Development Page */
 /* --------------------------------------- */
 
+#webdev-page {
+    .header-main {
+        .intro {
+            h1, p,  a {
+                text-shadow: none;
+            }
+        }
+    }
+    .nav-list {
+        a {
+            text-shadow: none;
+        }
+    }
+}
+
 
 .intro-section-bg-web-dev {
     background-image: url("/assets/Client Website Images/background-image-folder/website-development-banner-image.jpg");

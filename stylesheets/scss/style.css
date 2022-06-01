@@ -387,6 +387,14 @@ nav .nav-list-container .nav-list li a:hover::after {
 /* --------------------------------------- */
 /* Main Section Background  - Website Development Page */
 /* --------------------------------------- */
+#webdev-page .header-main .intro h1, #webdev-page .header-main .intro p, #webdev-page .header-main .intro a {
+  text-shadow: none;
+}
+
+#webdev-page .nav-list a {
+  text-shadow: none;
+}
+
 .intro-section-bg-web-dev {
   background-image: url("/assets/Client Website Images/background-image-folder/website-development-banner-image.jpg");
   -webkit-box-pack: end;
