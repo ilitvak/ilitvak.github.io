@@ -1998,7 +1998,6 @@ footer {
 /* Small phones to small tablets from 481px to 767px */
 @media only screen and (max-width: 767px){
 
-
     @-webkit-keyframes wiggle {
         0% {
             -webkit-transform: rotate(15deg);
@@ -2093,6 +2092,7 @@ footer {
             .nav-container {
                 position: fixed;
                 width: 100%;
+                height: 5px;
                 z-index: 1000;
                 border-radius: 10px;
 
