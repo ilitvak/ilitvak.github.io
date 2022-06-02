@@ -3,6 +3,9 @@
 /************************************/
 $('.hamburger-lines').click(function(){
     $(".menu-items").toggleClass("shift-Menu-Items-Back");
+    $(".line1").toggleClass("rotate-line-1");
+    $(".line2").toggleClass("hide-middle-line");
+    $(".line3").toggleClass("rotate-line-3");
 })
 
 /************************************/
