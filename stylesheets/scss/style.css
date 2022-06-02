@@ -2184,155 +2184,74 @@ footer .ending {
   header.header-main nav .nav-list-container .nav-list li a::after {
     display: none;
   }
-  header.header-main .mobile-nav .navbar {
+  header.header-main .mobile-nav {
+    margin-top: 0;
+  }
+  header.header-main .mobile-nav .nav-container {
     position: fixed;
     width: 100%;
-    margin-top: 55px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 20px;
+    z-index: 1000;
   }
-  header.header-main .mobile-nav .navbar .container {
-    max-width: 1050px;
-    width: 100%;
-    margin: auto;
-  }
-  header.header-main .mobile-nav .navbar .nav-container {
+  header.header-main .mobile-nav .nav-container .hamburger-lines {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-  }
-  header.header-main .mobile-nav .navbar .nav-container .checkbox {
-    position: absolute;
-    display: block;
-    height: 32px;
-    width: 32px;
-    top: 20px;
-    right: 25px;
-    z-index: 5;
-    opacity: 0;
-    cursor: pointer;
-  }
-  header.header-main .mobile-nav .navbar .nav-container .hamburger-lines {
-    display: block;
-    height: 26px;
-    width: 32px;
-    position: absolute;
-    top: 17px;
-    right: 25px;
-    z-index: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: relative;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  header.header-main .mobile-nav .navbar .nav-container .hamburger-lines .line {
-    display: block;
-    height: 4px;
     width: 100%;
-    border-radius: 10px;
-    background: #0e2431;
+    top: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    left: 85%;
   }
-  header.header-main .mobile-nav .navbar .nav-container .hamburger-lines .line-1 {
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    -webkit-transition: -webkit-transform 0.4s ease-in-out;
-    transition: -webkit-transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  header.header-main .mobile-nav .nav-container .hamburger-lines .line {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #000;
   }
-  header.header-main .mobile-nav .navbar .nav-container .hamburger-lines .line-2 {
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    transition: -webkit-transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  }
-  header.header-main .mobile-nav .navbar .nav-container .hamburger-lines .line-3 {
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-    -webkit-transition: -webkit-transform 0.4s ease-in-out;
-    transition: -webkit-transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  }
-  header.header-main .mobile-nav .navbar .nav-container li {
-    list-style-type: none;
-  }
-  header.header-main .mobile-nav .navbar .nav-container a {
-    text-decoration: none;
-    color: #0e2431;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-  }
-  header.header-main .mobile-nav .navbar .nav-container a:hover {
-    color: #3498db;
-  }
-  header.header-main .mobile-nav .navbar input[type="checkbox"]:checked ~ .menu-items {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  header.header-main .mobile-nav .navbar input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  header.header-main .mobile-nav .navbar input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  header.header-main .mobile-nav .navbar input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  header.header-main .mobile-nav .navbar .menu-items {
+  header.header-main .mobile-nav .nav-container .menu-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    height: 100vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
-    width: 100%;
-    -webkit-transform: translate(-150%);
-            transform: translate(-150%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 50px;
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    text-align: center;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  header.header-main .mobile-nav .nav-container .menu-items li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    list-style-type: none;
+  }
+  header.header-main .mobile-nav .nav-container .menu-items .fa-solid {
+    color: #3498db;
+  }
+  header.header-main .mobile-nav .nav-container .shift-Menu-Items-Back {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    padding: 0 20px;
     background-color: #fff;
-  }
-  header.header-main .mobile-nav .navbar .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  header.header-main .mobile-nav .navbar .menu-items li a {
-    color: #000;
-  }
-  header.header-main .mobile-nav .navbar .logo {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 1.2rem;
-    color: #0e2431;
   }
   .h1Small {
     font-size: 21px !important;

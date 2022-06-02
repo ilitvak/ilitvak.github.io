@@ -1,4 +1,11 @@
 /************************************/
+/* Hamburger Menu on Mobile Devices */
+/************************************/
+$('.hamburger-lines').click(function(){
+    $(".menu-items").toggleClass("shift-Menu-Items-Back");
+})
+
+/************************************/
 /* Scrolls to Section Upon Nav Click */
 /************************************/
 
@@ -40,7 +47,6 @@ if($(window).width() > 1){
 
 $(window).scroll(function(e){
     e.preventDefault();
-    console.log($(window).scrollTop());
 
     // mario enters
     if($(window).scrollTop() >= 500) {
