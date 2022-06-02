@@ -2190,8 +2190,8 @@ footer .ending {
   header.header-main .mobile-nav .nav-container {
     position: fixed;
     width: 100%;
-    padding: 20px;
     z-index: 1000;
+    border-radius: 10px;
   }
   header.header-main .mobile-nav .nav-container .hamburger-lines {
     display: -webkit-box;
@@ -2207,9 +2207,9 @@ footer .ending {
             flex-direction: column;
     width: 100%;
     top: 50px;
-    cursor: pointer;
-    z-index: 1000;
     left: 85%;
+    cursor: pointer;
+    z-index: 100;
   }
   header.header-main .mobile-nav .nav-container .hamburger-lines .line {
     display: block;
@@ -2248,9 +2248,9 @@ footer .ending {
     color: #3498db;
   }
   header.header-main .mobile-nav .nav-container .shift-Menu-Items-Back {
+    left: 0;
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    padding: 0 20px;
     background-color: #fff;
   }
   .h1Small {
