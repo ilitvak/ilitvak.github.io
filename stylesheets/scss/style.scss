@@ -485,6 +485,7 @@ nav {
             }
 
             p {
+                margin: 10px 0;
                 line-height: 25px;
             }
 
@@ -534,6 +535,7 @@ nav {
             }
 
             p {
+                margin: 10px 0;
                 line-height: 25px;
             }
 
@@ -564,7 +566,7 @@ nav {
         margin: 0 auto;
 
         .image-container {
-            width: 400px;
+            width: 550px;
             margin: 0 auto;
 
             img {
@@ -586,6 +588,7 @@ nav {
             }
 
             p {
+                margin: 10px 0;
                 line-height: 25px;
             }
 
@@ -616,7 +619,7 @@ nav {
         margin: 0 auto;
 
         .image-container {
-             width: 350px;
+             width: 450px;
              margin: 0 auto;
 
              img {
@@ -638,6 +641,7 @@ nav {
             }
 
             p {
+                margin: 10px 0;
                 line-height: 25px;
             }
 
@@ -728,7 +732,6 @@ nav {
             p {
                 padding: 5px 0;
             }
-
         }
     }
 }
@@ -920,7 +923,10 @@ nav {
             p {
                 padding: 5px 0;
             }
+        }
 
+        .boxes {
+            width: 30%;
         }
     }
 }
@@ -1040,7 +1046,6 @@ nav {
 #google-my-business-page .intro-section-bg-web-dev {
     background-image: url("/assets/Client Website Images/background-image-folder/google-my-business.jpg");
     justify-content: start;
-    background-position: right;
 }
 
 #google-my-business-page .intro-section-bg-web-dev {
@@ -1090,11 +1095,16 @@ nav {
 
 #google-my-business-page .search-engine-optimization-services {
     .section-2 {
+
         .website-content-box {
             p {
                 padding: 5px 0;
             }
 
+        }
+
+        .boxes {
+            width: 30%;
         }
     }
 }

@@ -485,6 +485,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #webdev-page .website-development-projects .col-1-of-2 .title-container p {
+  margin: 10px 0;
   line-height: 25px;
 }
 
@@ -550,6 +551,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #webdev-page .website-development-projects-2 .col-1-of-2 .title-container p {
+  margin: 10px 0;
   line-height: 25px;
 }
 
@@ -583,7 +585,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #webdev-page .website-development-projects-3 .col-1-of-2 .image-container {
-  width: 400px;
+  width: 550px;
   margin: 0 auto;
 }
 
@@ -613,6 +615,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #webdev-page .website-development-projects-3 .col-1-of-2 .title-container p {
+  margin: 10px 0;
   line-height: 25px;
 }
 
@@ -646,7 +649,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #webdev-page .website-development-projects-4 .col-1-of-2 .image-container {
-  width: 350px;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -676,6 +679,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #webdev-page .website-development-projects-4 .col-1-of-2 .title-container p {
+  margin: 10px 0;
   line-height: 25px;
 }
 
@@ -959,6 +963,10 @@ nav .nav-list-container .nav-list li a:hover::after {
   padding: 5px 0;
 }
 
+#social-media-page .search-engine-optimization-services .section-2 .boxes {
+  width: 30%;
+}
+
 #social-media-page .search-engine-optimization-projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1087,7 +1095,6 @@ nav .nav-list-container .nav-list li a:hover::after {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  background-position: right;
 }
 
 #google-my-business-page .intro-section-bg-web-dev .intro-text {
@@ -1144,6 +1151,10 @@ nav .nav-list-container .nav-list li a:hover::after {
 
 #google-my-business-page .search-engine-optimization-services .section-2 .website-content-box p {
   padding: 5px 0;
+}
+
+#google-my-business-page .search-engine-optimization-services .section-2 .boxes {
+  width: 30%;
 }
 
 #google-my-business-page .search-engine-optimization-projects {
