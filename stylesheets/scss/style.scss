@@ -2078,65 +2078,65 @@ footer {
             }
         }
 
-        .mobile-nav {
-            margin-top: 0;
+        // .mobile-nav {
+        //     margin-top: 0;
 
-            .nav-container {
-                position: fixed;
-                width: 100%;
-                z-index: 1000;
-                border-radius: 10px;
-
-
-                .hamburger-lines {
-                    display: flex;
-                    position: relative;
-                    justify-content: end;
-                    flex-direction: column;
-                    width: 100%;
-                    top: 50px;
-                    left: 85%;
-                    cursor: pointer;
-                    z-index: 100;
-
-                    .line {
-                        display: block;
-                        width: 35px;
-                        height: 3px;
-                        margin-top: 5px;
-                        background-color: #000;
-
-                    }
-                }
+        //     .nav-container {
+        //         position: fixed;
+        //         width: 100%;
+        //         z-index: 1000;
+        //         border-radius: 10px;
 
 
-                .menu-items {
-                    display: flex;
-                    position: relative;
-                    height: 100vh;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    transform: translateX(-500px);
+        //         .hamburger-lines {
+        //             display: flex;
+        //             position: relative;
+        //             justify-content: end;
+        //             flex-direction: column;
+        //             width: 100%;
+        //             top: 50px;
+        //             left: 85%;
+        //             cursor: pointer;
+        //             z-index: 100;
+
+        //             .line {
+        //                 display: block;
+        //                 width: 35px;
+        //                 height: 3px;
+        //                 margin-top: 5px;
+        //                 background-color: #000;
+
+        //             }
+        //         }
+
+
+        //         .menu-items {
+        //             display: flex;
+        //             position: relative;
+        //             height: 100vh;
+        //             justify-content: center;
+        //             align-items: center;
+        //             flex-direction: column;
+        //             transform: translateX(-500px);
     
-                    li {
-                        display: flex;
-                        padding: 10px 0;
-                        list-style-type: none;
-                    }
+        //             li {
+        //                 display: flex;
+        //                 padding: 10px 0;
+        //                 list-style-type: none;
+        //             }
     
-                    .fa-solid {
-                        color: #3498db;
-                    }
-                }
+        //             .fa-solid {
+        //                 color: #3498db;
+        //             }
+        //         }
 
-                .shift-Menu-Items-Back {
-                    left: 0;
-                    transform: translateX(0);
-                    background-color: #fff;
-                }
-            }
-        }
+        //         .shift-Menu-Items-Back {
+        //             left: 0;
+        //             transform: translateX(0);
+        //             background-color: #fff;
+        //         }
+        //     }
+        // }
     }
 
     .h1Small {
@@ -2986,7 +2986,7 @@ footer {
                     justify-content: end;
                     flex-direction: column;
                     width: 100%;
-                    top: 50px;
+                    top: 80px;
                     left: 85%;
                     cursor: pointer;
                     z-index: 100;
