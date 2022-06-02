@@ -1274,26 +1274,90 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 /* --------------------------------------- */
+/* Main Section Background  - Contact me Page */
+/* --------------------------------------- */
+#contact-me-page .header-main .intro h1, #contact-me-page .header-main .intro p, #contact-me-page .header-main .intro a {
+  text-shadow: none;
+}
+
+#contact-me-page .header-main .nav-list-container a {
+  text-shadow: none;
+}
+
+#contact-me-page .intro-section-bg-web-dev {
+  background-image: url("/assets/Client Website Images/background-image-folder/contact-me.jpg");
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+#contact-me-page .intro-section-bg-web-dev .intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  padding: 10px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact-me-page .intro-section-bg-web-dev .intro-text h1 {
+  margin-bottom: 10px;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: left;
+  color: #fff;
+  text-shadow: 2px 4px 3px black;
+}
+
+#contact-me-page .services-container .section-1 {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-me-page .services-container .section-1 .first-row {
+  width: 80%;
+}
+
+#contact-me-page .services-container .section-1 .first-row h2, #contact-me-page .services-container .section-1 .first-row h3 {
+  text-align: center;
+}
+
+#contact-me-page .services-container .section-1 .first-row h3 {
+  font-weight: normal;
+}
+
+#contact-me-page .services-container .section-2 .row-2 {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#contact-me-page .search-engine-optimization-services .section-2 .website-content-box p {
+  padding: 5px 0;
+}
+
+#contact-me-page .search-engine-optimization-services .section-2 .boxes {
+  width: 30%;
+}
+
+#contact-me-page footer {
+  margin: 4% auto;
+}
+
+/* --------------------------------------- */
 /* Grid Container for Projects */
 /* --------------------------------------- */
-/*
-@-webkit-keyframes levitate {
-    0% {
-    top: 100px;
-    -webkit-transform:scale(0.9);
-    }
-  
-    50% {
-    top: 100px;
-    -webkit-transform:scale(1.0);
-    }
-  
-    100% {
-    top: 100px;
-    -webkit-transform: scale(0.9);
-    }
-}  
-*/
 .projects-grid {
   margin: 8% auto 0;
   width: 90%;
@@ -2676,7 +2740,7 @@ footer .ending {
             flex-direction: column;
   }
   /********************************/
-  /* Search Engine Optimization Page */
+  /* Social Media Page */
   /********************************/
   #social-media-page .intro-section-bg-web-dev {
     display: -webkit-box;
@@ -2910,6 +2974,32 @@ footer .ending {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  /********************************/
+  /* Google My Business Mobile Page */
+  /********************************/
+  #contact-me-page .intro-section-bg-web-dev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contact-me-page .intro-section-bg-web-dev .intro-text {
+    width: 100%;
+    height: 90%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  #contact-me-page .intro-section-bg-web-dev .intro-text h1 {
+    text-align: center;
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+  }
+  #contact-me-page .search-engine-optimization-services .services-container .first-row {
+    width: 100%;
+  }
+  #contact-me-page .search-engine-optimization-services .services-container .first-row h3 {
+    font-weight: normal;
   }
   /********************************/
   /* About Me  Page */
