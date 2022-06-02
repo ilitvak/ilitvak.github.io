@@ -239,6 +239,10 @@ header.header-main .above-navigation-bar a {
 /* --------------------------------------- */
 /* Nav Section */
 /* --------------------------------------- */
+.mobile-nav {
+  display: none;
+}
+
 nav {
   position: relative;
   display: block;
@@ -2164,6 +2168,9 @@ footer .ending {
     border-radius: 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
             box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+  }
+  header.header-main .mobile-nav {
+    display: block;
   }
   header.header-main nav {
     position: relative;

@@ -253,6 +253,10 @@ header.header-main {
 /* Nav Section */
 /* --------------------------------------- */
 
+.mobile-nav {
+    display: none;
+}
+
 
 nav {
     position: relative;
@@ -2050,6 +2054,11 @@ footer {
             padding: 5px 15px;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+        }
+
+        // enables mobile navigation
+        .mobile-nav {
+            display: block;
         }
 
         nav {
