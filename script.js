@@ -8,20 +8,15 @@ $('.hamburger-lines').click(function(){
     $(".line3").toggleClass("rotate-line-3");
 })
 
-/************************************/
-/* Scrolls to Section Upon Nav Click */
-/************************************/
+$(".services-folder").click(function(){
+    $(".menu-items-folder").toggleClass("shift-Menu-Items-Back");
+    $(".menu-items").toggleClass("shift-Menu-Items-Back");
+});
 
-if($(window).width() > 1){
-    $(".scroller").click(function(e){
-        e.preventDefault();
-        console.log("works");
-        var aSelector = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: $(aSelector).offset().top - 60
-        }, 1200);
-    })
-} 
+$(".back-button").click(function(){
+    $(".menu-items-folder").toggleClass("shift-Menu-Items-Back");
+    $(".menu-items").toggleClass("shift-Menu-Items-Back");
+});
 
 
 /************************************/
