@@ -13,12 +13,14 @@ $('.hamburger-lines').click(function(){
 $(".services-folder").click(function(){
     $(".menu-items-folder").toggleClass("shift-Menu-Items-Forward ");
     $(".menu-items").toggleClass("shift-Menu-Items-Back");
+    $('.hamburger-lines').toggle();
 });
 
 // user clicks the back button in the services folder
 $(".back-button").click(function(){
     $(".menu-items-folder").toggleClass("shift-Menu-Items-Forward ");
     $(".menu-items").toggleClass("shift-Menu-Items-Back");
+    $('.hamburger-lines').toggle();
 });
 
 if($(".menu-items-folder.shift-Menu-Items-Forward")){
