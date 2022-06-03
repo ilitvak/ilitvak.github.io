@@ -1478,6 +1478,57 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 /* --------------------------------------- */
+/* Main Section Background  - Portfolio Page */
+/* --------------------------------------- */
+#portfolio-page .header-main .intro h1, #portfolio-page .header-main .intro p, #portfolio-page .header-main .intro a {
+  text-shadow: none;
+}
+
+#portfolio-page .header-main .nav-list-container a {
+  text-shadow: none;
+}
+
+#portfolio-page .intro-section-bg {
+  background-image: url("/assets/Client Website Images/background-image-folder/portfolio-background.jpg");
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio-page .intro-section-bg .intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  padding: 10px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio-page .intro-section-bg .intro-text h1 {
+  margin-bottom: 10px;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: left;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 4px 3px black;
+}
+
+#portfolio-page .projects-grid {
+  margin-top: 0px;
+}
+
+#portfolio-page .projects-grid .row {
+  padding: 50px 0;
+}
+
+/* --------------------------------------- */
 /* Main Section Background  - Contact me Page */
 /* --------------------------------------- */
 #contact-me-page .header-main .intro h1, #contact-me-page .header-main .intro p, #contact-me-page .header-main .intro a {
@@ -3360,6 +3411,12 @@ footer .ending {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  /********************************/
+  /* Portfolio Page  */
+  /********************************/
+  #portfolio-page .projects-grid .grid-1 {
+    margin-bottom: 50px !important;
   }
   /********************************/
   /* About Me  Page */
