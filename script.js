@@ -8,15 +8,22 @@ $('.hamburger-lines').click(function(){
     $(".line3").toggleClass("rotate-line-3");
 })
 
+
+// user clicks the services folder
 $(".services-folder").click(function(){
-    $(".menu-items-folder").toggleClass("shift-Menu-Items-Back");
+    $(".menu-items-folder").toggleClass("shift-Menu-Items-Forward ");
     $(".menu-items").toggleClass("shift-Menu-Items-Back");
 });
 
+// user clicks the back button in the services folder
 $(".back-button").click(function(){
-    $(".menu-items-folder").toggleClass("shift-Menu-Items-Back");
+    $(".menu-items-folder").toggleClass("shift-Menu-Items-Forward ");
     $(".menu-items").toggleClass("shift-Menu-Items-Back");
 });
+
+if($(".menu-items-folder.shift-Menu-Items-Forward")){
+
+}
 
 
 /************************************/

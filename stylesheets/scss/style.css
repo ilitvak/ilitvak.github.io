@@ -2555,7 +2555,7 @@ footer .ending {
             flex-direction: column;
     -webkit-transform: translateX(500px);
             transform: translateX(500px);
-    margin-top: -832px;
+    margin-top: -100vh;
   }
   header.header-main .mobile-nav .nav-container .menu-items-folder li {
     display: -webkit-box;
@@ -2569,6 +2569,12 @@ footer .ending {
     color: #3498db;
   }
   header.header-main .mobile-nav .nav-container .shift-Menu-Items-Back {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    background-color: #fff;
+  }
+  header.header-main .mobile-nav .nav-container .shift-Menu-Items-Forward {
     left: 0;
     -webkit-transform: translateX(0);
             transform: translateX(0);
