@@ -396,7 +396,7 @@ nav .nav-list-container .nav-list li a:hover::after {
   background-image: url("/assets/Client Website Images/background-image-folder/website-development-banner-image.webp");
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .intro-section-bg-web-dev .intro-text {
@@ -908,7 +908,7 @@ nav .nav-list-container .nav-list li a:hover::after {
   background-image: url("/assets/Client Website Images/background-image-folder/social-media-management.webp");
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 #social-media-page .intro-section-bg-web-dev .intro-text {
@@ -2527,7 +2527,7 @@ footer .ending {
     position: relative;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2765,7 +2765,7 @@ footer .ending {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     padding: 50px;
   }
   #webdev-page .intro-section-bg-web-dev .intro-text h1 {
@@ -2909,7 +2909,7 @@ footer .ending {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     padding: 30px;
   }
   #seo-page .intro-section-bg-web-dev .intro-text h1 {
@@ -3062,7 +3062,7 @@ footer .ending {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     padding: 50px;
   }
   #social-media-page .intro-section-bg-web-dev .intro-text h1 {
@@ -3185,7 +3185,7 @@ footer .ending {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     padding: 50px;
   }
   #google-my-business-page .intro-section-bg-web-dev .intro-text h1 {
@@ -3305,7 +3305,7 @@ footer .ending {
     height: 90%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
   }
   #contact-me-page .intro-section-bg-web-dev .intro-text h1 {
     text-align: center;
@@ -3333,7 +3333,7 @@ footer .ending {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     padding: 50px;
   }
   #about-me-page .intro-section-bg-web-dev .intro-text h1 {
