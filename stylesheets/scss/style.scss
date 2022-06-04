@@ -2683,10 +2683,12 @@ footer {
        .intro-section-bg-web-dev {
             display: flex;
             justify-content: center;
-            
+
             .intro-text {
                 width: 100%;
+                -webkit-justify-content: flex-end;
                 justify-content: flex-end;
+                align-items: flex-end;
                 padding: 50px;
  
                 h1 {
@@ -2837,7 +2839,9 @@ footer {
 
          .intro-text {
              width: 100%;
+             -webkit-justify-content: flex-end;
              justify-content: flex-end;
+             align-items: flex-end;
              padding: 30px;
 
              h1 {
@@ -3005,7 +3009,9 @@ footer {
 
             .intro-text {
                 width: 100%;
+                -webkit-justify-content: flex-end;
                 justify-content: flex-end;
+                align-items: flex-end;
                 padding: 50px;
 
              h1 {
@@ -3143,7 +3149,9 @@ footer {
 
             .intro-text {
                 width: 100%;
+                -webkit-justify-content: flex-end;
                 justify-content: flex-end;
+                align-items: flex-end;
                 padding: 50px;
 
              h1 {
@@ -3270,7 +3278,7 @@ footer {
  }   
 
   /********************************/
-   /* Google My Business Mobile Page */
+   /* Contact me Page */
    /********************************/
    #contact-me-page {
        .intro-section-bg-web-dev {
@@ -3279,7 +3287,9 @@ footer {
             .intro-text {
                 width: 100%;
                 height: 90%;
+                -webkit-justify-content: flex-end;
                 justify-content: flex-end;
+                align-items: flex-end;
                 
                 h1 {
                     text-align: center;
@@ -3303,7 +3313,7 @@ footer {
     }  
 
    /********************************/
-   /* Google My Business Mobile Page */
+   /* About Me Page */
    /********************************/
    #about-me-page {
        .intro-section-bg-web-dev {
@@ -3312,7 +3322,9 @@ footer {
 
             .intro-text {
                 width: 100%;
+                -webkit-justify-content: flex-end;
                 justify-content: flex-end;
+                align-items: flex-end;
                 padding: 50px;
 
             h1 {

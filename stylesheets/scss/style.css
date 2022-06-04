@@ -2766,6 +2766,9 @@ footer .ending {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 50px;
   }
   #webdev-page .intro-section-bg-web-dev .intro-text h1 {
@@ -2910,6 +2913,9 @@ footer .ending {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 30px;
   }
   #seo-page .intro-section-bg-web-dev .intro-text h1 {
@@ -3063,6 +3069,9 @@ footer .ending {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 50px;
   }
   #social-media-page .intro-section-bg-web-dev .intro-text h1 {
@@ -3186,6 +3195,9 @@ footer .ending {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 50px;
   }
   #google-my-business-page .intro-section-bg-web-dev .intro-text h1 {
@@ -3293,7 +3305,7 @@ footer .ending {
             flex-direction: column;
   }
   /********************************/
-  /* Google My Business Mobile Page */
+  /* Contact me Page */
   /********************************/
   #contact-me-page .intro-section-bg-web-dev {
     display: -webkit-box;
@@ -3306,6 +3318,9 @@ footer .ending {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   #contact-me-page .intro-section-bg-web-dev .intro-text h1 {
     text-align: center;
@@ -3319,7 +3334,7 @@ footer .ending {
     font-weight: normal;
   }
   /********************************/
-  /* Google My Business Mobile Page */
+  /* About Me Page */
   /********************************/
   #about-me-page .intro-section-bg-web-dev {
     display: -webkit-box;
@@ -3334,6 +3349,9 @@ footer .ending {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 50px;
   }
   #about-me-page .intro-section-bg-web-dev .intro-text h1 {
