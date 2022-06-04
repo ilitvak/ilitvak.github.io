@@ -6,6 +6,7 @@ $('.hamburger-lines').click(function(){
     $(".line1").toggleClass("rotate-line-1");
     $(".line2").toggleClass("hide-middle-line");
     $(".line3").toggleClass("rotate-line-3");
+    $("body").toggleClass("stopScroll");
 })
 
 
@@ -22,10 +23,6 @@ $(".back-button").click(function(){
     $(".menu-items").toggleClass("shift-Menu-Items-Back");
     $('.hamburger-lines').toggle();
 });
-
-if($(".menu-items-folder.shift-Menu-Items-Forward")){
-
-}
 
 
 /************************************/

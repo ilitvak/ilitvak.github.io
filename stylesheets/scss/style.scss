@@ -2462,7 +2462,7 @@ footer {
                 .menu-items {
                     display: flex;
                     position: relative;
-                    height: 100vh;
+                    height: 103vh;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
@@ -2484,12 +2484,12 @@ footer {
                 .menu-items-folder {
                     display: flex;
                     position: relative;
-                    height: 100vh;
+                    height: 103vh;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
                     transform: translateX(500px);
-                    margin-top: -100vh;
+                    margin-top: -102vh;
     
                     li {
                         display: flex;
@@ -2516,6 +2516,10 @@ footer {
                 }
             }
         }
+    }
+
+    .stopScroll {
+        overflow: hidden;
     }
 
     .h1Small {
@@ -2682,8 +2686,11 @@ footer {
  
             .intro-text {
                 width: 100%;
+                justify-content: end;
+                padding: 50px;
  
                 h1 {
+                    text-align: center;
                     font-size: 3rem !important;
                     line-height: 3rem !important;
                 }
@@ -2826,11 +2833,15 @@ footer {
     .intro-section-bg-web-dev {
          display: flex;
          justify-content: center;
+         background-position: -1050px 0;
 
          .intro-text {
              width: 100%;
+             justify-content: end;
+             padding: 30px;
 
              h1 {
+                 text-align: center;
                  font-size: 3rem !important;
                  line-height: 3rem !important;
              }
@@ -2990,9 +3001,12 @@ footer {
     .intro-section-bg-web-dev {
          display: flex;
          justify-content: center;
+         background-position: -300px 0;
 
          .intro-text {
              width: 100%;
+             justify-content: end;
+             padding: 50px;
 
              h1 {
                  text-align: center;
@@ -3125,9 +3139,12 @@ footer {
        .intro-section-bg-web-dev {
             display: flex;
             justify-content: center;
+            background-position: -850px 0;
 
             .intro-text {
                 width: 100%;
+                justify-content: end;
+                padding: 50px;
 
              h1 {
                  text-align: center;
@@ -3295,13 +3312,15 @@ footer {
          justify-content: center;
 
          .intro-text {
-             width: 100%;
+            width: 100%;
+            justify-content: end;
+            padding: 50px;
 
-          h1 {
-              text-align: center;
-              font-size: 3rem !important;
-              line-height: 3rem !important;
-          }
+         h1 {
+             text-align: center;
+             font-size: 3rem !important;
+             line-height: 3rem !important;
+         }
       }
   }
 
@@ -3420,17 +3439,30 @@ footer {
   }
 }   
 
-    /********************************/
-   /* Portfolio Page  */
+/********************************/
+   /* Social Media Page */
    /********************************/
-
    #portfolio-page {
-       .projects-grid {
-           .grid-1 {
-               margin-bottom: 50px !important;
-           }
-       }
-   }
+       .intro-section-bg{
+         display: flex;
+         justify-content: center;
+
+         .intro-text {
+             width: 100%;
+
+             h1 {
+                 text-align: center;
+                 font-size: 3rem !important;
+                 line-height: 3rem !important;
+                }
+            }
+        }
+        .projects-grid {
+            .grid-1 {
+                 margin-bottom: -25px !important;
+            }
+        }
+    }   
 
 
     /********************************/
@@ -3497,8 +3529,10 @@ footer {
 @media only screen and (max-width: 480px){
     
     header.header-main {
-        margin: 5% auto 0;
 
+        .intro {
+            margin-top: 15px;
+        }
 
         .nav-list-container {
             .nav-list {

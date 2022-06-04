@@ -2562,7 +2562,7 @@ footer .ending {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    height: 100vh;
+    height: 103vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2593,7 +2593,7 @@ footer .ending {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    height: 100vh;
+    height: 103vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2606,7 +2606,7 @@ footer .ending {
             flex-direction: column;
     -webkit-transform: translateX(500px);
             transform: translateX(500px);
-    margin-top: -100vh;
+    margin-top: -102vh;
   }
   header.header-main .mobile-nav .nav-container .menu-items-folder li {
     display: -webkit-box;
@@ -2630,6 +2630,9 @@ footer .ending {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     background-color: #fff;
+  }
+  .stopScroll {
+    overflow: hidden;
   }
   .h1Small {
     font-size: 21px !important;
@@ -2760,8 +2763,13 @@ footer .ending {
   }
   #webdev-page .intro-section-bg-web-dev .intro-text {
     width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 50px;
   }
   #webdev-page .intro-section-bg-web-dev .intro-text h1 {
+    text-align: center;
     font-size: 3rem !important;
     line-height: 3rem !important;
   }
@@ -2895,11 +2903,17 @@ footer .ending {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-position: -1050px 0;
   }
   #seo-page .intro-section-bg-web-dev .intro-text {
     width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 30px;
   }
   #seo-page .intro-section-bg-web-dev .intro-text h1 {
+    text-align: center;
     font-size: 3rem !important;
     line-height: 3rem !important;
   }
@@ -3042,9 +3056,14 @@ footer .ending {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-position: -300px 0;
   }
   #social-media-page .intro-section-bg-web-dev .intro-text {
     width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 50px;
   }
   #social-media-page .intro-section-bg-web-dev .intro-text h1 {
     text-align: center;
@@ -3160,9 +3179,14 @@ footer .ending {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-position: -850px 0;
   }
   #google-my-business-page .intro-section-bg-web-dev .intro-text {
     width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 50px;
   }
   #google-my-business-page .intro-section-bg-web-dev .intro-text h1 {
     text-align: center;
@@ -3307,6 +3331,10 @@ footer .ending {
   }
   #about-me-page .intro-section-bg-web-dev .intro-text {
     width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 50px;
   }
   #about-me-page .intro-section-bg-web-dev .intro-text h1 {
     text-align: center;
@@ -3413,10 +3441,26 @@ footer .ending {
             flex-direction: column;
   }
   /********************************/
-  /* Portfolio Page  */
+  /* Social Media Page */
   /********************************/
+  #portfolio-page .intro-section-bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #portfolio-page .intro-section-bg .intro-text {
+    width: 100%;
+  }
+  #portfolio-page .intro-section-bg .intro-text h1 {
+    text-align: center;
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+  }
   #portfolio-page .projects-grid .grid-1 {
-    margin-bottom: 50px !important;
+    margin-bottom: -25px !important;
   }
   /********************************/
   /* About Me  Page */
@@ -3467,8 +3511,8 @@ footer .ending {
 
 /* Small phones from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  header.header-main {
-    margin: 5% auto 0;
+  header.header-main .intro {
+    margin-top: 15px;
   }
   header.header-main .nav-list-container .nav-list li {
     font-size: 14px;
