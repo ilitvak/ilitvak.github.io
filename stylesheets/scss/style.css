@@ -344,7 +344,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 .intro-section-bg {
-  background-image: url("/assets/Client Website Images/background-image-folder/ilwebdesign-background-image.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/ilwebdesign-background-image.webp");
 }
 
 .intro-section-bg .intro-text {
@@ -393,7 +393,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 .intro-section-bg-web-dev {
-  background-image: url("/assets/Client Website Images/background-image-folder/website-development-banner-image.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/website-development-banner-image.webp");
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -711,7 +711,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #seo-page .intro-section-bg-web-dev {
-  background-image: url("/assets/Client Website Images/background-image-folder/search-engine-optimization.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/search-engine-optimization.webp");
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -905,7 +905,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #social-media-page .intro-section-bg-web-dev {
-  background-image: url("/assets/Client Website Images/background-image-folder/social-media-management.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/social-media-management.webp");
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -1095,7 +1095,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #google-my-business-page .intro-section-bg-web-dev {
-  background-image: url("/assets/Client Website Images/background-image-folder/google-my-business.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/google-my-business.webp");
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -1285,7 +1285,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #about-me-page .intro-section-bg-web-dev {
-  background-image: url("/assets/Client Website Images/background-image-folder/about-me.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/about-me.webp");
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -1489,7 +1489,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #portfolio-page .intro-section-bg {
-  background-image: url("/assets/Client Website Images/background-image-folder/portfolio-background.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/portfolio-background.webp");
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1540,7 +1540,7 @@ nav .nav-list-container .nav-list li a:hover::after {
 }
 
 #contact-me-page .intro-section-bg-web-dev {
-  background-image: url("/assets/Client Website Images/background-image-folder/contact-me.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/contact-me.webp");
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -1839,7 +1839,7 @@ nav .nav-list-container .nav-list li a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/assets/Client Website Images/background-image-folder/mobile-design-2.jpg");
+  background-image: url("/assets/Client Website Images/background-image-folder/mobile-design-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
