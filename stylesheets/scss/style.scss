@@ -2136,7 +2136,7 @@ footer {
             margin: 0 auto;
             ul {
                 display: flex;
-                justify-content: center;
+                justify-content: space-evenly;
                 margin-top: 15px;
 
                 li {
@@ -2148,32 +2148,10 @@ footer {
                     a {
                         display: inline-block;
                         height: 45px;
+                        font-size: 25px;
 
                         i {
                             color: #000;
-                        }
-
-                        p.i-text {
-                            position: relative;
-                            display: inline-block;
-                            height:100%;
-                            margin-left: 10px;
-                            vertical-align: middle;
-                            font-family: $main-font;
-                            font-size: 15px;
-
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                display: block;
-                                width: 0;
-                                height: 50%;
-                                border-bottom: 2px solid #2980b9;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                            }
                         }
 
                         &:hover p::after {
