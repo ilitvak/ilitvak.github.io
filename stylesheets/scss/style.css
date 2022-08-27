@@ -118,6 +118,17 @@ a.btt:hover {
 }
 
 /* --------------------------------------- */
+/* Tidio Chat Bot */
+/* --------------------------------------- */
+.awesome-iframe .footer-icons-wrapper span {
+  display: none;
+}
+
+#ic_logo {
+  display: none;
+}
+
+/* --------------------------------------- */
 /* Body Section */
 /* --------------------------------------- */
 .animated-mario-container.first-mario {

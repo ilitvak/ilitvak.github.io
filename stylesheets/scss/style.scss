@@ -123,6 +123,20 @@ a.btt {
     transform: translatey(-10%);
   }
 
+
+/* --------------------------------------- */
+/* Tidio Chat Bot */
+/* --------------------------------------- */
+
+// removes branding
+.awesome-iframe .footer-icons-wrapper span {
+  display: none;
+}
+
+#ic_logo {
+    display: none;
+}
+
 /* --------------------------------------- */
 /* Body Section */
 /* --------------------------------------- */
