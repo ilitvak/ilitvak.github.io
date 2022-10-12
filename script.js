@@ -181,7 +181,7 @@ $(redIcon).click(function(e){
 $(window).scroll(function(){
 
     // checks the scroll top against the bottom position of the skills section
-    if( $(window).scrollTop() >= $(".seo-section").offset().top + $(".skills").outerHeight(true) - 150 ) {
+    if( $(window).scrollTop() >= $(".mobile-section-bg").offset().top  - 150 ) {
         $(".about-me-grid-container").addClass("progress-bar-animation");  
         
         var a = setTimeout(function(){
