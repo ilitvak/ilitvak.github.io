@@ -12,7 +12,6 @@ if($(window).width() > 1){
         }, 1200);
     })
 } 
-
 /************************************/
 /*** Fills In Skill Bar Color ***/
 /************************************/
@@ -74,6 +73,26 @@ function recaptchaCallBack(token) {
     recaptchaToken = token;
 }
 
+
+const selectClass = document.getElementById("filter-system");
+
+
+const gallery = document.querySelector(".gallery");
+const images = gallery.querySelectorAll("img");
+
+selectClass.addEventListener("click", function() {
+    const category = this.value;
+    console.log("Category Selected: " + category);
+    images.forEach(function(image) {
+      if (category === "all") {
+        image.style.display = "block";
+      } else if (image.classList.contains(category)) {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    });
+  });
 
 
 $(window).scroll(function(){

@@ -25,6 +25,34 @@ $(".back-button").click(function(){
 });
 
 
+
+
+let filterSystem = $(".filter-system-ul li");
+console.log(filterSystem);
+
+let projectsGrid =$(".projects-grid .grid-1").toArray();
+console.log(projectsGrid);
+
+
+$(filterSystem).click(function(){
+
+    const cateogorySelected = this.innerHTML;
+    console.log("Category Selected: " + this.innerHTML);
+
+    projectsGrid.forEach(function(project){
+        console.log(project);
+        if(cateogorySelected === "All") {
+            project.style.display = "inline-block";
+        } else if(project.classList.contains(cateogorySelected)) {
+            project.style.display = "inline-block";
+        } else {
+            project.style.display = "none";
+        }
+    })
+});
+
+
+
 /************************************/
 /* Back to top btn animated in after 400px scrolling */
 /************************************/
@@ -227,25 +255,6 @@ document.getElementById('contactMeForm').addEventListener('submit', function(e){
         console.log("Error is: " + error);
     }
 })
-
-
-var iLoveLolaColors = ["#d63031","#e84393","#6c5ce7","#0984e3","#00cec9","#74b9ff","#55efc4","#ffeaa7", "#fdcb6e", "#e17055", "#636e72"];
-var heartBeat = 0;
-function iloveYouLola(){
-
-    document.querySelector('.fa-heart').style.color = iLoveLolaColors[heartBeat];
-    document.querySelector('a.btt').style.backgroundColor = iLoveLolaColors[heartBeat];
-    heartBeat++;
-
-    if(heartBeat == iLoveLolaColors.length) {
-        heartBeat = 0;
-    }
-
-}
-
-setInterval(function(){
-    iloveYouLola();
-}, 1000)
 
 
 /************************************/
