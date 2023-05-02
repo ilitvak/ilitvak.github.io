@@ -36,14 +36,14 @@ console.log(projectsGrid);
 
 $(filterSystem).click(function(){
 
-    const cateogorySelected = this.innerHTML;
-    console.log("Category Selected: " + this.innerHTML);
+    const cateogorySelectedID = $(this).attr("id");
+    console.log("Category Selected: " + cateogorySelectedID);
 
     projectsGrid.forEach(function(project){
         console.log(project);
-        if(cateogorySelected === "All") {
+        if(cateogorySelectedID === "All") {
             project.style.display = "inline-block";
-        } else if(project.classList.contains(cateogorySelected)) {
+        } else if(project.classList.contains(cateogorySelectedID)) {
             project.style.display = "inline-block";
         } else {
             project.style.display = "none";
